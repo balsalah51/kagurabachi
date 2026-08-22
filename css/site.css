@@ -782,30 +782,69 @@ footer.site h3 {
   text-transform: uppercase;
 }
 
-.steps {
+.cuts-wrap {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 1.15rem 1.15rem 1.3rem;
+  margin: 0.4rem 0 0;
+  border: 1px solid var(--ink);
+  box-shadow: var(--shadow);
+}
+.cuts-wrap .section-head {
+  border-bottom-color: rgba(246, 239, 230, 0.14);
+  margin: 0 0 0.95rem;
+}
+.cuts-wrap .section-head h2 { color: var(--paper); }
+.cuts-wrap .section-head a { color: var(--gold-bright); }
+.cuts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  counter-reset: step;
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: 0.5rem;
 }
-.steps article {
-  background: var(--cream);
-  border: 1px solid var(--line);
-  padding: 1rem 1.05rem 1.15rem;
+.cut {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+  color: var(--paper);
+  background: var(--ink-soft);
+  border: 1px solid rgba(246, 239, 230, 0.1);
+  padding: 0.35rem 0.55rem 0.35rem 0.35rem;
+  min-height: 3.35rem;
+  transition: border-color 0.16s ease, transform 0.16s ease, background 0.16s ease;
 }
-.steps article::before {
-  counter-increment: step;
-  content: "0" counter(step);
+.cut img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  object-position: top center;
+  flex: none;
+  background: #111;
+}
+.cut b {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.15;
+}
+.cut small {
+  display: block;
   font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  color: var(--ruby);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(246, 239, 230, 0.48);
+  margin-top: 0.12rem;
 }
-.steps h3 { margin: 0.3rem 0 0.35rem; }
-.steps p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+.cut:hover {
+  color: var(--gold-bright);
+  border-color: var(--gold);
+  background: #221c16;
+  transform: translateY(-2px);
+}
 
 @media (max-width: 920px) {
-  .layout, .split, .footer-inner, .page-hero, .feature, .paths, .people, .catalog, .steps { grid-template-columns: 1fr; }
+  .layout, .split, .footer-inner, .page-hero, .feature, .paths, .people, .catalog { grid-template-columns: 1fr; }
   .infobox { position: static; }
   .nav-toggle { display: block; }
   .primary-nav { display: none; }
