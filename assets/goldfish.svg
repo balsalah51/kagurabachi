@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 140" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="aka" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E23B3B"/>
+      <stop offset="1" stop-color="#8B1218"/>
+    </linearGradient>
+    <linearGradient id="kuro" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A3A3A"/>
+      <stop offset="1" stop-color="#111"/>
+    </linearGradient>
+    <linearGradient id="nishiki" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8C547"/>
+      <stop offset=".45" stop-color="#C41E3A"/>
+      <stop offset="1" stop-color="#1A1A1A"/>
+    </linearGradient>
+  </defs>
+</svg>
