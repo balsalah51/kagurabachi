@@ -29,7 +29,7 @@
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
         <ul class="primary-nav" id="primary-nav">
-          ${navLink("index.html", "Home")}
+          ${navLink("index.html", "Kagurabachi")}
           ${navLink("characters/index.html", "Characters", "characters")}
           ${navLink("arcs/index.html", "Story", "arcs")}
           ${navLink("fun/index.html", "Fun", "fun")}
@@ -56,8 +56,8 @@
     <footer class="site">
       <div class="footer-inner">
         <div>
-          <h3>Kagurabachi Archive</h3>
-          <p>An independent English-language database for Takeru Hokazono’s <em>Kagurabachi</em>. Built in the spirit of a Fandom encyclopedia and a Kanzenshuu-style publication guide — characters, blades, chapters, covers, and analysis, nothing else.</p>
+          <h3>Kagurabachi</h3>
+          <p>A fan site for Takeru Hokazono’s <em>Kagurabachi</em>. Characters, blades, volumes, and the goldfish.</p>
           <p class="legal">Kagurabachi © Takeru Hokazono / Shueisha. Anime images © Takeru Hokazono / Project Kagurabachi. Fan-made reference. Official chapters: <a href="https://www.viz.com/kagurabachi">VIZ</a> and <a href="https://mangaplus.shueisha.co.jp/">MANGA Plus</a>.</p>
         </div>
         <div>
