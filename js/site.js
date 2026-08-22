@@ -1,51 +1,7 @@
 (function () {
-  const PAGES = [
-    { t: "Home", u: "index.html", k: "archive portal kagurabachi" },
-    { t: "Characters", u: "characters/index.html", k: "directory roster" },
-    { t: "Chihiro Rokuhira", u: "characters/chihiro.html", k: "enten protagonist son" },
-    { t: "Kunishige Rokuhira", u: "characters/kunishige.html", k: "swordsmith father datenseki" },
-    { t: "Togo Shiba", u: "characters/shiba.html", k: "teleport cafe" },
-    { t: "Hakuri Sazanami", u: "characters/hakuri.html", k: "storehouse isou rakuzaichi" },
-    { t: "Hiyuki Kagari", u: "characters/hiyuki.html", k: "flame bone kamunabi" },
-    { t: "Genichi Sojo", u: "characters/sojo.html", k: "cloud gouger kuregumo" },
-    { t: "Yura", u: "characters/yura.html", k: "hishaku leader" },
-    { t: "Seiichi Samura", u: "characters/samura.html", k: "tobimune iai white purity" },
-    { t: "Yoji Uruha", u: "characters/uruha.html", k: "kumeyuri bearer" },
-    { t: "Char Kyonagi", u: "characters/char.html", k: "healing regeneration" },
-    { t: "Iori Samura", u: "characters/iori.html", k: "daughter iai" },
-    { t: "Akemura Soga", u: "characters/akemura.html", k: "sword master magatsumi shinuchi" },
-    { t: "Kyora Sazanami", u: "characters/kyora.html", k: "rakuzaichi auction" },
-    { t: "Enchanted Blades", u: "blades/index.html", k: "yoto datenseki" },
-    { t: "Enten", u: "blades/enten.html", k: "kuro aka nishiki goldfish" },
-    { t: "Cloud Gouger", u: "blades/cloud-gouger.html", k: "kuregumo mei yui kou" },
-    { t: "Magatsumi", u: "blades/magatsumi.html", k: "shinuchi malediction" },
-    { t: "Kumeyuri", u: "blades/kumeyuri.html", k: "banquet play" },
-    { t: "Tobimune", u: "blades/tobimune.html", k: "crow owl suzaku" },
-    { t: "Manga Guide", u: "manga/index.html", k: "volumes chapters jump" },
-    { t: "Volume Guide", u: "manga/volumes.html", k: "tankobon isbn" },
-    { t: "Chapter Index", u: "manga/chapters.html", k: "weekly serialization" },
-    { t: "Cover Studies", u: "manga/covers.html", k: "color palette volume art" },
-    { t: "Color Pages & Pulls", u: "manga/color-pages.html", k: "jump color illustration" },
-    { t: "Story Arcs", u: "arcs/index.html", k: "sojo rakuzaichi" },
-    { t: "Vs. Sojo Arc", u: "arcs/vs-sojo.html", k: "char cloud gouger" },
-    { t: "Rakuzaichi Arc", u: "arcs/rakuzaichi.html", k: "auction hakuri" },
-    { t: "Sword Bearer Assassination Arc", u: "arcs/sword-bearer.html", k: "part 1 climax" },
-    { t: "Seitei War Arc", u: "arcs/seitei-war.html", k: "part 2 irishima" },
-    { t: "Story Analysis", u: "analysis/index.html", k: "essays themes" },
-    { t: "What Enten Was Forged For", u: "analysis/enten-purpose.html", k: "destroy blades" },
-    { t: "The Malediction", u: "analysis/malediction.html", k: "soga 200000" },
-    { t: "Revenge and Inheritance", u: "analysis/revenge.html", k: "chihiro kunishige" },
-    { t: "Factions", u: "factions/index.html", k: "kamunabi hishaku sazanami" },
-    { t: "Collectibles", u: "collectibles/index.html", k: "volumes merch figures" },
-    { t: "World & Timeline", u: "world/index.html", k: "history datenseki" },
-    { t: "Datenseki", u: "world/datenseki.html", k: "ore ore" },
-    { t: "Sorcery", u: "world/sorcery.html", k: "spirit energy yojutsu" },
-    { t: "About the Archive", u: "about.html", k: "kanzenshuu fandom protocol" }
-  ];
-
   function rootPrefix() {
     const depth = location.pathname.replace(/\\/g, "/").split("/").filter(Boolean).length;
-    const inSub = /\/(characters|blades|manga|arcs|analysis|factions|collectibles|world)\//.test(location.pathname);
+    const inSub = /\/(characters|blades|manga|arcs|analysis|factions|collectibles|world|media)\//.test(location.pathname);
     return inSub || depth > 1 ? "../" : "";
   }
 
@@ -79,12 +35,8 @@
           ${navLink("arcs/index.html", "Arcs")}
           ${navLink("analysis/index.html", "Analysis")}
           ${navLink("collectibles/index.html", "Collectibles")}
+          ${navLink("media/index.html", "Media")}
         </ul>
-        <div class="search">
-          <label class="visually-hidden" for="q" style="position:absolute;left:-999px">Search the archive</label>
-          <input id="q" type="search" placeholder="Search characters, blades, arcs…" autocomplete="off">
-          <div class="search-results" id="results" role="listbox"></div>
-        </div>
       </div>
     </header>
     <nav class="subnav" aria-label="Encyclopedia">
@@ -97,6 +49,7 @@
         <a href="${R}manga/color-pages.html">Color Pages</a>
         <a href="${R}world/datenseki.html">Datenseki</a>
         <a href="${R}world/sorcery.html">Sorcery</a>
+        <a href="${R}media/index.html">Theories &amp; Video</a>
         <a href="${R}about.html">About / Protocol</a>
       </div>
     </nav>
@@ -108,7 +61,7 @@
         <div>
           <h3>Kagurabachi Archive</h3>
           <p>An independent English-language database for Takeru Hokazono’s <em>Kagurabachi</em>. Built in the spirit of a Fandom encyclopedia and a Kanzenshuu-style publication guide — characters, blades, chapters, covers, and analysis, nothing else.</p>
-          <p class="legal">Kagurabachi © Takeru Hokazono / Shueisha. This is a fan-made reference. Official chapters: <a href="https://www.viz.com/kagurabachi">VIZ</a> and <a href="https://mangaplus.shueisha.co.jp/">MANGA Plus</a>. Volume cover reconstructions on this site are original color studies, not official art.</p>
+          <p class="legal">Kagurabachi © Takeru Hokazono / Shueisha. Anime images © Takeru Hokazono / Project Kagurabachi. Fan-made reference. Official chapters: <a href="https://www.viz.com/kagurabachi">VIZ</a> and <a href="https://mangaplus.shueisha.co.jp/">MANGA Plus</a>.</p>
         </div>
         <div>
           <h3>Read officially</h3>
@@ -121,6 +74,7 @@
           <p><a href="${R}characters/index.html">Character encyclopedia</a><br>
           <a href="${R}manga/index.html">Manga guide</a><br>
           <a href="${R}analysis/index.html">Story analysis</a><br>
+          <a href="${R}media/index.html">Theories &amp; video</a><br>
           <a href="${R}collectibles/index.html">Collectibles</a></p>
         </div>
       </div>
@@ -145,25 +99,6 @@
     toggle.addEventListener("click", () => {
       const open = mast.classList.toggle("open");
       toggle.setAttribute("aria-expanded", String(open));
-    });
-  }
-
-  const q = document.getElementById("q");
-  const box = document.getElementById("results");
-  if (q && box) {
-    const render = (items) => {
-      box.innerHTML = items.length
-        ? items.map((p) => `<a href="${R}${p.u}"><strong>${p.t}</strong><small>${p.u}</small></a>`).join("")
-        : `<a href="${R}characters/index.html"><strong>No match</strong><small>Browse the encyclopedia</small></a>`;
-      box.classList.toggle("open", q.value.trim().length > 0);
-    };
-    q.addEventListener("input", () => {
-      const s = q.value.trim().toLowerCase();
-      if (!s) { box.classList.remove("open"); return; }
-      render(PAGES.filter((p) => (p.t + " " + p.k).toLowerCase().includes(s)).slice(0, 8));
-    });
-    document.addEventListener("click", (e) => {
-      if (!e.target.closest(".search")) box.classList.remove("open");
     });
   }
 
