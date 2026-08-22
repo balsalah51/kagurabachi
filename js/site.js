@@ -1,16 +1,17 @@
 (function () {
   function rootPrefix() {
     const depth = location.pathname.replace(/\\/g, "/").split("/").filter(Boolean).length;
-    const inSub = /\/(characters|blades|manga|arcs|analysis|factions|collectibles|world|media)\//.test(location.pathname);
+    const inSub = /\/(characters|blades|manga|arcs|analysis|factions|collectibles|world|media|fun)\//.test(location.pathname);
     return inSub || depth > 1 ? "../" : "";
   }
 
   const R = rootPrefix();
   const here = location.pathname.split("/").pop() || "index.html";
 
-  function navLink(href, label) {
+  function navLink(href, label, folder) {
     const file = href.split("/").pop();
-    const current = file === here ? ' aria-current="page"' : "";
+    const on = file === here || (folder && location.pathname.includes("/" + folder + "/"));
+    const current = on ? ' aria-current="page"' : "";
     return `<li><a href="${R}${href}"${current}>${label}</a></li>`;
   }
 
@@ -28,29 +29,25 @@
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
         <ul class="primary-nav" id="primary-nav">
-          ${navLink("index.html", "Archive")}
-          ${navLink("characters/index.html", "Characters")}
-          ${navLink("blades/index.html", "Blades")}
-          ${navLink("manga/index.html", "Manga Guide")}
-          ${navLink("arcs/index.html", "Arcs")}
-          ${navLink("analysis/index.html", "Analysis")}
-          ${navLink("collectibles/index.html", "Collectibles")}
-          ${navLink("media/index.html", "Media")}
+          ${navLink("index.html", "Home")}
+          ${navLink("characters/index.html", "Characters", "characters")}
+          ${navLink("arcs/index.html", "Story", "arcs")}
+          ${navLink("fun/index.html", "Fun", "fun")}
+          ${navLink("media/index.html", "Theories", "media")}
+          ${navLink("analysis/index.html", "Essays", "analysis")}
         </ul>
       </div>
     </header>
     <nav class="subnav" aria-label="Encyclopedia">
       <div class="subnav-inner">
-        <a href="${R}world/index.html">World &amp; Timeline</a>
-        <a href="${R}factions/index.html">Factions</a>
+        <a href="${R}blades/index.html">Blades</a>
+        <a href="${R}manga/index.html">Manga Guide</a>
         <a href="${R}manga/volumes.html">Volumes</a>
-        <a href="${R}manga/chapters.html">Chapters</a>
-        <a href="${R}manga/covers.html">Cover Studies</a>
-        <a href="${R}manga/color-pages.html">Color Pages</a>
-        <a href="${R}world/datenseki.html">Datenseki</a>
-        <a href="${R}world/sorcery.html">Sorcery</a>
-        <a href="${R}media/index.html">Theories &amp; Video</a>
-        <a href="${R}about.html">About / Protocol</a>
+        <a href="${R}world/index.html">World</a>
+        <a href="${R}factions/index.html">Factions</a>
+        <a href="${R}collectibles/index.html">Collectibles</a>
+        <a href="${R}fun/goldfish.html">Goldfish</a>
+        <a href="${R}about.html">About</a>
       </div>
     </nav>
   `;
@@ -71,11 +68,11 @@
         </div>
         <div>
           <h3>On this site</h3>
-          <p><a href="${R}characters/index.html">Character encyclopedia</a><br>
-          <a href="${R}manga/index.html">Manga guide</a><br>
-          <a href="${R}analysis/index.html">Story analysis</a><br>
+          <p><a href="${R}characters/index.html">Characters</a><br>
+          <a href="${R}fun/index.html">Fun of the manga</a><br>
           <a href="${R}media/index.html">Theories &amp; video</a><br>
-          <a href="${R}collectibles/index.html">Collectibles</a></p>
+          <a href="${R}analysis/index.html">Essays</a><br>
+          <a href="${R}manga/index.html">Manga guide</a></p>
         </div>
       </div>
     </footer>
