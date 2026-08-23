@@ -493,35 +493,77 @@ blockquote.cite footer {
 }
 .related a:hover { background: var(--ruby); color: var(--paper); }
 
-/* Homepage — small pictured buttons, spread out */
+/* Homepage — art banner, then info, then tiny buttons */
 body.home {
   background: var(--cream);
 }
 .home .wrap {
   max-width: 1040px;
-  padding-top: 1.4rem;
+  padding-top: 1.8rem;
   padding-bottom: 4rem;
 }
 
-.home-top {
-  margin: 0 0 1.4rem;
-  padding-bottom: 0.85rem;
-  border-bottom: 1px solid var(--line);
+.home-banner {
+  position: relative;
+  color: var(--paper);
+  min-height: 72vh;
+  display: grid;
+  align-items: end;
+  background:
+    linear-gradient(180deg, rgba(12, 11, 10, 0.12) 0%, rgba(12, 11, 10, 0.42) 46%, rgba(12, 11, 10, 0.86) 78%),
+    url("../assets/covers/teaser-og.jpg") center 18% / cover no-repeat,
+    var(--ink);
+  border-bottom: 3px solid var(--ruby);
 }
-.home-top h1 {
-  font-size: clamp(1.45rem, 2.6vw, 1.85rem);
-  margin: 0 0 0.25rem;
+.home-banner-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 8rem 1.25rem 2.4rem;
+  width: 100%;
 }
-.home-top h1 .jp {
-  font-size: 0.5em;
-  margin-top: 0.12rem;
+.home-banner .kicker {
+  color: var(--gold-bright);
+  margin-bottom: 0.45rem;
 }
-.home-top p {
+.home-banner h1 {
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  margin: 0 0 0.55rem;
+  color: var(--paper);
+}
+.home-banner h1 .jp {
+  color: var(--gold-bright);
+  letter-spacing: 0.28em;
+  margin-top: 0.15rem;
+}
+.home-banner .lede {
+  color: rgba(246, 239, 230, 0.9);
+  max-width: 40rem;
   margin: 0;
-  color: var(--muted);
-  font-size: 0.98rem;
-  max-width: 36rem;
+  font-size: 1.12rem;
 }
+.home-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.15rem 1.7rem;
+  margin: 1.45rem 0 1.35rem;
+}
+.home-stats div { min-width: 5.2rem; }
+.home-stats b {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.65rem;
+  line-height: 1;
+  color: var(--gold-bright);
+}
+.home-stats span {
+  display: block;
+  margin-top: 0.28rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+.home-banner .cta-row { margin-top: 0; }
 
 .home-info {
   max-width: 44rem;
@@ -925,4 +967,6 @@ footer.site h3 {
 
 @media (max-width: 640px) {
   .tile { max-width: calc(50% - 0.25rem); }
+  .home-banner { min-height: 78vh; }
+  .home-banner-inner { padding-top: 5.5rem; }
 }
