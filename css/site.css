@@ -499,18 +499,18 @@ body.home {
 }
 .home .wrap {
   max-width: 1040px;
-  padding-top: 1.75rem;
+  padding-top: 1.4rem;
   padding-bottom: 4rem;
 }
 
 .home-top {
-  margin: 0 0 2.4rem;
-  padding-bottom: 1.2rem;
+  margin: 0 0 1.4rem;
+  padding-bottom: 0.85rem;
   border-bottom: 1px solid var(--line);
 }
 .home-top h1 {
-  font-size: clamp(1.7rem, 3vw, 2.15rem);
-  margin: 0 0 0.35rem;
+  font-size: clamp(1.45rem, 2.6vw, 1.85rem);
+  margin: 0 0 0.25rem;
 }
 .home-top h1 .jp {
   font-size: 0.5em;
@@ -521,6 +521,40 @@ body.home {
   color: var(--muted);
   font-size: 0.98rem;
   max-width: 36rem;
+}
+
+.home-info {
+  max-width: 44rem;
+  margin: 0 0 2rem;
+}
+.home-info h2 {
+  font-size: 1.25rem;
+  margin: 1.45rem 0 0.4rem;
+}
+.home-info h2:first-child { margin-top: 0.2rem; }
+.home-info p { margin: 0 0 0.75rem; }
+.home-info ul {
+  margin: 0 0 0.85rem;
+  padding-left: 1.15rem;
+}
+.home-info li { margin: 0 0 0.28rem; }
+.home-facts {
+  width: 100%;
+  max-width: 36rem;
+  border: 1px solid var(--line-strong);
+  font-size: 0.88rem;
+  margin: 0.4rem 0 1rem;
+}
+.home-facts th,
+.home-facts td {
+  padding: 0.38rem 0.65rem;
+  background: #fffdf8;
+}
+.home-facts th {
+  width: 8.2rem;
+  color: var(--muted);
+  font-weight: 600;
+  background: var(--paper-deep);
 }
 
 .home-label {
