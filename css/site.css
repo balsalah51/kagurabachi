@@ -493,268 +493,88 @@ blockquote.cite footer {
 }
 .related a:hover { background: var(--ruby); color: var(--paper); }
 
-/* Homepage — Fandom main-page boxes + Kanzenshuu news column */
+/* Homepage — small pictured buttons, spread out */
 body.home {
   background: var(--cream);
 }
 .home .wrap {
-  max-width: 1100px;
-  padding-top: 1.15rem;
-  padding-bottom: 3rem;
+  max-width: 1040px;
+  padding-top: 1.75rem;
+  padding-bottom: 4rem;
 }
 
-.mp-welcome {
-  display: grid;
-  grid-template-columns: 168px minmax(0, 1fr);
-  gap: 1.1rem;
-  align-items: stretch;
-  background: #fffdf8;
-  border: 1px solid var(--line-strong);
-  margin-bottom: 1rem;
+.home-top {
+  margin: 0 0 2.4rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--line);
 }
-.mp-welcome > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  background: var(--ink);
+.home-top h1 {
+  font-size: clamp(1.7rem, 3vw, 2.15rem);
+  margin: 0 0 0.35rem;
 }
-.mp-welcome > div { padding: 0.85rem 1.05rem 1rem 0; }
-.mp-hello {
-  margin: 0 0 0.15rem;
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ruby);
+.home-top h1 .jp {
+  font-size: 0.5em;
+  margin-top: 0.12rem;
 }
-.mp-welcome h1 {
-  font-size: clamp(1.85rem, 3.4vw, 2.45rem);
-  margin: 0 0 0.45rem;
-}
-.mp-welcome h1 .jp {
-  font-size: 0.48em;
-  margin-top: 0.15rem;
-}
-.mp-welcome p { margin: 0 0 0.65rem; }
-.mp-meta {
-  font-size: 0.88rem;
+.home-top p {
+  margin: 0;
   color: var(--muted);
-  margin: 0;
+  font-size: 0.98rem;
+  max-width: 36rem;
 }
 
-.mp-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 318px;
-  gap: 1rem;
-  align-items: start;
-}
-
-.mp-box {
-  background: #fffdf8;
-  border: 1px solid var(--line-strong);
-  margin-bottom: 1rem;
-}
-.mp-hd {
-  margin: 0;
-  background: var(--ink);
-  color: var(--paper);
-  font-family: var(--serif);
-  font-size: 1.12rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  padding: 0.42rem 0.75rem 0.46rem;
-  border-bottom: 3px solid var(--ruby);
-}
-.mp-hd a {
-  float: right;
-  color: var(--gold-bright);
-  font-family: var(--sans);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-top: 0.28rem;
-}
-.mp-hd a:hover { color: var(--paper); }
-.mp-bd { padding: 0.8rem 0.9rem 0.95rem; }
-
-.mp-feature {
-  display: grid;
-  grid-template-columns: 148px minmax(0, 1fr);
-  gap: 0.9rem;
-}
-.mp-feature img {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  object-position: top center;
-  border: 1px solid var(--line-strong);
-  background: var(--ink);
-}
-.mp-feature h3 {
-  margin: 0 0 0.4rem;
-  font-size: 1.35rem;
-}
-.mp-feature h3 a { color: inherit; text-decoration: none; }
-.mp-feature h3 a:hover { color: var(--blood); }
-.jp-inline {
-  font-family: var(--jp);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  color: var(--muted);
-  font-weight: 500;
-}
-.mp-feature p { margin: 0 0 0.7rem; font-size: 0.95rem; }
-.mp-also { font-size: 0.88rem; color: var(--muted); margin: 0; }
-
-.mp-portals {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.45rem;
-}
-.mp-portal {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  border: 1px solid var(--line);
-  background: var(--ink);
-}
-.mp-portal img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: top center;
-}
-.mp-portal span {
-  display: block;
-  color: var(--paper);
-  text-align: center;
-  font-size: 0.78rem;
-  letter-spacing: 0.03em;
-  padding: 0.32rem 0.2rem 0.4rem;
-}
-.mp-portal:hover { border-color: var(--gold); color: inherit; }
-.mp-portal:hover span { color: var(--gold-bright); }
-
-.mp-quote {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: none;
-}
-.mp-quote p {
-  margin: 0 0 0.55rem;
-  font-family: var(--serif);
-  font-size: 1.15rem;
-  line-height: 1.45;
+.home-label {
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  margin: 2.2rem 0 0.85rem;
   color: var(--ink);
 }
-.mp-quote footer {
-  font-family: var(--sans);
-  font-size: 0.8rem;
-  color: var(--muted);
-}
 
-.mp-dyk {
-  margin: 0;
-  padding-left: 1.15rem;
-}
-.mp-dyk li { margin: 0 0 0.55rem; font-size: 0.92rem; }
-.mp-dyk li:last-child { margin-bottom: 0; }
-
-.mp-news article {
+.tiles {
   display: grid;
-  grid-template-columns: 56px minmax(0, 1fr);
-  gap: 0.65rem;
-  padding: 0.7rem 0;
-  border-bottom: 1px solid var(--line);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem 1.6rem;
 }
-.mp-news article:first-child { padding-top: 0; }
-.mp-news article:last-child { border-bottom: 0; padding-bottom: 0; }
-.mp-news img {
-  width: 56px;
-  height: 72px;
-  object-fit: cover;
-  object-position: top center;
+.tile {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: center;
+  min-height: 5.6rem;
+  padding: 0.5rem 0.85rem 0.5rem 0.5rem;
+  background: #fffdf8;
   border: 1px solid var(--line);
-  background: var(--ink);
-}
-.mp-news time {
-  display: block;
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--ruby);
-  margin-bottom: 0.15rem;
-}
-.mp-news h3 {
-  margin: 0 0 0.25rem;
-  font-size: 1.02rem;
-}
-.mp-news h3 a { color: inherit; text-decoration: none; }
-.mp-news h3 a:hover { color: var(--blood); }
-.mp-news p { margin: 0; font-size: 0.84rem; color: var(--ash); }
-
-.mp-status {
-  width: 100%;
-  border: 0;
-  font-size: 0.84rem;
-  background: transparent;
-}
-.mp-status th,
-.mp-status td {
-  padding: 0.32rem 0.15rem;
-  border-bottom: 1px solid var(--line);
-  background: transparent;
-  vertical-align: top;
-}
-.mp-status tr:nth-child(even) td { background: transparent; }
-.mp-status th {
-  width: 6.4rem;
-  color: var(--muted);
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: none;
-  background: transparent;
-}
-.mp-status tr:last-child th,
-.mp-status tr:last-child td { border-bottom: 0; }
-
-.mp-guides {
-  margin: 0;
-  padding-left: 1.1rem;
-  font-size: 0.9rem;
-}
-.mp-guides li { margin: 0 0 0.4rem; }
-
-.mp-jackets {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-  gap: 0.35rem;
-}
-.mp-jackets a {
   text-decoration: none;
   color: inherit;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
-.mp-jackets img {
-  width: 100%;
-  aspect-ratio: 3 / 4.25;
+.tile:hover {
+  border-color: var(--ruby);
+  background: #fff;
+  color: inherit;
+}
+.tile img {
+  width: 76px;
+  height: 76px;
   object-fit: cover;
-  border: 1px solid var(--line-strong);
+  object-position: top center;
   background: var(--ink);
+  border: 1px solid var(--line);
 }
-.mp-jackets span {
+.tile b {
   display: block;
-  text-align: center;
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  color: var(--muted);
-  padding-top: 0.2rem;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.2;
 }
-.mp-jackets a:hover span { color: var(--blood); }
+.tile small {
+  display: block;
+  margin-top: 0.22rem;
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
 .media-row {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -1052,11 +872,6 @@ footer.site h3 {
 
 @media (max-width: 920px) {
   .layout, .split, .footer-inner, .page-hero, .feature, .paths, .people, .catalog { grid-template-columns: 1fr 1fr; }
-  .mp-layout, .mp-welcome, .mp-feature { grid-template-columns: 1fr; }
-  .mp-welcome > img { height: 220px; }
-  .mp-welcome > div { padding: 0.85rem 1rem 1rem; }
-  .mp-portals { grid-template-columns: repeat(4, 1fr); }
-  .mp-jackets { grid-template-columns: repeat(6, 1fr); }
   .infobox { position: static; }
   .nav-toggle { display: block; }
   .primary-nav { display: none; }
@@ -1073,9 +888,6 @@ footer.site h3 {
   .article > p:first-of-type::first-letter { font-size: 2.4rem; }
 }
 
-@media (max-width: 560px) {
-  .mp-portals { grid-template-columns: repeat(2, 1fr); }
-  .mp-jackets { grid-template-columns: repeat(4, 1fr); }
-  .mp-news article { grid-template-columns: 48px minmax(0, 1fr); }
-  .mp-news img { width: 48px; height: 62px; }
+@media (max-width: 640px) {
+  .tiles { grid-template-columns: 1fr; }
 }
