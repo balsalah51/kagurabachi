@@ -1,7 +1,7 @@
 (function () {
   function rootPrefix() {
     const depth = location.pathname.replace(/\\/g, "/").split("/").filter(Boolean).length;
-    const inSub = /\/(characters|blades|manga|arcs|analysis|factions|collectibles|world|media|fun)\//.test(location.pathname);
+    const inSub = /\/(characters|blades|manga|arcs|analysis|factions|collectibles|world|media|fun|guide)\//.test(location.pathname);
     return inSub || depth > 1 ? "../" : "";
   }
 
@@ -40,6 +40,7 @@
     </header>
     <nav class="subnav" aria-label="Encyclopedia">
       <div class="subnav-inner">
+        <a href="${R}guide/index.html">Guide</a>
         <a href="${R}blades/index.html">Blades</a>
         <a href="${R}manga/volumes.html">Volumes</a>
         <a href="${R}world/index.html">World</a>
@@ -68,7 +69,8 @@
         </div>
         <div>
           <h3>On this site</h3>
-          <p><a href="${R}characters/index.html">Characters</a><br>
+          <p><a href="${R}guide/index.html">Guide</a><br>
+          <a href="${R}characters/index.html">Characters</a><br>
           <a href="${R}fun/index.html">Fun of the manga</a><br>
           <a href="${R}media/index.html">Theories &amp; video</a><br>
           <a href="${R}analysis/index.html">Essays</a><br>
