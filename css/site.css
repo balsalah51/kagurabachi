@@ -506,19 +506,19 @@ body.home {
 .home-banner {
   position: relative;
   color: var(--paper);
-  min-height: 32rem;
+  min-height: 72vh;
   display: grid;
   align-items: end;
   background:
-    linear-gradient(180deg, rgba(12, 11, 10, 0.18) 0%, rgba(12, 11, 10, 0.82) 68%),
-    url("../assets/covers/teaser-og.jpg") center 16% / cover no-repeat,
+    linear-gradient(180deg, rgba(12, 11, 10, 0.12) 0%, rgba(12, 11, 10, 0.42) 46%, rgba(12, 11, 10, 0.86) 78%),
+    url("../assets/covers/teaser-og.jpg") center 18% / cover no-repeat,
     var(--ink);
   border-bottom: 3px solid var(--ruby);
 }
 .home-banner-inner {
   max-width: 1040px;
   margin: 0 auto;
-  padding: 4.2rem 1.25rem 2.1rem;
+  padding: 8rem 1.25rem 2.4rem;
   width: 100%;
 }
 .home-banner .kicker {
@@ -967,4 +967,6 @@ footer.site h3 {
 
 @media (max-width: 640px) {
   .tile { max-width: calc(50% - 0.25rem); }
+  .home-banner { min-height: 78vh; }
+  .home-banner-inner { padding-top: 5.5rem; }
 }
