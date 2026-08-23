@@ -41,11 +41,11 @@
     <nav class="subnav" aria-label="Encyclopedia">
       <div class="subnav-inner">
         <a href="${R}blades/index.html">Blades</a>
-        <a href="${R}manga/index.html">Manga Guide</a>
         <a href="${R}manga/volumes.html">Volumes</a>
         <a href="${R}world/index.html">World</a>
+        <a href="${R}world/glossary.html">Glossary</a>
         <a href="${R}factions/index.html">Factions</a>
-        <a href="${R}collectibles/index.html">Collectibles</a>
+        <a href="${R}media/anime.html">Anime</a>
         <a href="${R}fun/goldfish.html">Goldfish</a>
         <a href="${R}about.html">About</a>
       </div>

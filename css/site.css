@@ -566,8 +566,8 @@ body.home {
 .home-banner .cta-row { margin-top: 0; }
 
 .home-info {
-  max-width: 44rem;
-  margin: 0 0 2rem;
+  max-width: 40rem;
+  margin: 0 0 1.35rem;
 }
 .home-info h2 {
   font-size: 1.25rem;
