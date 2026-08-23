@@ -29,12 +29,12 @@
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
         <ul class="primary-nav" id="primary-nav">
-          ${navLink("index.html", "Kagurabachi")}
+          ${navLink("index.html", "Home")}
           ${navLink("characters/index.html", "Characters", "characters")}
+          ${navLink("manga/index.html", "Manga", "manga")}
           ${navLink("arcs/index.html", "Story", "arcs")}
-          ${navLink("fun/index.html", "Fun", "fun")}
-          ${navLink("media/index.html", "Theories", "media")}
           ${navLink("analysis/index.html", "Essays", "analysis")}
+          ${navLink("fun/index.html", "Fun", "fun")}
         </ul>
       </div>
     </header>
