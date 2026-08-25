@@ -42,12 +42,13 @@
       <div class="subnav-inner">
         <a href="${R}guide/index.html">Guide</a>
         <a href="${R}blades/index.html">Blades</a>
+        <a href="${R}world/techniques.html">Techniques</a>
         <a href="${R}manga/volumes.html">Volumes</a>
+        <a href="${R}manga/part-2.html">Part 2</a>
         <a href="${R}world/index.html">World</a>
-        <a href="${R}world/glossary.html">Glossary</a>
-        <a href="${R}factions/index.html">Factions</a>
+        <a href="${R}factions/hishaku.html">Hishaku</a>
+        <a href="${R}factions/kamunabi.html">Kamunabi</a>
         <a href="${R}media/anime.html">Anime</a>
-        <a href="${R}fun/goldfish.html">Goldfish</a>
         <a href="${R}about.html">About</a>
       </div>
     </nav>
@@ -71,10 +72,11 @@
           <h3>On this site</h3>
           <p><a href="${R}guide/index.html">Guide</a><br>
           <a href="${R}characters/index.html">Characters</a><br>
+          <a href="${R}factions/hishaku.html">Hishaku</a> · <a href="${R}factions/kamunabi.html">Kamunabi</a><br>
+          <a href="${R}world/techniques.html">Techniques</a><br>
+          <a href="${R}manga/part-2.html">Part 2</a><br>
           <a href="${R}fun/index.html">Fun of the manga</a><br>
-          <a href="${R}media/index.html">Theories &amp; video</a><br>
           <a href="${R}analysis/index.html">Essays</a><br>
-          <a href="${R}manga/index.html">Manga guide</a><br>
           <a href="${R}about.html">About</a> · <a href="${R}privacy.html">Privacy</a></p>
         </div>
       </div>
