@@ -1,4 +1,4 @@
-/* Kagurabachi Archive — cover-page ink: white, black, blood red, goldfish gold */
+/* Kagurabachi Archive, cover-page ink: white, black, blood red, goldfish gold */
 :root {
   --blood: #9b1419;
   --ruby: #c41e3a;
@@ -64,7 +64,7 @@ button, input, select { font: inherit; }
   padding: 0.5rem 0.8rem;
 }
 
-/* ——— Top bar (Kanzenshuu editorial + wiki utility) ——— */
+/* Top bar (Kanzenshuu editorial + wiki utility) */
 .masthead {
   position: sticky;
   top: 0;
@@ -165,7 +165,7 @@ button, input, select { font: inherit; }
 }
 .subnav a:hover { color: var(--scarlet); }
 
-/* ——— Layout ——— */
+/* Layout */
 .wrap {
   max-width: 1280px;
   margin: 0 auto;
@@ -241,7 +241,7 @@ h3 { font-size: 1.3rem; margin: 1.5rem 0 0.5rem; }
   color: var(--ruby);
 }
 
-/* Infobox — Fandom pattern */
+/* Infobox, Fandom pattern */
 .infobox {
   background: var(--cream);
   border: 1px solid var(--line-strong);
@@ -358,7 +358,7 @@ h3 { font-size: 1.3rem; margin: 1.5rem 0 0.5rem; }
   margin-bottom: 0.4rem;
 }
 
-/* Volume cover studies — color reconstructions, not official art */
+/* Volume cover studies, color reconstructions, not official art */
 .cover-study {
   border: 1px solid var(--line-strong);
   background: var(--cream);
@@ -396,7 +396,7 @@ h3 { font-size: 1.3rem; margin: 1.5rem 0 0.5rem; }
 .cover-meta h3 { margin: 0 0 0.2rem; font-size: 1.2rem; }
 .cover-meta p { margin: 0; font-size: 0.88rem; color: var(--muted); }
 
-/* Tables — Kanzenshuu manga guide */
+/* Tables, Kanzenshuu manga guide */
 .table-wrap { overflow-x: auto; border: 1px solid var(--line-strong); }
 table {
   width: 100%;
@@ -493,7 +493,7 @@ blockquote.cite footer {
 }
 .related a:hover { background: var(--ruby); color: var(--paper); }
 
-/* Homepage — art banner, then info, then tiny buttons */
+/* Homepage, art banner, then info, then tiny buttons */
 body.home {
   background: var(--cream);
 }
@@ -829,6 +829,13 @@ footer.site h3 {
 .p-akemura { background: linear-gradient(160deg, #2d1b4e 0%, #0c0814 70%); }
 .p-kyora { background: linear-gradient(160deg, #1f3a2e 0%, #0a1410 70%); }
 .p-azami { background: linear-gradient(160deg, #1c3350 0%, #0a121c 70%); }
+.p-hokuto { background: linear-gradient(160deg, #4a3814 0%, #14100a 70%); }
+.p-kuguri { background: linear-gradient(160deg, #3a1428 0%, #120810 70%); }
+.p-natsuki { background: linear-gradient(160deg, #1a3a58 0%, #0a121c 70%); }
+.p-kasen { background: linear-gradient(160deg, #2c2a38 0%, #0c0c12 70%); }
+.p-subaru { background: linear-gradient(160deg, #3a2818 0%, #14100c 70%); }
+.p-tafuku { background: linear-gradient(160deg, #4a3018 0%, #1a1008 70%); }
+.p-kiri { background: linear-gradient(160deg, #5a2030 0%, #140810 70%); }
 
 .blade-enten { background: linear-gradient(180deg, #111 0%, #7a1014 55%, #c9a227 100%); }
 .blade-kuregumo { background: linear-gradient(180deg, #0a1c22 0%, #1a6a7a 55%, #dceef2 100%); }
@@ -836,7 +843,7 @@ footer.site h3 {
 .blade-kumeyuri { background: linear-gradient(180deg, #2a1020 0%, #8a2a4a 60%, #f0c4c8 100%); }
 .blade-tobimune { background: linear-gradient(180deg, #0c0c10 0%, #2a3048 55%, #e8d080 100%); }
 
-/* Editorial home — path, not a jacket dump */
+/* Editorial home, path, not a jacket dump */
 .paths {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

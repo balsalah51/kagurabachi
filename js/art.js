@@ -1,4 +1,4 @@
-/* Inline SVG portraits — original decorative marks, not official art */
+/* Inline SVG portraits, original decorative marks, not official art */
 window.KBArt = {
   fish(color) {
     const fill = color || "#e8c547";
