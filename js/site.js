@@ -83,6 +83,11 @@
     </footer>
   `;
 
+  document.querySelectorAll(".layout").forEach((el) => {
+    const box = el.querySelector(":scope > .infobox");
+    if (box && el.firstElementChild !== box) el.prepend(box);
+  });
+
   const mountHead = document.getElementById("site-header");
   const mountFoot = document.getElementById("site-footer");
   if (mountHead) mountHead.innerHTML = header;
