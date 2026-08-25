@@ -70,11 +70,11 @@
         </div>
         <div>
           <h3>On this site</h3>
-          <p><a href="${R}guide/index.html">Guide</a><br>
+          <p><a href="${R}guide/index.html">Guide</a> · <a href="${R}guide/part-1.html">Part 1</a><br>
           <a href="${R}characters/index.html">Characters</a><br>
           <a href="${R}factions/hishaku.html">Hishaku</a> · <a href="${R}factions/kamunabi.html">Kamunabi</a><br>
-          <a href="${R}world/techniques.html">Techniques</a><br>
-          <a href="${R}manga/part-2.html">Part 2</a><br>
+          <a href="${R}world/techniques.html">Techniques</a> · <a href="${R}world/storehouse.html">Storehouse</a><br>
+          <a href="${R}manga/part-2.html">Part 2</a> · <a href="${R}manga/synopses.html">Synopses</a><br>
           <a href="${R}fun/index.html">Fun of the manga</a><br>
           <a href="${R}analysis/index.html">Essays</a><br>
           <a href="${R}about.html">About</a> · <a href="${R}privacy.html">Privacy</a></p>
