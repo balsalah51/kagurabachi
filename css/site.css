@@ -655,6 +655,14 @@ body.home {
   margin: 0 0 0.45rem;
   color: var(--muted);
 }
+.home-label span {
+  font-family: var(--jp);
+  letter-spacing: 0.22em;
+  font-weight: 400;
+  margin-left: 0.55rem;
+  text-transform: none;
+  opacity: 0.72;
+}
 
 .tiles {
   display: flex;
@@ -836,6 +844,22 @@ footer.site h3 {
 .p-subaru { background: linear-gradient(160deg, #3a2818 0%, #14100c 70%); }
 .p-tafuku { background: linear-gradient(160deg, #4a3018 0%, #1a1008 70%); }
 .p-kiri { background: linear-gradient(160deg, #5a2030 0%, #140810 70%); }
+.p-toto { background: linear-gradient(160deg, #3a2040 0%, #120814 70%); }
+.p-yukisada { background: linear-gradient(160deg, #204040 0%, #0c1414 70%); }
+.p-hagiwara { background: linear-gradient(160deg, #2a3048 0%, #0c1018 70%); }
+.p-mashiro { background: linear-gradient(160deg, #284038 0%, #0c1410 70%); }
+.p-hinao { background: linear-gradient(160deg, #6a4030 0%, #1a100c 70%); }
+.p-itsuo { background: linear-gradient(160deg, #403020 0%, #14100c 70%); }
+.p-ariu { background: linear-gradient(160deg, #203848 0%, #081018 70%); }
+.p-bingo { background: linear-gradient(160deg, #503018 0%, #140c08 70%); }
+.p-tenri { background: linear-gradient(160deg, #204838 0%, #0a1410 70%); }
+.p-soya { background: linear-gradient(160deg, #2a2040 0%, #100c18 70%); }
+.p-uran { background: linear-gradient(160deg, #1a3850 0%, #081018 70%); }
+.p-tamaki { background: linear-gradient(160deg, #403040 0%, #140c14 70%); }
+.p-enji { background: linear-gradient(160deg, #304030 0%, #0c140c 70%); }
+.p-madoka { background: linear-gradient(160deg, #5a2018 0%, #140808 70%); }
+.p-kazane { background: linear-gradient(160deg, #203040 0%, #0a1018 70%); }
+.p-hasumi { background: linear-gradient(160deg, #3a3420 0%, #12100c 70%); }
 
 .blade-enten { background: linear-gradient(180deg, #111 0%, #7a1014 55%, #c9a227 100%); }
 .blade-kuregumo { background: linear-gradient(180deg, #0a1c22 0%, #1a6a7a 55%, #dceef2 100%); }
