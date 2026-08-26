@@ -1,4 +1,12 @@
 (function () {
+  /* Paste your Amazon Associates tag (example: "kagurabachi-20") to earn commission on volume buys. Empty tag still opens Amazon; no commission until you join and paste it. */
+  const KAGURA = Object.assign({
+    amazonTag: "",
+    bookshopId: "",
+    animeStart: "2027-04-01T00:00:00+09:00",
+  }, window.KAGURA || {});
+  window.KAGURA = KAGURA;
+
   function rootPrefix() {
     const depth = location.pathname.replace(/\\/g, "/").split("/").filter(Boolean).length;
     const inSub = /\/(characters|blades|manga|arcs|analysis|factions|collectibles|world|media|fun|guide)\//.test(location.pathname);
@@ -7,6 +15,8 @@
 
   const R = rootPrefix();
   const here = location.pathname.split("/").pop() || "index.html";
+  const isHome = here === "index.html" && !/\/(characters|blades|manga|arcs|analysis|factions|collectibles|world|media|fun|guide)\//.test(location.pathname);
+  const hideShop = isHome || /\/(characters|blades|factions)\//.test(location.pathname);
 
   function navLink(href, label, folder) {
     const file = href.split("/").pop();
@@ -75,6 +85,7 @@
           <a href="${R}factions/hishaku.html">Hishaku</a> · <a href="${R}factions/kamunabi.html">Kamunabi</a><br>
           <a href="${R}world/techniques.html">Techniques</a> · <a href="${R}world/storehouse.html">Storehouse</a><br>
           <a href="${R}manga/part-2.html">Part 2</a> · <a href="${R}manga/synopses.html">Synopses</a><br>
+          <a href="${R}media/anime.html">Anime countdown</a>${hideShop ? "" : ` · <a href="${R}collectibles/shop.html">Shop</a>`}<br>
           <a href="${R}fun/index.html">Fun of the manga</a><br>
           <a href="${R}analysis/index.html">Essays</a><br>
           <a href="${R}about.html">About</a> · <a href="${R}privacy.html">Privacy</a></p>
@@ -117,5 +128,62 @@
     el.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); reveal(); }
     });
+  });
+
+  function amazonUrl(query) {
+    const url = new URL("https://www.amazon.com/s");
+    url.searchParams.set("k", query);
+    if (KAGURA.amazonTag) url.searchParams.set("tag", KAGURA.amazonTag);
+    return url.toString();
+  }
+
+  document.querySelectorAll("[data-amazon]").forEach((el) => {
+    el.href = amazonUrl(el.getAttribute("data-amazon"));
+    el.rel = "sponsored noopener noreferrer";
+    el.target = "_blank";
+  });
+
+  document.querySelectorAll("[data-bookshop]").forEach((el) => {
+    const q = encodeURIComponent(el.getAttribute("data-bookshop") || "Kagurabachi");
+    const id = KAGURA.bookshopId;
+    el.href = id
+      ? `https://bookshop.org/a/${encodeURIComponent(id)}/search?keywords=${q}`
+      : `https://bookshop.org/search?keywords=${q}`;
+    el.rel = "noopener noreferrer";
+    el.target = "_blank";
+  });
+
+  const start = new Date(KAGURA.animeStart).getTime();
+  document.querySelectorAll("[data-clock]").forEach((root) => {
+    const dEl = root.querySelector("[data-d]");
+    const hEl = root.querySelector("[data-h]");
+    const mEl = root.querySelector("[data-m]");
+    const sEl = root.querySelector("[data-s]");
+    const live = root.querySelector("[data-clock-live]");
+    function pad(n, w) {
+      return String(Math.max(0, n)).padStart(w, "0");
+    }
+    function tick() {
+      const diff = start - Date.now();
+      if (diff <= 0) {
+        if (dEl) dEl.textContent = "000";
+        if (hEl) hEl.textContent = "00";
+        if (mEl) mEl.textContent = "00";
+        if (sEl) sEl.textContent = "00";
+        if (live) live.textContent = "The April 2027 season is here. A first-episode date lands when they print one.";
+        return;
+      }
+      const s = Math.floor(diff / 1000);
+      const days = Math.floor(s / 86400);
+      const hours = Math.floor((s % 86400) / 3600);
+      const mins = Math.floor((s % 3600) / 60);
+      const secs = s % 60;
+      if (dEl) dEl.textContent = pad(days, 3);
+      if (hEl) hEl.textContent = pad(hours, 2);
+      if (mEl) mEl.textContent = pad(mins, 2);
+      if (sEl) sEl.textContent = pad(secs, 2);
+    }
+    tick();
+    setInterval(tick, 1000);
   });
 })();
