@@ -15,6 +15,8 @@
 
   const R = rootPrefix();
   const here = location.pathname.split("/").pop() || "index.html";
+  const isHome = here === "index.html" && !/\/(characters|blades|manga|arcs|analysis|factions|collectibles|world|media|fun|guide)\//.test(location.pathname);
+  const hideShop = isHome || /\/(characters|blades|factions)\//.test(location.pathname);
 
   function navLink(href, label, folder) {
     const file = href.split("/").pop();
@@ -57,7 +59,6 @@
         <a href="${R}factions/hishaku.html">Hishaku</a>
         <a href="${R}factions/kamunabi.html">Kamunabi</a>
         <a href="${R}media/anime.html">Anime</a>
-        <a href="${R}collectibles/shop.html">Shop</a>
         <a href="${R}about.html">About</a>
       </div>
     </nav>
@@ -84,7 +85,7 @@
           <a href="${R}factions/hishaku.html">Hishaku</a> · <a href="${R}factions/kamunabi.html">Kamunabi</a><br>
           <a href="${R}world/techniques.html">Techniques</a> · <a href="${R}world/storehouse.html">Storehouse</a><br>
           <a href="${R}manga/part-2.html">Part 2</a> · <a href="${R}manga/synopses.html">Synopses</a><br>
-          <a href="${R}media/anime.html">Anime countdown</a> · <a href="${R}collectibles/shop.html">Shop</a><br>
+          <a href="${R}media/anime.html">Anime countdown</a>${hideShop ? "" : ` · <a href="${R}collectibles/shop.html">Shop</a>`}<br>
           <a href="${R}fun/index.html">Fun of the manga</a><br>
           <a href="${R}analysis/index.html">Essays</a><br>
           <a href="${R}about.html">About</a> · <a href="${R}privacy.html">Privacy</a></p>
