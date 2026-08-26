@@ -1,5 +1,5 @@
 (function () {
-  /* Paste your Amazon Associates tag (example: "kagurabachi-20") to earn commission on volume buys. Empty tag still opens Amazon; no commission until you join and paste it. */
+  /* Shop product links use amzn.to URLs and must keep their href. data-amazon search links still pick up amazonTag if one is pasted. */
   const KAGURA = Object.assign({
     amazonTag: "",
     bookshopId: "",
@@ -137,10 +137,19 @@
     return url.toString();
   }
 
-  document.querySelectorAll("[data-amazon]").forEach((el) => {
-    el.href = amazonUrl(el.getAttribute("data-amazon"));
+  function markAmazonLink(el) {
     el.rel = "sponsored noopener noreferrer";
     el.target = "_blank";
+  }
+
+  document.querySelectorAll("[data-amazon]").forEach((el) => {
+    el.href = amazonUrl(el.getAttribute("data-amazon"));
+    markAmazonLink(el);
+  });
+
+  document.querySelectorAll('a[href*="amzn.to"], a[data-affiliate="amazon"]').forEach((el) => {
+    if (el.hasAttribute("data-amazon")) return;
+    markAmazonLink(el);
   });
 
   document.querySelectorAll("[data-bookshop]").forEach((el) => {

@@ -1131,6 +1131,9 @@ footer.site h3 {
   gap: 0.9rem;
   margin: 1rem 0 1.4rem;
 }
+.shop-grid-products {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
 .shop-card {
   display: flex;
   flex-direction: column;
@@ -1140,6 +1143,26 @@ footer.site h3 {
   background: var(--cream);
   text-decoration: none;
   color: inherit;
+}
+.shop-card-product {
+  padding: 0.7rem 0.75rem 1rem;
+}
+.shop-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4.25;
+  object-fit: cover;
+  border: 1px solid var(--line-strong);
+  background: var(--ink);
+  margin: 0 0 0.2rem;
+}
+.shop-card .cover-strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.18rem;
+  margin: 0 0 0.2rem;
+}
+.shop-card .cover-strip img {
+  margin: 0;
 }
 .shop-card:hover {
   border-color: var(--gold);
