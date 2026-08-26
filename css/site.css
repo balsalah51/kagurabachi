@@ -864,6 +864,18 @@ footer.site h3 {
 .p-madoka { background: linear-gradient(160deg, #5a2018 0%, #140808 70%); }
 .p-kazane { background: linear-gradient(160deg, #203040 0%, #0a1018 70%); }
 .p-hasumi { background: linear-gradient(160deg, #3a3420 0%, #12100c 70%); }
+.p-ichiki { background: linear-gradient(160deg, #3a2418 0%, #120c08 70%); }
+.p-yatsuru { background: linear-gradient(160deg, #241830 0%, #0c0814 70%); }
+.p-izaru { background: linear-gradient(160deg, #2a2018 0%, #100c08 70%); }
+.p-ikura { background: linear-gradient(160deg, #384048 0%, #121418 70%); }
+.p-sengoku { background: linear-gradient(160deg, #401818 0%, #140808 70%); }
+.p-fushimi { background: linear-gradient(160deg, #304040 0%, #0c1414 70%); }
+.p-yoshinojo { background: linear-gradient(160deg, #342448 0%, #100814 70%); }
+.p-joji { background: linear-gradient(160deg, #283028 0%, #0c100c 70%); }
+.p-ro { background: linear-gradient(160deg, #1e2430 0%, #0b0d12 70%); }
+.p-moku { background: linear-gradient(160deg, #243028 0%, #0c120e 70%); }
+.p-sumi { background: linear-gradient(160deg, #3a2030 0%, #140810 70%); }
+.p-kugara { background: linear-gradient(160deg, #2a3040 0%, #0c1018 70%); }
 
 .blade-enten { background: linear-gradient(180deg, #111 0%, #7a1014 55%, #c9a227 100%); }
 .blade-kuregumo { background: linear-gradient(180deg, #0a1c22 0%, #1a6a7a 55%, #dceef2 100%); }
@@ -1029,6 +1041,129 @@ footer.site h3 {
   border-color: var(--gold);
   background: #221c16;
   transform: translateY(-2px);
+}
+
+/* Countdown to the April 2027 anime */
+.clock-band {
+  margin: 1.4rem 0 0;
+  padding: 1.15rem 1.2rem 1.25rem;
+  border: 1px solid var(--line-strong);
+  background:
+    linear-gradient(180deg, rgba(155, 20, 25, 0.12), transparent 48%),
+    linear-gradient(90deg, rgba(201, 162, 39, 0.08), transparent 42%),
+    var(--cream);
+}
+.clock-kicker {
+  font-family: var(--jp);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  margin: 0;
+}
+.clock-label {
+  margin: 0.2rem 0 0.85rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.clock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: stretch;
+}
+.clock-unit {
+  min-width: 4.4rem;
+  flex: 1 1 4.4rem;
+  max-width: 7.2rem;
+  padding: 0.55rem 0.4rem 0.5rem;
+  border: 1px solid var(--line-strong);
+  background: var(--paper);
+  text-align: center;
+}
+.clock-num {
+  display: block;
+  font-family: var(--jp);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--blood);
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+}
+.clock-unit-label {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.clock-note {
+  margin: 0.75rem 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.clock-note a { color: var(--gold-dim); }
+
+.home-banner .clock-band {
+  max-width: 40rem;
+  margin-top: 1.35rem;
+  border-color: rgba(232, 197, 71, 0.38);
+  background:
+    linear-gradient(180deg, rgba(155, 20, 25, 0.42), rgba(12, 11, 10, 0.55)),
+    rgba(12, 11, 10, 0.42);
+}
+.home-banner .clock-kicker { color: var(--gold-bright); }
+.home-banner .clock-label { color: rgba(246, 239, 230, 0.92); }
+.home-banner .clock-unit {
+  background: rgba(12, 11, 10, 0.55);
+  border-color: rgba(232, 197, 71, 0.28);
+}
+.home-banner .clock-num { color: var(--gold-bright); }
+.home-banner .clock-unit-label { color: rgba(246, 239, 230, 0.55); }
+.home-banner .clock-note { color: rgba(246, 239, 230, 0.62); }
+.home-banner .clock-note a { color: var(--gold-bright); }
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0 1.4rem;
+}
+.shop-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.9rem 1rem 1rem;
+  border: 1px solid var(--line-strong);
+  background: var(--cream);
+  text-decoration: none;
+  color: inherit;
+}
+.shop-card:hover {
+  border-color: var(--gold);
+  color: inherit;
+}
+.shop-card strong {
+  color: var(--blood);
+  font-size: 0.98rem;
+  font-family: var(--serif);
+}
+.shop-card span {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.shop-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ruby);
+}
+.note code, .article code {
+  font-family: var(--mono);
+  font-size: 0.86em;
 }
 
 @media (max-width: 920px) {
