@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Bowl · Kagurabachi Archive</title>
+  <meta name="description" content="Kuro, Aka, and Nishiki as pictures: Enten’s three goldfish, the household fighting language.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Serif+JP:wght@400;500;600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="main" class="wrap">
+    <p class="crumb"><a href="../index.html">Archive</a> / <a href="index.html">Fun</a> / Bowl</p>
+    <header class="page-hero"><div>
+      <p class="kicker">Kuro · Aka · Nishiki</p>
+      <h1>The bowl<span class="jp">金魚鉢</span></h1>
+      <p class="lede">Three fish. A kitchen object. The entire fighting language, shown.</p>
+    </div></header>
+    <article class="article">
+      <figure class="shot">
+        <img src="../assets/official/jp-ogp.jpg" alt="Chihiro with Aka, Kuro, and Nishiki">
+        <figcaption>Official anime visual: the three fish behind Enten. Cypic understood the assignment. The cute thing is the kit. © Project Kagurabachi.</figcaption>
+      </figure>
+      <p>Chapter 1 puts the bowl on the table before anyone calls a technique. Hokazono threw carp out on the storyboard because koi looked like a weapon and goldfish looked like a life. Fantails give him three silhouettes. White, black, and red because the coat is already stained. The <a href="goldfish.html">goldfish page</a> keeps the interview. This page keeps the pictures.</p>
+    </article>
+    <div class="fish-trio">
+      <article class="fish-card">
+        <div class="mark p-chihiro" data-fish="#e8c547"></div>
+        <div class="body">
+          <h3>Kuro<span class="jp">黒</span></h3>
+          <p>Black fish. Paints arm and edge in black water and throws a cut the size of the fish you called. Shred spends more spirit to throw many small ones.</p>
+        </div>
+      </article>
+      <article class="fish-card">
+        <div class="mark" style="background:linear-gradient(160deg,#9b1419 0%,#1a0c0d 70%)" data-fish="#e23b3b"></div>
+        <div class="body">
+          <h3>Aka<span class="jp">赤</span></h3>
+          <p>Red fish. Drinks a technique and lets you speak it back for a short window. The household made into a counter, not a trophy.</p>
+        </div>
+      </article>
+      <article class="fish-card">
+        <div class="mark" style="background:linear-gradient(160deg,#c9a227 0%,#4a1014 55%,#1a0c0d 100%)" data-fish="#f6efe6"></div>
+        <div class="body">
+          <h3>Nishiki<span class="jp">錦</span></h3>
+          <p>Tricolor cloak. Speed, density, and a built-in resistance to other Enchanted Blade ailments. Enten’s purpose showing through the technique list.</p>
+        </div>
+      </article>
+    </div>
+    <div class="people">
+      <figure>
+        <img src="../assets/fun/enten.png" alt="Enten">
+        <figcaption class="credit">Enten, the seventh</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/portraits/chihiro-anime.png" alt="Chihiro official visual">
+        <figcaption class="credit">Chihiro, Cypic sheet</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/covers/jp-vol1.webp" alt="Volume 1 jacket">
+        <figcaption class="credit">Vol. 1: Kuro overhead</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/covers/jp-vol11.webp" alt="Volume 11 jacket">
+        <figcaption class="credit">Vol. 11: Aka and Kuro in snow</figcaption>
+      </figure>
+    </div>
+    <article class="article">
+      <h2>Furniture first</h2>
+      <p>The three fish in the Rokuhira house are the emotional core of Enten. A wartime blade manifests weather, flowers, banquet ghosts. Enten manifests the kitchen. Official art still sells all three. Volume 1 is rusty ruby asphalt with Kuro overhead. Volume 11 puts Chihiro in snow with Aka and Kuro. The 2026 teaser puts the triad behind Enten because the fighting language is still a bowl.</p>
+      <p>YouTube that says “koi = perseverance” is quoting the draft. Read the interview, then look at the fins. The chubby carp never made it to Sunday. Technique names live in the <a href="../world/techniques.html">catalog</a>. The workshop as a room is <a href="../world/workshop.html">its own page</a>.</p>
+      <p class="related"><a href="goldfish.html">Goldfish, not koi</a><a href="../blades/enten.html">Enten</a><a href="../world/workshop.html">The workshop</a><a href="wall.html">Sunday wall</a></p>
+    </article>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../js/site.js"></script>
+  <script src="../js/art.js"></script>
+  <script>
+    document.querySelectorAll("[data-fish]").forEach((el) => {
+      if (window.KBArt) el.innerHTML = window.KBArt.fish(el.getAttribute("data-fish"));
+    });
+  </script>
+</body>
+</html>
