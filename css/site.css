@@ -496,6 +496,35 @@ blockquote.cite footer {
   font-size: 0.82rem;
 }
 .related a:hover { background: var(--ruby); color: var(--paper); }
+nav.related {
+  border-top: 1px solid var(--line);
+  padding-top: 0.85rem;
+  margin-top: 1.6rem;
+}
+nav.related::before {
+  content: "Keep reading";
+  flex: 0 0 100%;
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  color: var(--ink);
+  margin: 0 0 0.15rem;
+}
+.vol-turn, .arc-jump {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: 0.35rem 0 1rem;
+}
+.vol-turn a, .arc-jump a { font-weight: 600; }
+.map-list {
+  columns: 2;
+  gap: 0 2.5rem;
+  padding-left: 1.2rem;
+  margin: 0 0 1.6rem;
+}
+.map-list li { break-inside: avoid; margin: 0.15rem 0; }
+@media (max-width: 640px) {
+  .map-list { columns: 1; }
+}
 
 /* Homepage, art banner, then info, then tiny buttons */
 body.home {

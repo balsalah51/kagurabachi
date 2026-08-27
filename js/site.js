@@ -60,6 +60,7 @@
         <a href="${R}factions/kamunabi.html">Kamunabi</a>
         <a href="${R}media/anime.html">Anime</a>
         <a href="${R}fun/community.html">Board</a>
+        <a href="${R}sitemap.html">Map</a>
         <a href="${R}about.html">About</a>
       </div>
     </nav>
@@ -71,7 +72,7 @@
         <div>
           <h3>Kagurabachi</h3>
           <p>A fan site for Takeru Hokazono’s <em>Kagurabachi</em>. Characters, blades, volumes, and the goldfish.</p>
-          <p class="legal">Kagurabachi © Takeru Hokazono / Shueisha. Anime images © Takeru Hokazono / Project Kagurabachi. Fan-made reference. Official chapters: <a href="https://www.viz.com/kagurabachi">VIZ</a> and <a href="https://mangaplus.shueisha.co.jp/">MANGA Plus</a>. <a href="${R}privacy.html">Privacy</a>.</p>
+          <p class="legal">Kagurabachi © Takeru Hokazono / Shueisha. Anime images © Takeru Hokazono / Project Kagurabachi. Fan-made reference. Official chapters: <a href="https://www.viz.com/kagurabachi">VIZ</a> and <a href="https://mangaplus.shueisha.co.jp/">MANGA Plus</a>. <a href="${R}sitemap.html">Site map</a> · <a href="${R}privacy.html">Privacy</a>.</p>
         </div>
         <div>
           <h3>Read officially</h3>
@@ -88,8 +89,9 @@
           <a href="${R}manga/part-2.html">Part 2</a> · <a href="${R}manga/synopses.html">Synopses</a><br>
           <a href="${R}media/anime.html">Anime countdown</a>${hideShop ? "" : ` · <a href="${R}collectibles/shop.html">Shop</a>`}<br>
           <a href="${R}fun/index.html">Fun of the manga</a> · <a href="${R}fun/community.html">Sunday board</a><br>
-          <a href="${R}analysis/index.html">Essays</a><br>
-          <a href="${R}about.html">About</a> · <a href="${R}privacy.html">Privacy</a></p>
+          <a href="${R}blades/index.html">Enchanted Blades</a> · <a href="${R}arcs/index.html">Story arcs</a><br>
+          <a href="${R}analysis/index.html">Essays</a> · <a href="${R}world/glossary.html">Glossary</a><br>
+          <a href="${R}about.html">About</a> · <a href="${R}sitemap.html">Site map</a> · <a href="${R}privacy.html">Privacy</a></p>
         </div>
       </div>
     </footer>
