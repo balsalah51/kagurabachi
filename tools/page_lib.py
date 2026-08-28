@@ -35,6 +35,7 @@ def page(rel, title, desc, body, depth=1):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(html, encoding="utf-8")
     print("wrote", rel, "words", len(html.split()))
+    print("note: run tools/seo_apply.py after generating pages so canonical, Open Graph, JSON-LD, and related links land.")
 
 
 def crumb(*parts):
