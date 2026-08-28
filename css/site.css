@@ -1348,6 +1348,70 @@ footer.site h3 {
   font-size: 0.86em;
 }
 
+/* UNION ARENA Kagurabachi singles */
+.ua-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.4rem 0 1.1rem;
+  padding: 0.55rem 0.95rem;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.ua-cta:hover { color: var(--gold-bright); }
+.ua-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+  gap: 1rem;
+  margin: 1.1rem 0 1.6rem;
+}
+.ua-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  border: 1px solid var(--line-strong);
+  text-decoration: none;
+  color: inherit;
+  min-height: 100%;
+}
+.ua-card:hover {
+  border-color: var(--gold);
+  color: inherit;
+  transform: translateY(-2px);
+}
+.ua-card img {
+  width: 100%;
+  aspect-ratio: 63 / 88;
+  object-fit: cover;
+  object-position: top center;
+  background: var(--ink);
+}
+.ua-card .ua-meta {
+  padding: 0.55rem 0.65rem 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+.ua-card .ua-meta strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  color: var(--blood);
+  margin-bottom: 0.12rem;
+}
+.ua-card .ua-meta span {
+  color: var(--muted);
+}
+.ua-pack {
+  aspect-ratio: 3 / 4 !important;
+  object-fit: contain !important;
+  background: var(--paper-deep) !important;
+  padding: 0.6rem;
+}
+
 /* Sunday board, meme plates, quotes */
 .board {
   columns: 3;

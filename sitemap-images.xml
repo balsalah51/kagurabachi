@@ -907,6 +907,74 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/collectibles/union-arena.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/booster-pack.jpg</image:loc>
+      <image:title>booster pack</image:title>
+      <image:caption>booster pack</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/booster-box.jpg</image:loc>
+      <image:title>booster box</image:title>
+      <image:caption>booster box</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/chihiro-060.jpg</image:loc>
+      <image:title>chihiro 060</image:title>
+      <image:caption>chihiro 060</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/chihiro-059.jpg</image:loc>
+      <image:title>chihiro 059</image:title>
+      <image:caption>chihiro 059</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/shiba-049.jpg</image:loc>
+      <image:title>shiba 049</image:title>
+      <image:caption>shiba 049</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/hakuri-047.jpg</image:loc>
+      <image:title>hakuri 047</image:title>
+      <image:caption>hakuri 047</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/char.jpg</image:loc>
+      <image:title>char</image:title>
+      <image:caption>char</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/kyora.jpg</image:loc>
+      <image:title>kyora</image:title>
+      <image:caption>kyora</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/hiyuki-066.jpg</image:loc>
+      <image:title>hiyuki 066</image:title>
+      <image:caption>hiyuki 066</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/iori-005.jpg</image:loc>
+      <image:title>iori 005</image:title>
+      <image:caption>iori 005</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/iori-003.jpg</image:loc>
+      <image:title>iori 003</image:title>
+      <image:caption>iori 003</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/yura.jpg</image:loc>
+      <image:title>yura</image:title>
+      <image:caption>yura</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/iai.jpg</image:loc>
+      <image:title>iai</image:title>
+      <image:caption>iai</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/factions/</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/portraits/hiyuki.webp</image:loc>
@@ -1747,6 +1815,11 @@
       <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
       <image:title>ch001</image:title>
       <image:caption>ch001</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/cards/chihiro-060.jpg</image:loc>
+      <image:title>chihiro 060</image:title>
+      <image:caption>chihiro 060</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/jp-vol2.webp</image:loc>
