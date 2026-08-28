@@ -11,7 +11,13 @@
   <link rel="stylesheet" href="css/site.css">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://kagurabachi.org/sitemap.html">
-  <meta name="robots" content="index, follow">
+  <link rel="alternate" hreflang="en" href="https://kagurabachi.org/sitemap.html">
+  <link rel="alternate" hreflang="x-default" href="https://kagurabachi.org/sitemap.html">
+  <link rel="search" type="application/opensearchdescription+xml" title="Kagurabachi Archive" href="https://kagurabachi.org/opensearch.xml">
+  <link rel="manifest" href="https://kagurabachi.org/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="https://kagurabachi.org/assets/logo.png">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#9b1419">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kagurabachi Archive">
@@ -20,6 +26,7 @@
   <meta property="og:title" content="Site map · Kagurabachi Archive">
   <meta property="og:description" content="Every Kagurabachi.org page in one directory: characters, Enchanted Blades, volumes, arcs, world, essays, and fun.">
   <meta property="og:image" content="https://kagurabachi.org/assets/covers/teaser-og.jpg">
+  <meta property="og:image:alt" content="Site map · Kagurabachi Archive">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Site map · Kagurabachi Archive">
   <meta name="twitter:description" content="Every Kagurabachi.org page in one directory: characters, Enchanted Blades, volumes, arcs, world, essays, and fun.">
@@ -34,13 +41,24 @@
       "name": "Kagurabachi Archive",
       "alternateName": [
         "Kagurabachi Encyclopedia",
-        "Kagurabachi.org"
+        "Kagurabachi.org",
+        "Kagurabachi wiki",
+        "KB",
+        "カグラバチ 資料庫"
       ],
       "url": "https://kagurabachi.org/",
       "inLanguage": "en",
       "description": "Independent encyclopedia for Takeru Hokazono’s Kagurabachi: characters, Enchanted Blades, manga guide, and analysis.",
       "publisher": {
         "@id": "https://kagurabachi.org/#org"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://kagurabachi.org/search.html?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
     },
     {
@@ -48,7 +66,12 @@
       "@id": "https://kagurabachi.org/#org",
       "name": "Kagurabachi Archive",
       "url": "https://kagurabachi.org/",
-      "logo": "https://kagurabachi.org/assets/favicon.svg"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kagurabachi.org/assets/logo.png",
+        "width": 512,
+        "height": 512
+      }
     },
     {
       "@type": "CollectionPage",
@@ -60,7 +83,11 @@
         "@id": "https://kagurabachi.org/#website"
       },
       "inLanguage": "en",
-      "image": "https://kagurabachi.org/assets/covers/teaser-og.jpg"
+      "image": "https://kagurabachi.org/assets/covers/teaser-og.jpg",
+      "dateModified": "2026-08-27",
+      "publisher": {
+        "@id": "https://kagurabachi.org/#org"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -84,6 +111,10 @@
   </script>
 </head>
 <body>
+<noscript>
+<nav class="crawl-nav" aria-label="Site"><a href="index.html">Home</a> · <a href="search.html">Search</a> · <a href="faq.html">FAQ</a> · <a href="characters/index.html">Characters</a> · <a href="blades/index.html">Blades</a> · <a href="manga/index.html">Manga</a> · <a href="arcs/index.html">Story</a> · <a href="sitemap.html">Site map</a></nav>
+</noscript>
+
   <div id="site-header"></div>
   <main id="main" class="wrap">
     <p class="crumb"><a href="index.html">Home</a> / Site map</p>
@@ -99,6 +130,7 @@
     <h2>Front door</h2>
     <ul class="map-list">
         <li><a href="about.html">About This Kagurabachi Encyclopedia</a></li>
+        <li><a href="faq.html">Kagurabachi FAQ</a></li>
         <li><a href="index.html">Kagurabachi Encyclopedia</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
     </ul>
@@ -274,7 +306,7 @@
         <li><a href="collectibles/index.html">Kagurabachi Collectibles</a></li>
         <li><a href="collectibles/shop.html">Where to Buy Kagurabachi Volumes &amp; Official Merch</a></li>
     </ul>
-    <nav class="related" aria-label="Related pages"><a href="index.html">Home</a><a href="guide/index.html">Guide</a><a href="characters/index.html">Characters</a><a href="manga/synopses.html">Volume synopses</a><a href="about.html">About</a></nav>
+    <nav class="related" aria-label="Related pages"><a href="index.html">Home</a><a href="search.html">Search</a><a href="faq.html">FAQ</a><a href="guide/index.html">Guide</a><a href="characters/index.html">Characters</a><a href="manga/synopses.html">Volume synopses</a><a href="about.html">About</a></nav>
     </article>
   </main>
   <div id="site-footer"></div>

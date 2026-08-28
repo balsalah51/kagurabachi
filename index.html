@@ -12,7 +12,14 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://kagurabachi.org/">
   <link rel="sitemap" type="application/xml" href="https://kagurabachi.org/sitemap.xml">
-  <meta name="robots" content="index, follow">
+  <link rel="preload" as="image" href="assets/covers/teaser-og.jpg" fetchpriority="high">
+  <link rel="alternate" hreflang="en" href="https://kagurabachi.org/">
+  <link rel="alternate" hreflang="x-default" href="https://kagurabachi.org/">
+  <link rel="search" type="application/opensearchdescription+xml" title="Kagurabachi Archive" href="https://kagurabachi.org/opensearch.xml">
+  <link rel="manifest" href="https://kagurabachi.org/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="https://kagurabachi.org/assets/logo.png">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#9b1419">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kagurabachi Archive">
@@ -21,6 +28,7 @@
   <meta property="og:title" content="Kagurabachi Encyclopedia | Characters, Enchanted Blades &amp; Manga Guide">
   <meta property="og:description" content="Independent Kagurabachi encyclopedia since the first Jump issue: characters, Enchanted Blades, manga guide, volume synopses, and analysis.">
   <meta property="og:image" content="https://kagurabachi.org/assets/covers/teaser-og.jpg">
+  <meta property="og:image:alt" content="Kagurabachi Encyclopedia | Characters, Enchanted Blades &amp; Manga Guide">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kagurabachi Encyclopedia | Characters, Enchanted Blades &amp; Manga Guide">
   <meta name="twitter:description" content="Independent Kagurabachi encyclopedia since the first Jump issue: characters, Enchanted Blades, manga guide, volume synopses, and analysis.">
@@ -35,13 +43,24 @@
       "name": "Kagurabachi Archive",
       "alternateName": [
         "Kagurabachi Encyclopedia",
-        "Kagurabachi.org"
+        "Kagurabachi.org",
+        "Kagurabachi wiki",
+        "KB",
+        "カグラバチ 資料庫"
       ],
       "url": "https://kagurabachi.org/",
       "inLanguage": "en",
       "description": "Independent encyclopedia for Takeru Hokazono’s Kagurabachi: characters, Enchanted Blades, manga guide, and analysis.",
       "publisher": {
         "@id": "https://kagurabachi.org/#org"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://kagurabachi.org/search.html?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
     },
     {
@@ -49,7 +68,12 @@
       "@id": "https://kagurabachi.org/#org",
       "name": "Kagurabachi Archive",
       "url": "https://kagurabachi.org/",
-      "logo": "https://kagurabachi.org/assets/favicon.svg"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kagurabachi.org/assets/logo.png",
+        "width": 512,
+        "height": 512
+      }
     },
     {
       "@type": "CollectionPage",
@@ -61,13 +85,59 @@
         "@id": "https://kagurabachi.org/#website"
       },
       "inLanguage": "en",
-      "image": "https://kagurabachi.org/assets/covers/teaser-og.jpg"
+      "image": "https://kagurabachi.org/assets/covers/teaser-og.jpg",
+      "dateModified": "2026-08-27",
+      "publisher": {
+        "@id": "https://kagurabachi.org/#org"
+      },
+      "about": {
+        "@id": "https://kagurabachi.org/#series"
+      }
+    },
+    {
+      "@type": "ComicSeries",
+      "@id": "https://kagurabachi.org/#series",
+      "name": "Kagurabachi",
+      "alternateName": [
+        "カグラバチ",
+        "KB"
+      ],
+      "url": "https://kagurabachi.org/manga/",
+      "inLanguage": [
+        "ja",
+        "en"
+      ],
+      "genre": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Takeru Hokazono"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Shueisha"
+      },
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Kagurabachi",
+        "https://www.viz.com/kagurabachi",
+        "https://mangaplus.shueisha.co.jp/titles/100274",
+        "https://anime.kagurabachi.jp/",
+        "https://myanimelist.net/manga/158925/Kagurabachi"
+      ],
+      "description": "Weekly Shōnen Jump manga by Takeru Hokazono. Chihiro Rokuhira, Enchanted Blades, and the Seitei War."
     }
   ]
 }
   </script>
 </head>
 <body class="home">
+<noscript>
+<nav class="crawl-nav" aria-label="Site"><a href="index.html">Home</a> · <a href="search.html">Search</a> · <a href="faq.html">FAQ</a> · <a href="characters/index.html">Characters</a> · <a href="blades/index.html">Blades</a> · <a href="manga/index.html">Manga</a> · <a href="arcs/index.html">Story</a> · <a href="sitemap.html">Site map</a></nav>
+</noscript>
+
   <div id="site-header"></div>
 
   <main id="main">
@@ -98,6 +168,11 @@
           <a class="btn" href="characters/chihiro.html">Start with Chihiro</a>
           <a class="btn ghost" href="manga/part-2.html">Open Part 2</a>
         </div>
+        <form class="home-search" action="search.html" method="get" role="search">
+          <label for="home-q">Search this encyclopedia</label>
+          <input id="home-q" type="search" name="q" placeholder="Chihiro, Enten, Rakuzaichi, KB…" autocomplete="off" enterkeyhint="search">
+          <button type="submit">Search</button>
+        </form>
       </div>
     </section>
 
@@ -121,6 +196,14 @@
       <a class="home-row" href="manga/synopses.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol1.webp" alt="Volume synopses"><b>Volume synopses</b><small>Eleven spines, told in sentences</small></a>
       <a class="home-row" href="guide/watch.html"><img loading="lazy" decoding="async" src="assets/covers/teaser-og.jpg" alt="Anime countdown"><b>Anime countdown</b><small>April 2027 · Cypic · how to watch</small></a>
       <a class="home-row" href="characters/ichiki.html"><img loading="lazy" decoding="async" src="assets/portraits/azami.webp" alt="The leadership table"><b>The leadership table</b><small>Ichiki, Yatsuru, Izaru, and the rest of the heads</small></a>
+    </div>
+
+    <p class="home-label">Asked a lot <span>質問</span></p>
+    <div class="home-faq">
+      <a href="faq.html#anime"><b>When is the Kagurabachi anime?</b><small>April 2027 · Cypic · how to watch</small></a>
+      <a href="faq.html#read"><b>Where do I read Kagurabachi?</b><small>VIZ and MANGA Plus, same week as Jump</small></a>
+      <a href="faq.html#blades"><b>What are Enchanted Blades?</b><small>Seven swords. Goldfish, clouds, flowers</small></a>
+      <a href="faq.html#wiki"><b>Is this a Kagurabachi wiki?</b><small>Encyclopedia depth. Search the archive</small></a>
     </div>
 
     <p class="home-label">Sunday ink <span>日曜</span></p>
