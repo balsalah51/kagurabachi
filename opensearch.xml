@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Kagurabachi</ShortName>
+  <LongName>Kagurabachi Archive</LongName>
+  <Description>Search the Kagurabachi encyclopedia: characters, Enchanted Blades, arcs, essays.</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/svg+xml">https://kagurabachi.org/assets/favicon.svg</Image>
+  <Image width="512" height="512" type="image/png">https://kagurabachi.org/assets/logo.png</Image>
+  <Url type="text/html" method="get" template="https://kagurabachi.org/search.html?q={searchTerms}"/>
+</OpenSearchDescription>

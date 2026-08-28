@@ -1,5 +1,16 @@
 User-agent: *
 Allow: /
 Disallow: /404.html
+Disallow: /tools/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /404.html
+Disallow: /tools/
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /assets/
 
 Sitemap: https://kagurabachi.org/sitemap.xml
+Sitemap: https://kagurabachi.org/sitemap-images.xml

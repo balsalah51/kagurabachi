@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Apply on-page SEO, related links, alt text, robots, and sitemaps.
 
-Idempotent: safe to re-run. Writes robots.txt, sitemap.xml, sitemap.html,
+Idempotent: safe to re-run. Writes robots.txt, sitemap.xml, sitemap-images.xml,
+sitemap.html, search.html, the search index, OpenSearch, and the web manifest,
 and patches every HTML page with canonical URLs, Open Graph, Twitter cards,
-JSON-LD, related-page nav, and descriptive image alt text.
+JSON-LD (including SearchAction for Google), related-page nav, and descriptive
+image alt text.
 """
 from __future__ import annotations
 
@@ -48,6 +50,8 @@ TITLE_OVERRIDES = {
     "world/techniques.html": "Kagurabachi Technique Catalog | Enchanted Blade Kit &amp; Innate Arts",
     "world/glossary.html": "Kagurabachi Glossary | Enchanted Blades, Contracts, True Realm",
     "sitemap.html": "Site map · Kagurabachi Archive",
+    "faq.html": "Kagurabachi FAQ | Anime Date, How to Read, Wiki Answers",
+    "search.html": "Search the Kagurabachi Encyclopedia | Characters, Blades, Arcs",
 }
 
 DESC_OVERRIDES = {
@@ -60,6 +64,8 @@ DESC_OVERRIDES = {
     "analysis/enten-purpose.html": "Why Kunishige forged Enten after the Seitei War: a seventh blade built as a retraction. Its True Realm is Magatsumi’s death.",
     "factions/index.html": "Kagurabachi organizations: Kamunabi state sorcerers, the Hishaku ten, Sazanami auction house, Soga, Mikaboshi, and the Masumi.",
     "index.html": "Independent Kagurabachi encyclopedia since the first Jump issue: characters, Enchanted Blades, manga guide, volume synopses, and analysis.",
+    "faq.html": "Kagurabachi FAQ: what the manga is, when the 2027 anime airs, where to read legally, Enchanted Blades, Chihiro, KB, and how this encyclopedia works as a wiki.",
+    "search.html": "Search Kagurabachi.org: characters, Enchanted Blades, story arcs, volume synopses, and essays. Wiki-depth index for Takeru Hokazono’s manga.",
 }
 
 # Extra related chips keyed by repo-relative path. Merged with any existing related nav.
@@ -479,6 +485,8 @@ PAGE_RELATED: dict[str, list[tuple[str, str]]] = {
         ("index.html", "Home"),
         ("guide/index.html", "Guide"),
         ("characters/index.html", "Characters"),
+        ("faq.html", "FAQ"),
+        ("search.html", "Search"),
         ("sitemap.html", "Site map"),
         ("privacy.html", "Privacy"),
     ],
@@ -489,11 +497,31 @@ PAGE_RELATED: dict[str, list[tuple[str, str]]] = {
         ("manga/synopses.html", "Volume synopses"),
         ("arcs/index.html", "Story arcs"),
         ("media/anime.html", "Anime"),
+        ("search.html", "Search"),
+        ("faq.html", "FAQ"),
+    ],
+    "faq.html": [
+        ("search.html", "Search"),
+        ("guide/index.html", "Guide"),
+        ("media/anime.html", "Anime"),
+        ("characters/chihiro.html", "Chihiro"),
+        ("blades/index.html", "Enchanted Blades"),
+        ("manga/index.html", "Manga guide"),
         ("sitemap.html", "Site map"),
         ("about.html", "About"),
     ],
+    "search.html": [
+        ("faq.html", "FAQ"),
+        ("sitemap.html", "Site map"),
+        ("characters/index.html", "Characters"),
+        ("blades/index.html", "Enchanted Blades"),
+        ("guide/index.html", "Guide"),
+        ("index.html", "Home"),
+    ],
     "sitemap.html": [
         ("index.html", "Home"),
+        ("search.html", "Search"),
+        ("faq.html", "FAQ"),
         ("guide/index.html", "Guide"),
         ("characters/index.html", "Characters"),
         ("manga/synopses.html", "Volume synopses"),
@@ -622,6 +650,16 @@ SRC_ALT = {
 
 SKIP_RELATED = {"404.html"}
 
+SERIES_SAME_AS = [
+    "https://en.wikipedia.org/wiki/Kagurabachi",
+    "https://www.viz.com/kagurabachi",
+    "https://mangaplus.shueisha.co.jp/titles/100274",
+    "https://anime.kagurabachi.jp/",
+    "https://myanimelist.net/manga/158925/Kagurabachi",
+]
+
+_LASTMOD: dict[str, str] = {}
+
 SECTIONS = [
     ("Guide", "guide"),
     ("Characters", "characters"),
@@ -699,6 +737,8 @@ def og_image_for(html: str, rel: str) -> str:
         "index.html": f"{SITE}/assets/covers/teaser-og.jpg",
         "about.html": f"{SITE}/assets/covers/teaser-og.jpg",
         "sitemap.html": f"{SITE}/assets/covers/teaser-og.jpg",
+        "faq.html": f"{SITE}/assets/covers/teaser-og.jpg",
+        "search.html": f"{SITE}/assets/covers/teaser-og.jpg",
         "media/anime.html": f"{SITE}/assets/covers/teaser-og.jpg",
         "guide/watch.html": f"{SITE}/assets/covers/teaser-og.jpg",
         "404.html": f"{SITE}/assets/covers/teaser-og.jpg",
@@ -718,6 +758,10 @@ def og_image_for(html: str, rel: str) -> str:
 def page_kind(rel: str) -> str:
     if rel == "about.html":
         return "AboutPage"
+    if rel == "faq.html":
+        return "FAQPage"
+    if rel == "search.html":
+        return "SearchResultsPage"
     if rel.endswith("/index.html") or rel in ("index.html", "sitemap.html"):
         return "CollectionPage"
     if rel.startswith("analysis/") or rel.startswith("manga/synopses"):
@@ -754,22 +798,42 @@ def json_ld(rel: str, title: str, desc: str, html: str) -> str:
     clean_title = htmlmod.unescape(re.sub(r"<[^>]+>", "", title))
     url = canonical_url(rel)
     crumbs = breadcrumbs(html, rel, clean_title)
+    modified = git_lastmod(rel)
     website = {
         "@type": "WebSite",
         "@id": f"{SITE}/#website",
         "name": "Kagurabachi Archive",
-        "alternateName": ["Kagurabachi Encyclopedia", "Kagurabachi.org"],
+        "alternateName": [
+            "Kagurabachi Encyclopedia",
+            "Kagurabachi.org",
+            "Kagurabachi wiki",
+            "KB",
+            "カグラバチ 資料庫",
+        ],
         "url": f"{SITE}/",
         "inLanguage": "en",
         "description": "Independent encyclopedia for Takeru Hokazono’s Kagurabachi: characters, Enchanted Blades, manga guide, and analysis.",
         "publisher": {"@id": f"{SITE}/#org"},
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": f"{SITE}/search.html?q={{search_term_string}}",
+            },
+            "query-input": "required name=search_term_string",
+        },
     }
     org = {
         "@type": "Organization",
         "@id": f"{SITE}/#org",
         "name": "Kagurabachi Archive",
         "url": f"{SITE}/",
-        "logo": f"{SITE}/assets/favicon.svg",
+        "logo": {
+            "@type": "ImageObject",
+            "url": f"{SITE}/assets/logo.png",
+            "width": 512,
+            "height": 512,
+        },
     }
     page = {
         "@type": page_kind(rel),
@@ -780,8 +844,24 @@ def json_ld(rel: str, title: str, desc: str, html: str) -> str:
         "isPartOf": {"@id": f"{SITE}/#website"},
         "inLanguage": "en",
         "image": og_image_for(html, rel),
+        "dateModified": modified,
+        "publisher": {"@id": f"{SITE}/#org"},
     }
+    if page_kind(rel) == "Article":
+        page["headline"] = clean_title
+        page["datePublished"] = modified
+        page["author"] = {"@id": f"{SITE}/#org"}
     graph: list[dict] = [website, org, page]
+    if rel in ("index.html", "manga/index.html", "guide/series.html"):
+        graph.append(comic_series())
+        page["about"] = {"@id": f"{SITE}/#series"}
+    if rel in ("media/anime.html", "guide/watch.html"):
+        graph.append(tv_series())
+        page["about"] = {"@id": f"{SITE}/#anime"}
+    if rel == "faq.html":
+        faqs = extract_faq(html)
+        if faqs:
+            page["mainEntity"] = faqs
     if len(crumbs) >= 2:
         graph.append({
             "@type": "BreadcrumbList",
@@ -791,12 +871,26 @@ def json_ld(rel: str, title: str, desc: str, html: str) -> str:
             ],
         })
     if rel.startswith("characters/") and not rel.endswith("index.html"):
-        graph.append({
-            "@type": "Person",
+        jp = re.search(r'<h1>[^<]*<span class="jp">([^<]+)</span>', html)
+        person = {
+            "@type": ["Person", "FictionalCharacter"],
             "name": re.sub(r"\s*[·|].*$", "", clean_title).strip(),
             "url": url,
             "description": htmlmod.unescape(desc or ""),
             "mainEntityOfPage": url,
+            "isPartOf": {"@id": f"{SITE}/#series"},
+        }
+        if jp:
+            person["alternateName"] = htmlmod.unescape(jp.group(1)).strip()
+        graph.append(person)
+    if rel.startswith("blades/") and not rel.endswith("index.html"):
+        graph.append({
+            "@type": "CreativeWork",
+            "name": re.sub(r"\s*[·|].*$", "", clean_title).strip(),
+            "url": url,
+            "description": htmlmod.unescape(desc or ""),
+            "mainEntityOfPage": url,
+            "isPartOf": {"@id": f"{SITE}/#series"},
         })
     dumped = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, indent=2)
     return dumped.replace("</", "<\\/")
@@ -807,8 +901,14 @@ def strip_old_seo(html: str) -> str:
     html = re.sub(r'\n?\s*<meta property="og:[^"]+" content="[^"]*"\s*/?>', "", html)
     html = re.sub(r'\n?\s*<meta name="twitter:[^"]+" content="[^"]*"\s*/?>', "", html)
     html = re.sub(r'\n?\s*<meta name="robots" content="[^"]*"\s*/?>', "", html)
+    html = re.sub(r'\n?\s*<meta name="googlebot" content="[^"]*"\s*/?>', "", html)
     html = re.sub(r'\n?\s*<meta name="theme-color" content="[^"]*"\s*/?>', "", html)
     html = re.sub(r'\n?\s*<link rel="sitemap"[^>]*>', "", html)
+    html = re.sub(r'\n?\s*<link rel="search"[^>]*>', "", html)
+    html = re.sub(r'\n?\s*<link rel="manifest"[^>]*>', "", html)
+    html = re.sub(r'\n?\s*<link rel="apple-touch-icon"[^>]*>', "", html)
+    html = re.sub(r'\n?\s*<link rel="alternate"[^>]*hreflang[^>]*>', "", html)
+    html = re.sub(r'\n?\s*<link rel="preload"[^>]*>', "", html)
     html = re.sub(
         r'\n?\s*<script type="application/ld\+json">.*?</script>',
         "",
@@ -858,13 +958,24 @@ def inject_head(html: str, rel: str) -> str:
     clean_title = htmlmod.unescape(re.sub(r"<[^>]+>", "", title))
     url = canonical_url(rel)
     image = og_image_for(html, rel)
-    robots = "noindex, follow" if rel == "404.html" else "index, follow"
+    robots = (
+        "noindex, follow"
+        if rel == "404.html"
+        else "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    )
     og_type = "article" if page_kind(rel) == "Article" else "website"
     ld = json_ld(rel, title, htmlmod.unescape(desc), html)
+    og_alt = htmlmod.escape(clean_title, quote=True)
 
     extra = [
         f'  <link rel="canonical" href="{url}">',
+        f'  <link rel="alternate" hreflang="en" href="{url}">',
+        f'  <link rel="alternate" hreflang="x-default" href="{url}">',
+        f'  <link rel="search" type="application/opensearchdescription+xml" title="Kagurabachi Archive" href="{SITE}/opensearch.xml">',
+        f'  <link rel="manifest" href="{SITE}/manifest.webmanifest">',
+        f'  <link rel="apple-touch-icon" href="{SITE}/assets/logo.png">',
         f'  <meta name="robots" content="{robots}">',
+        f'  <meta name="googlebot" content="{robots}">',
         f'  <meta name="theme-color" content="#9b1419">',
         f'  <meta property="og:type" content="{og_type}">',
         f'  <meta property="og:site_name" content="Kagurabachi Archive">',
@@ -873,6 +984,7 @@ def inject_head(html: str, rel: str) -> str:
         f'  <meta property="og:title" content="{htmlmod.escape(clean_title, quote=True)}">',
         f'  <meta property="og:description" content="{desc}">',
         f'  <meta property="og:image" content="{image}">',
+        f'  <meta property="og:image:alt" content="{og_alt}">',
         f'  <meta name="twitter:card" content="summary_large_image">',
         f'  <meta name="twitter:title" content="{htmlmod.escape(clean_title, quote=True)}">',
         f'  <meta name="twitter:description" content="{desc}">',
@@ -883,6 +995,7 @@ def inject_head(html: str, rel: str) -> str:
     ]
     if rel == "index.html":
         extra.insert(1, f'  <link rel="sitemap" type="application/xml" href="{SITE}/sitemap.xml">')
+        extra.insert(2, '  <link rel="preload" as="image" href="assets/covers/teaser-og.jpg" fetchpriority="high">')
 
     block = "\n".join(extra)
     if "</head>" not in html:
@@ -1117,6 +1230,8 @@ def lazy_images(html: str) -> str:
 
 
 def git_lastmod(rel: str) -> str:
+    if rel in _LASTMOD:
+        return _LASTMOD[rel]
     try:
         out = subprocess.check_output(
             ["git", "log", "-1", "--format=%cs", "--", rel],
@@ -1124,9 +1239,72 @@ def git_lastmod(rel: str) -> str:
             stderr=subprocess.DEVNULL,
         )
         date = out.decode().strip()
-        return date or "2026-08-27"
+        _LASTMOD[rel] = date or "2026-08-28"
     except Exception:
-        return "2026-08-27"
+        _LASTMOD[rel] = "2026-08-28"
+    return _LASTMOD[rel]
+
+
+def comic_series() -> dict:
+    return {
+        "@type": "ComicSeries",
+        "@id": f"{SITE}/#series",
+        "name": "Kagurabachi",
+        "alternateName": ["カグラバチ", "KB"],
+        "url": f"{SITE}/manga/",
+        "inLanguage": ["ja", "en"],
+        "genre": ["Action", "Adventure", "Fantasy"],
+        "author": {"@type": "Person", "name": "Takeru Hokazono"},
+        "publisher": {"@type": "Organization", "name": "Shueisha"},
+        "sameAs": SERIES_SAME_AS,
+        "description": "Weekly Shōnen Jump manga by Takeru Hokazono. Chihiro Rokuhira, Enchanted Blades, and the Seitei War.",
+    }
+
+
+def tv_series() -> dict:
+    return {
+        "@type": "TVSeries",
+        "@id": f"{SITE}/#anime",
+        "name": "Kagurabachi",
+        "alternateName": ["カグラバチ", "KB"],
+        "url": f"{SITE}/media/anime.html",
+        "inLanguage": "ja",
+        "startDate": "2027-04",
+        "director": {"@type": "Person", "name": "Tetsuya Takeuchi"},
+        "productionCompany": {"@type": "Organization", "name": "Cypic"},
+        "sameAs": [
+            "https://anime.kagurabachi.jp/",
+            "https://x.com/kb_anime_jp",
+            "https://x.com/kb_anime_en",
+        ],
+        "description": "Cypic television adaptation of Takeru Hokazono’s Kagurabachi, scheduled for April 2027.",
+        "isBasedOn": {"@id": f"{SITE}/#series"},
+    }
+
+
+def extract_faq(html: str) -> list[dict]:
+    article = re.search(r'<article class="article[^"]*">(.*?)</article>', html, re.S)
+    if not article:
+        return []
+    body = article.group(1)
+    chunks = re.split(r'<h2 id="([^"]+)">', body)
+    out = []
+    for i in range(1, len(chunks) - 1, 2):
+        inner = chunks[i + 1]
+        q = re.search(r"([^<]+)</h2>", inner)
+        a = re.search(r"<p>(.*?)</p>", inner, re.S)
+        if not q or not a:
+            continue
+        question = htmlmod.unescape(re.sub(r"\s+", " ", q.group(1))).strip()
+        answer = htmlmod.unescape(re.sub(r"<[^>]+>", " ", a.group(1)))
+        answer = re.sub(r"\s+", " ", answer).strip()
+        if question and answer:
+            out.append({
+                "@type": "Question",
+                "name": question,
+                "acceptedAnswer": {"@type": "Answer", "text": answer},
+            })
+    return out
 
 
 def write_robots():
@@ -1134,10 +1312,279 @@ def write_robots():
         "User-agent: *\n"
         "Allow: /\n"
         "Disallow: /404.html\n"
+        "Disallow: /tools/\n"
         "\n"
-        f"Sitemap: {SITE}/sitemap.xml\n",
+        "User-agent: Googlebot\n"
+        "Allow: /\n"
+        "Disallow: /404.html\n"
+        "Disallow: /tools/\n"
+        "\n"
+        "User-agent: Googlebot-Image\n"
+        "Allow: /\n"
+        "Allow: /assets/\n"
+        "\n"
+        f"Sitemap: {SITE}/sitemap.xml\n"
+        f"Sitemap: {SITE}/sitemap-images.xml\n",
         encoding="utf-8",
     )
+
+
+def abs_img(src: str, rel: str) -> str | None:
+    if not src or src.startswith("data:"):
+        return None
+    if src.startswith("http://") or src.startswith("https://"):
+        return src
+    if src.startswith("//"):
+        return "https:" + src
+    fake = f'<img src="{src}">'
+    return first_img_abs(fake, rel)
+
+
+def write_image_sitemap(pages: list[str]):
+    blocks = []
+    seen_pair: set[tuple[str, str]] = set()
+    for rel in pages:
+        if rel in ("404.html",):
+            continue
+        html = (ROOT / rel).read_text(encoding="utf-8")
+        page_url = canonical_url(rel)
+        images = []
+        for src, alt in re.findall(r'<img[^>]+src="([^"]+)"[^>]*(?:alt="([^"]*)")?', html):
+            loc = abs_img(src, rel)
+            if not loc or not loc.startswith(SITE):
+                continue
+            key = (page_url, loc)
+            if key in seen_pair:
+                continue
+            seen_pair.add(key)
+            cap = htmlmod.escape(alt or Path(src).stem.replace("-", " "), quote=True)
+            images.append(
+                "    <image:image>\n"
+                f"      <image:loc>{htmlmod.escape(loc)}</image:loc>\n"
+                f"      <image:title>{cap}</image:title>\n"
+                f"      <image:caption>{cap}</image:caption>\n"
+                "    </image:image>"
+            )
+        if not images:
+            continue
+        blocks.append(
+            "  <url>\n"
+            f"    <loc>{page_url}</loc>\n"
+            + "\n".join(images[:20])
+            + "\n  </url>"
+        )
+    xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+        '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+        + "\n".join(blocks)
+        + "\n</urlset>\n"
+    )
+    (ROOT / "sitemap-images.xml").write_text(xml, encoding="utf-8")
+
+
+def write_opensearch():
+    (ROOT / "opensearch.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">\n'
+        "  <ShortName>Kagurabachi</ShortName>\n"
+        "  <LongName>Kagurabachi Archive</LongName>\n"
+        "  <Description>Search the Kagurabachi encyclopedia: characters, Enchanted Blades, arcs, essays.</Description>\n"
+        "  <InputEncoding>UTF-8</InputEncoding>\n"
+        f'  <Image width="16" height="16" type="image/svg+xml">{SITE}/assets/favicon.svg</Image>\n'
+        f'  <Image width="512" height="512" type="image/png">{SITE}/assets/logo.png</Image>\n'
+        f'  <Url type="text/html" method="get" template="{SITE}/search.html?q={{searchTerms}}"/>\n'
+        "</OpenSearchDescription>\n",
+        encoding="utf-8",
+    )
+
+
+def write_manifest():
+    data = {
+        "name": "Kagurabachi Archive",
+        "short_name": "KB Archive",
+        "description": "Independent encyclopedia for Takeru Hokazono’s Kagurabachi.",
+        "start_url": "/",
+        "scope": "/",
+        "display": "browser",
+        "lang": "en",
+        "background_color": "#f6efe6",
+        "theme_color": "#9b1419",
+        "icons": [
+            {
+                "src": "/assets/logo.png",
+                "sizes": "512x512",
+                "type": "image/png",
+            }
+        ],
+    }
+    (ROOT / "manifest.webmanifest").write_text(
+        json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
+def inject_noscript(html: str, rel: str) -> str:
+    html = re.sub(
+        r'\n?<noscript>\s*<nav class="crawl-nav".*?</noscript>\n?',
+        "",
+        html,
+        flags=re.S,
+    )
+    prefix = "../" if "/" in rel else ""
+    links = [
+        (f"{prefix}index.html", "Home"),
+        (f"{prefix}search.html", "Search"),
+        (f"{prefix}faq.html", "FAQ"),
+        (f"{prefix}characters/index.html", "Characters"),
+        (f"{prefix}blades/index.html", "Blades"),
+        (f"{prefix}manga/index.html", "Manga"),
+        (f"{prefix}arcs/index.html", "Story"),
+        (f"{prefix}sitemap.html", "Site map"),
+    ]
+    inner = " · ".join(f'<a href="{h}">{t}</a>' for h, t in links)
+    block = f'<noscript>\n<nav class="crawl-nav" aria-label="Site">{inner}</nav>\n</noscript>\n'
+    html = re.sub(r"(<body[^>]*>)", r"\1\n" + block, html, count=1)
+    return html
+
+
+def search_entry(rel: str, html: str, title: str) -> dict | None:
+    if rel in ("404.html",):
+        return None
+    clean_title = htmlmod.unescape(re.sub(r"<[^>]+>", "", title))
+    short = re.sub(r"\s*[·|].*$", "", clean_title).strip()
+    desc = htmlmod.unescape(meta_desc(html) or "")
+    jp_m = re.search(r'<h1>[^<]*<span class="jp">([^<]+)</span>', html)
+    jp = htmlmod.unescape(jp_m.group(1)).strip() if jp_m else ""
+    article = re.search(r"<article[^>]*>(.*?)</article>", html, re.S)
+    body = article.group(1) if article else html
+    body = re.sub(r'<span class="spoiler">.*?</span>', " ", body, flags=re.S)
+    body = re.sub(r"<script[^>]*>.*?</script>", " ", body, flags=re.S)
+    body = re.sub(r"<[^>]+>", " ", body)
+    body = htmlmod.unescape(re.sub(r"\s+", " ", body)).strip()
+    aliases = [short, Path(rel).stem.replace("-", " ")]
+    if jp:
+        aliases.append(jp)
+        aliases.append(jp.replace(" ", ""))
+    if rel == "index.html":
+        aliases.extend(["KB", "Kagurabachi wiki", "カグラバチ", "Kagura bachi"])
+    if rel == "faq.html":
+        aliases.extend(["wiki", "FAQ", "KB", "how to read Kagurabachi"])
+    if rel == "media/anime.html":
+        aliases.extend(["Kagurabachi anime", "Cypic", "Crunchyroll", "2027", "BachiAnime"])
+    section = folder_of(rel) or "site"
+    return {
+        "url": canonical_url(rel).replace(SITE, "") or "/",
+        "title": short or clean_title,
+        "jp": jp,
+        "desc": desc,
+        "section": section,
+        "aliases": [a for a in dict.fromkeys(aliases) if a],
+        "text": body[:800],
+    }
+
+
+def write_search_index(pages: list[str], titles: dict[str, str]) -> list[dict]:
+    entries = []
+    for rel in pages:
+        html = (ROOT / rel).read_text(encoding="utf-8")
+        entry = search_entry(rel, html, titles.get(rel) or rel)
+        if entry:
+            entries.append(entry)
+    (ROOT / "assets" / "search-index.json").write_text(
+        json.dumps(entries, ensure_ascii=False, indent=None, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
+    return entries
+
+
+def write_search_page(pages: list[str], titles: dict[str, str]):
+    def title_of(rel: str) -> str:
+        t = titles.get(rel) or rel
+        t = htmlmod.unescape(re.sub(r"<[^>]+>", "", t))
+        t = re.sub(r"\s*[·|].*$", "", t).strip()
+        return t
+
+    groups: dict[str, list[str]] = defaultdict(list)
+    root_pages = []
+    for rel in pages:
+        if rel in ("404.html", "search.html"):
+            continue
+        if "/" not in rel:
+            root_pages.append(rel)
+            continue
+        groups[rel.split("/", 1)[0]].append(rel)
+
+    def lis(rels: list[str]) -> str:
+        bits = []
+        for rel in rels:
+            href = rel if not rel.endswith("/index.html") else rel[:-10] + "index.html"
+            bits.append(f'<li><a href="{href}">{htmlmod.escape(title_of(rel))}</a></li>')
+        return "\n        ".join(bits)
+
+    sections_html = []
+    if root_pages:
+        sections_html.append(
+            "<h2>Front door</h2>\n    <ul class=\"map-list\">\n        "
+            + lis(root_pages)
+            + "\n    </ul>"
+        )
+    for label, folder in SECTIONS:
+        rels = groups.get(folder, [])
+        if not rels:
+            continue
+        rels = sorted(rels, key=lambda r: (0 if r.endswith("/index.html") else 1, r))
+        sections_html.append(
+            f"<h2>{label}</h2>\n    <ul class=\"map-list\">\n        "
+            + lis(rels)
+            + "\n    </ul>"
+        )
+    body = "\n    ".join(sections_html)
+    page = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search the Kagurabachi Encyclopedia | Characters, Blades, Arcs</title>
+  <meta name="description" content="Search Kagurabachi.org: characters, Enchanted Blades, story arcs, volume synopses, and essays. Wiki-depth index for Takeru Hokazono’s manga.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="{FONTS}" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="main" class="wrap">
+    <p class="crumb"><a href="index.html">Home</a> / Search</p>
+    <header class="page-hero">
+      <div>
+        <p class="kicker">Index</p>
+        <h1>Search<span class="jp">検索</span></h1>
+        <p class="lede">Names, blades, arcs, KB. The box Google can hand off to, and the directory a crawler can still walk if the script stays in the truck.</p>
+      </div>
+    </header>
+    <form class="home-search" action="search.html" method="get" role="search">
+      <label for="archive-q">Search this encyclopedia</label>
+      <input id="archive-q" type="search" name="q" placeholder="Chihiro, Enten, Rakuzaichi, KB…" autocomplete="off" enterkeyhint="search">
+      <button type="submit">Search</button>
+    </form>
+    <p class="search-status" id="search-status">Type a name, blade, arc, or KB. The index is this encyclopedia.</p>
+    <div id="search-results"></div>
+    <div id="search-fallback">
+      <article class="article map-page">
+        <p>Every page, grouped the way the workshop is. Same doors as the <a href="sitemap.html">site map</a>. Official chapters stay on <a href="https://www.viz.com/shonenjump/chapters/kagurabachi">VIZ</a> and <a href="https://mangaplus.shueisha.co.jp/titles/100274">MANGA Plus</a>.</p>
+      {body}
+      </article>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/site.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
+"""
+    (ROOT / "search.html").write_text(page, encoding="utf-8")
 
 
 def write_xml_sitemap(pages: list[str]):
@@ -1152,6 +1599,8 @@ def write_xml_sitemap(pages: list[str]):
             pri, freq = "1.0", "weekly"
         elif rel.endswith("/index.html") or rel in (
             "sitemap.html",
+            "faq.html",
+            "search.html",
             "manga/synopses.html",
             "characters/chihiro.html",
             "media/anime.html",
@@ -1258,7 +1707,11 @@ def write_html_sitemap(pages: list[str], titles: dict[str, str]):
 
 
 def main() -> None:
-    pages = [rel_of(p) for p in html_files() if rel_of(p) != "sitemap.html"]
+    pages = [
+        rel_of(p)
+        for p in html_files()
+        if rel_of(p) not in ("sitemap.html", "search.html")
+    ]
     titles: dict[str, str] = {}
     for rel in pages:
         path = ROOT / rel
@@ -1271,23 +1724,41 @@ def main() -> None:
         html = merge_related(html, rel)
         html = inject_head(html, rel)
         html = lazy_images(html)
+        html = inject_noscript(html, rel)
         path.write_text(html, encoding="utf-8")
         titles[rel] = attr(html, "title") or rel
         print("seo", rel)
 
     write_html_sitemap(pages + ["sitemap.html"], titles)
-    # sitemap.html itself needs the head treatment
     sm = ROOT / "sitemap.html"
     html = sm.read_text(encoding="utf-8")
     html = merge_related(html, "sitemap.html")
     html = inject_head(html, "sitemap.html")
+    html = inject_noscript(html, "sitemap.html")
     sm.write_text(html, encoding="utf-8")
     titles["sitemap.html"] = attr(html, "title") or "Site map"
 
-    all_pages = pages + ["sitemap.html"]
+    write_search_page(pages + ["sitemap.html", "search.html"], titles)
+    se = ROOT / "search.html"
+    html = se.read_text(encoding="utf-8")
+    html = merge_related(html, "search.html")
+    html = inject_head(html, "search.html")
+    html = inject_noscript(html, "search.html")
+    se.write_text(html, encoding="utf-8")
+    titles["search.html"] = attr(html, "title") or "Search"
+
+    all_pages = pages + ["sitemap.html", "search.html"]
+    write_search_index(all_pages, titles)
     write_xml_sitemap(all_pages)
+    write_image_sitemap(all_pages)
     write_robots()
-    print("wrote robots.txt sitemap.xml sitemap.html", "pages", len(all_pages))
+    write_opensearch()
+    write_manifest()
+    print(
+        "wrote robots.txt sitemap.xml sitemap-images.xml sitemap.html search.html",
+        "pages",
+        len(all_pages),
+    )
 
 
 if __name__ == "__main__":

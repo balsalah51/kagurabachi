@@ -1,0 +1,18 @@
+{
+  "name": "Kagurabachi Archive",
+  "short_name": "KB Archive",
+  "description": "Independent encyclopedia for Takeru Hokazono’s Kagurabachi.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "lang": "en",
+  "background_color": "#f6efe6",
+  "theme_color": "#9b1419",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

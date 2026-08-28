@@ -37,6 +37,11 @@
           </svg>
           <span class="brand-name">Kagura<em>bachi</em><span class="brand-kana">カグラバチ 資料庫</span></span>
         </a>
+        <form class="site-search" action="${R}search.html" method="get" role="search">
+          <label class="sr-only" for="nav-q">Search the Kagurabachi encyclopedia</label>
+          <input id="nav-q" type="search" name="q" placeholder="Search Kagurabachi…" autocomplete="off" enterkeyhint="search">
+          <button type="submit">Search</button>
+        </form>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
         <ul class="primary-nav" id="primary-nav">
           ${navLink("index.html", "Home")}
@@ -60,6 +65,8 @@
         <a href="${R}factions/kamunabi.html">Kamunabi</a>
         <a href="${R}media/anime.html">Anime</a>
         <a href="${R}fun/community.html">Board</a>
+        <a href="${R}search.html">Search</a>
+        <a href="${R}faq.html">FAQ</a>
         <a href="${R}sitemap.html">Map</a>
         <a href="${R}about.html">About</a>
       </div>
@@ -91,6 +98,7 @@
           <a href="${R}fun/index.html">Fun of the manga</a> · <a href="${R}fun/community.html">Sunday board</a><br>
           <a href="${R}blades/index.html">Enchanted Blades</a> · <a href="${R}arcs/index.html">Story arcs</a><br>
           <a href="${R}analysis/index.html">Essays</a> · <a href="${R}world/glossary.html">Glossary</a><br>
+          <a href="${R}search.html">Search</a> · <a href="${R}faq.html">FAQ</a><br>
           <a href="${R}about.html">About</a> · <a href="${R}sitemap.html">Site map</a> · <a href="${R}privacy.html">Privacy</a></p>
         </div>
       </div>
