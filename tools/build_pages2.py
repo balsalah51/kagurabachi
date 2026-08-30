@@ -3,7 +3,7 @@ from pathlib import Path
 import importlib.util
 
 spec = importlib.util.spec_from_file_location("bp", "/workspace/tools/build_pages.py")
-# Don't re-run build_pages on import — duplicate the helpers instead.
+# Don't re-run build_pages on import, duplicate the helpers instead.
 
 ROOT = Path("/workspace")
 HEAD = """<!DOCTYPE html>
@@ -11,7 +11,7 @@ HEAD = """<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title} — Kagurabachi Archive</title>
+  <title>{title} · Kagurabachi Archive</title>
   <meta name="description" content="{desc}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,7 +58,7 @@ page("manga/index.html", "Manga Guide", "Kagurabachi manga guide: volumes, chapt
      + hero("Publication database", "Manga Guide", "漫画ガイド", "Kanzenshuu-style notes on how Kagurabachi exists as paper and pixels: Jump, tankōbon, English editions, covers, and color pages.")
      + """
      <article class="article">
-       <p>Kagurabachi began in <em>Weekly Shōnen Jump</em> on 19 September 2023. Takeru Hokazono — Osaka-born, 2000 — had already placed with the one-shot <em>Enten</em> at the Tezuka Awards. The serial is the first long work. VIZ and MANGA Plus run the English simulpub. Jump Comics volumes started 2 February 2024 in Japan; VIZ’s first English hardcover-style tankōbon arrived 5 November 2024.</p>
+       <p>Kagurabachi began in <em>Weekly Shōnen Jump</em> on 19 September 2023. Takeru Hokazono, Osaka-born, 2000, had already placed with the one-shot <em>Enten</em> at the Tezuka Awards. The serial is the first long work. VIZ and MANGA Plus run the English simulpub. Jump Comics volumes started 2 February 2024 in Japan; VIZ’s first English hardcover-style tankōbon arrived 5 November 2024.</p>
        <p>As of May 2026 there are <strong>11</strong> Japanese volumes. Volume 12 is listed for 4 September 2026. Part 1 of the story closes around chapter 115 (“Swordsmith”). Part 2 opens on the Seitei War. Circulation passed 4 million by April 2026. An anime from Cypic, directed by Tetsuya Takeuchi, is scheduled for April 2027 (Crunchyroll outside Japan).</p>
      </article>
      <div class="grid">
@@ -79,8 +79,8 @@ VOLS = [
     ("07", "Night Battle", "夜戦", "2025-05-02", "978-4-08-884413-8", "2026-05-05", "978-1-9747-6574-4", "57–65", "Samura, Chihiro, Iori", "Night blue, sunglasses, hotel dark", "The false deaths. Owl over Japan. Operation: Easy Does It."),
     ("08", "Dawn", "夜明け", "2025-07-04", "978-4-08-884566-1", "2026-08-04", "978-1-9747-1650-0", "66–74", "Chihiro, Iori, Hiruhiko", "Hotel silhouette under Owl", "Iori’s past. Malediction spoken aloud. Samura walks into the duel."),
     ("09", "Enten", "淵天", "2025-10-03", "978-4-08-884653-8", "2026-11-03", "978-1-9747-6845-5", "75–86", "Chihiro", "Single-figure Enten jacket", "Enten vs Tobimune. Kunishige’s brief, said cleanly. Samura opens his eyes."),
-    ("10", "The Swordsmen", "剣士たち", "2026-01-05", "978-4-08-884740-5", "TBD", "—", "87–95", "Natsuki, Hokuto, Uruha, Yura", "Four-man war ensemble", "Kasen’s leak. HQ infiltration. Yura starts spending Shinuchi at range."),
-    ("11", "Heroes", "英雄", "2026-05-01", "978-4-08-885102-0", "TBD", "—", "96–105", "Chihiro, goldfish, snow", "Snow white, Aka &amp; Kuro, Enten raised", "Yukisada, the vessel, the cell. The Sword Master stands up in Yura."),
+    ("10", "The Swordsmen", "剣士たち", "2026-01-05", "978-4-08-884740-5", "TBD", ": ", "87–95", "Natsuki, Hokuto, Uruha, Yura", "Four-man war ensemble", "Kasen’s leak. HQ infiltration. Yura starts spending Shinuchi at range."),
+    ("11", "Heroes", "英雄", "2026-05-01", "978-4-08-885102-0", "TBD", ": ", "96–105", "Chihiro, goldfish, snow", "Snow white, Aka &amp; Kuro, Enten raised", "Yukisada, the vessel, the cell. The Sword Master stands up in Yura."),
 ]
 
 rows = "".join(
@@ -99,7 +99,7 @@ page("manga/volumes.html", "Volume Guide", "Kagurabachi tankōbon volume guide w
      </table></div>
      <h2>Volume summaries</h2>
      """ + "".join(
-         f"<h3>Vol. {n} — {title}</h3><p>{summary} <em>Palette:</em> {pal}.</p>"
+         f"<h3>Vol. {n}, {title}</h3><p>{summary} <em>Palette:</em> {pal}.</p>"
          for n, title, jp, jp_d, isbn_j, en_d, isbn_e, chs, faces, pal, summary in VOLS
      )
      + "<p>Volume 12 (4 September 2026, ISBN 978-4-08-885177-8) is expected to close Part 1 (chs. 106–115) and open the war book.</p>")
@@ -141,7 +141,7 @@ for v in VOLS:
 
 page("manga/covers.html", "Cover Studies", "Original color reconstructions of Kagurabachi volume jackets based on published cover descriptions.",
      crumb("index.html", "Manga Guide", "Cover Studies")
-     + hero("Color documentation", "Cover Studies", "表紙研究", "These are not official illustrations. They are archive reconstructions of palette, lockup, and stated cover figures — the Kanzenshuu habit of documenting a jacket when you cannot reprint it.")
+     + hero("Color documentation", "Cover Studies", "表紙研究", "These are not official illustrations. They are archive reconstructions of palette, lockup, and stated cover figures, the Kanzenshuu habit of documenting a jacket when you cannot reprint it.")
      + '<div class="grid">' + "".join(cards) + "</div>"
      + """<h2>How to read a Hokazono jacket</h2>
      <article class="article">
@@ -191,7 +191,7 @@ CHAPTERS = [
     (113, "Rock", "石"), (114, "Kunishige Rokuhira", "六平国重"), (115, "Swordsmith", "刀匠"),
     (116, "Princess", "姫"), (117, "The Irishima Talks", "杁島会談"),
     (118, "The Irishima Talks, Part 2", "杁島会談 弐"), (119, "The Irishima Talks, Part 3", "杁島会談 参"),
-    (120, "The Irishima Talks, Part 4", "杁島会談 肆"), (121, "The Irishima Talks — END", "杁島会談 終"),
+    (120, "The Irishima Talks, Part 4", "杁島会談 肆"), (121, "The Irishima Talks, END", "杁島会談 終"),
     (122, "Start", "始動"), (123, "Chiaki", "千晃"), (124, "Powerless", "無力"),
     (125, "Smelting", "製鉄"), (126, "Fire", "火"),
 ]
@@ -204,7 +204,7 @@ page("manga/chapters.html", "Chapter Index", "Complete Kagurabachi chapter title
 
 page("manga/color-pages.html", "Color Pages & Pulls", "How Kagurabachi uses Jump color openings and volume jackets, documented without hosting official art.",
      crumb("index.html", "Manga Guide", "Color Pages")
-     + hero("Illustration archive", "Color Pages &amp; Pulls", "カラーページ", "A pull, in this archive, is a documented color moment — lead color, center color, jacket, anime teaser — not a scan.")
+     + hero("Illustration archive", "Color Pages &amp; Pulls", "カラーページ", "A pull, in this archive, is a documented color moment, lead color, center color, jacket, anime teaser, not a scan.")
      + """
      <article class="article">
        <h2>What Jump actually prints</h2>
@@ -215,13 +215,13 @@ page("manga/color-pages.html", "Color Pages & Pulls", "How Kagurabachi uses Jump
          <tbody>
            <tr><td>Issue lead color</td><td>Issue date, position, figures, palette, any author comment</td><td>Vol. 1 announcement color: Chihiro, Kuro, ruby ground</td></tr>
            <tr><td>Interior color</td><td>Chapter number, whether it reprints in tankōbon</td><td>Early Sojo clash pages keep cyan lightning against red type</td></tr>
-           <tr><td>Tankōbon jacket</td><td>Faces, background, logo color — see <a href="covers.html">Cover Studies</a></td><td>Vol. 6 yin-yang Uruha / Samura</td></tr>
+           <tr><td>Tankōbon jacket</td><td>Faces, background, logo color, see <a href="covers.html">Cover Studies</a></td><td>Vol. 6 yin-yang Uruha / Samura</td></tr>
            <tr><td>Promo / anime</td><td>Studio, date, which fish appear</td><td>Cypic teaser: Aka, Kuro, Nishiki behind Chihiro and Enten</td></tr>
          </tbody>
        </table></div>
        <p>If you own the volume, the legal “pull” is the book in your hands. This site will describe the page, not replace it. Buy the Jump Comics / VIZ edition; do not send us scans.</p>
        <h2>Spine &amp; printing notes</h2>
-       <p>Japanese Jump Comics spines for the series run a dark field with the カグラバチ logotype. A shelf of the first eleven volumes reads as a red-to-black bar — useful if you are collecting for the same reason Kanzenshuu collects spine art. English VIZ spines follow VIZ’s current Jump trade dress; they are a parallel object, not a color-matched set.</p>
+       <p>Japanese Jump Comics spines for the series run a dark field with the カグラバチ logotype. A shelf of the first eleven volumes reads as a red-to-black bar, useful if you are collecting for the same reason Kanzenshuu collects spine art. English VIZ spines follow VIZ’s current Jump trade dress; they are a parallel object, not a color-matched set.</p>
      </article>
      """)
 
@@ -244,9 +244,9 @@ page("arcs/vs-sojo.html", "Vs. Sojo Arc", "Summary and analysis of Kagurabachi's
      + """<div class="layout"><article class="article">
      <h2>Summary</h2>
      <p>Three years after the raid, Chihiro and Shiba work the Tokyo underworld. Char Kyonagi says she has seen an Enchanted Blade. Norisaku Madoka confirms Sojo has Cloud Gouger. Azami of the Kamunabi wants Chihiro away from that man. Chihiro stays.</p>
-     <p>Sojo takes Char. The Anti-Cloud Gouger Special Forces — six people built to solve one sword — stage an ambush while Chihiro hits the compound. Four of the six die. Hagiwara loses his legs. Kazane loses an arm. Chihiro loses an arm and still finds the True Realm. Enten cuts Cloud Gouger. Sojo chooses Datenseki suicide over a quiet death.</p>
+     <p>Sojo takes Char. The Anti-Cloud Gouger Special Forces, six people built to solve one sword, stage an ambush while Chihiro hits the compound. Four of the six die. Hagiwara loses his legs. Kazane loses an arm. Chihiro loses an arm and still finds the True Realm. Enten cuts Cloud Gouger. Sojo chooses Datenseki suicide over a quiet death.</p>
      <h2>Why the arc matters</h2>
-     <p>This is the series teaching you the rules: Lifelong Contracts, Datenseki as a bomb, government squads that are not enough, and a protagonist who will spend his body without spending Char. Sojo is the dark mirror of Kunishige-love. Everything later — auction, bearers, Magatsumi — is a larger version of this argument.</p>
+     <p>This is the series teaching you the rules: Lifelong Contracts, Datenseki as a bomb, government squads that are not enough, and a protagonist who will spend his body without spending Char. Sojo is the dark mirror of Kunishige-love. Everything later, auction, bearers, Magatsumi, is a larger version of this argument.</p>
      <p class="related"><a href="../characters/sojo.html">Sojo</a><a href="../characters/char.html">Char</a><a href="../blades/cloud-gouger.html">Cloud Gouger</a></p>
      </article></div>""")
 
@@ -265,11 +265,11 @@ page("arcs/sword-bearer.html", "Sword Bearer Assassination Arc", "Part 1 climax 
      + hero("Chapters 47–115", "Sword Bearer Assassination", "所有者暗殺編", "Part 1. Longest arc. The contracts come due.")
      + """<div class="layout"><article class="article">
      <p class="note"><strong>Full spoilers</strong> for the end of Part 1.</p>
-     <h2>Movement one — Uruha and Samura</h2>
+     <h2>Movement one, Uruha and Samura</h2>
      <p>Chihiro and Hakuri are sent to keep Yoji Uruha alive. Hiruhiko boards the train. The fight falls into a kabuki house. At Senkutsuji, Hakuri returns Tobimune to Samura, who clears the temple and then cuts Uruha down. It looks like a Hishaku pact. It is Suzaku: kill the contract, keep the man.</p>
-     <h2>Movement two — Iori</h2>
+     <h2>Movement two, Iori</h2>
      <p>Samura hangs Owl over the country. The Masumi take Iori to the Kyoto Bloodshed Hotel. Chihiro learns Iai by copying Kuguri and the house style. Iori’s seal breaks. Hiruhiko wrecks the hotel with Play. Samura arrives. Feathers, banquet, goldfish.</p>
-     <h2>Movement three — the basement</h2>
+     <h2>Movement three, the basement</h2>
      <p>Chihiro tells Samura the truth Kunishige left in Enten. Samura opens his eyes. In Tokyo, Kasen’s leak is on the table, Kudo dies for Hakuri, Uruha walks again, Yura spends Magatsumi without drawing it, Yukisada sits in the barrier. Shiba dumps the fight onto the street. Chihiro and Samura meet Yura. Yura, losing, gives the body to Akemura.</p>
      <h2>End of Part 1</h2>
      <p>Magatsumi breaks Enten. Samura’s flames go black. He buys Chihiro a corridor and dies. Tobimune goes to Iori. Akemura is loose in the Kamunabi. Chapters 106–115 spend the last of the present tense and hand the book to a swordsmith and a princess on Irishima.</p>
@@ -281,9 +281,9 @@ page("arcs/seitei-war.html", "Seitei War Arc", "Part 2 of Kagurabachi: the Seite
      + hero("Part 2 · Ch. 116–", "Seitei War Arc", "斉廷戦争編", "The war the jackets called heroic. The talks, the ore, the woman who could see.")
      + """<div class="layout"><article class="article">
      <h2>What the present already told us</h2>
-     <p>Shokoku rose from the sea. Irishima had Datenseki. Japan took it. The Mikaboshi — old sorcerer kings the Soga once drove off the mainland — came back with bodies that could survive the stone. The Sorcery Bureau became an army, then the Kamunabi. A year and five months in, Kunishige’s blades reversed the front. After the treaty, Akemura used Malediction anyway.</p>
+     <p>Shokoku rose from the sea. Irishima had Datenseki. Japan took it. The Mikaboshi, old sorcerer kings the Soga once drove off the mainland, came back with bodies that could survive the stone. The Sorcery Bureau became an army, then the Kamunabi. A year and five months in, Kunishige’s blades reversed the front. After the treaty, Akemura used Malediction anyway.</p>
      <h2>Part 2 on the page</h2>
-     <p>The uncollected chapters open on Chiaki Soga — Chihiro’s mother, Princess Soga, foresight as inherited proof of Izanami — and on the Irishima talks. Shiba is still a Soga guardian. Mashiro is still alive. Kunishige is still a picky weapons dealer who has not yet looked at the ore. The smelting chapters are the archive’s smithing manual: how a pair of eyes made a mineral into seven national sins.</p>
+     <p>The uncollected chapters open on Chiaki Soga, Chihiro’s mother, Princess Soga, foresight as inherited proof of Izanami, and on the Irishima talks. Shiba is still a Soga guardian. Mashiro is still alive. Kunishige is still a picky weapons dealer who has not yet looked at the ore. The smelting chapters are the archive’s smithing manual: how a pair of eyes made a mineral into seven national sins.</p>
      <p>This arc is unfinished. Entries will expand as Jump prints them. Until then, the <a href="../world/index.html">timeline</a> holds the dated facts.</p>
      </article></div>""")
 
@@ -303,7 +303,7 @@ page("analysis/enten-purpose.html", "What Enten Was Forged For", "Analysis of En
      crumb("index.html", "Analysis", "Enten’s purpose")
      + hero("Essay", "What Enten was forged for", "淵天の目的", "Kunishige did not give his son a heirloom. He gave him a retraction.")
      + """<article class="article">
-     <p>The public knows six Enchanted Blades. The Kamunabi want six Enchanted Blades. Chihiro’s whole early swagger — the seventh sword, the secret cellar — reads as shōnen inheritance. Chapter 83 and the Kyoto duel with Samura retract that reading. Enten exists because the other swords could not be broken on an anvil. Its True Realm is Magatsumi’s death. Nishiki’s resistance kit is the brief made visible.</p>
+     <p>The public knows six Enchanted Blades. The Kamunabi want six Enchanted Blades. Chihiro’s whole early swagger, the seventh sword, the secret cellar, reads as shōnen inheritance. Chapter 83 and the Kyoto duel with Samura retract that reading. Enten exists because the other swords could not be broken on an anvil. Its True Realm is Magatsumi’s death. Nishiki’s resistance kit is the brief made visible.</p>
      <p>That is why the goldfish matter as craft, not mascot. Kuro, Aka, and Nishiki are peacetime objects. A wartime blade manifests weather, flowers, banquet ghosts. Enten manifests the house. Hokazono’s interview line about koi versus goldfish is the same argument in the real world: the long fish looked like a weapon; the bowl fish looked like a life.</p>
      <p>When Magatsumi finally breaks Enten, the book is being literal. A retraction can fail. Samura’s black Suzaku pausing the disintegration is the support blade doing the job Kunishige assigned it eighteen years late. Chihiro’s notes toward a <em>new</em> Enten are the smith’s education catching up to the father’s. Revenge got him to the door. Inheritance is the forge.</p>
      <blockquote class="pull">The seventh blade is the only one whose success condition is fewer blades.</blockquote>
@@ -313,7 +313,7 @@ page("analysis/malediction.html", "The Malediction", "Analysis of Magatsumi’s 
      crumb("index.html", "Analysis", "The Malediction")
      + hero("Essay", "The Malediction", "蠱毒", "Two hundred thousand people after a peace. The Kamunabi called it a victory anyway.")
      + """<article class="article">
-     <p>Malediction is not one of Magatsumi’s insect names. It is an extension — True Realm as policy. Akemura decides the islanders should end, and the blade learns a wider mouth. Flowers are the visual because the sword already ate people as gardens; he simply asked for a field the size of a nation.</p>
+     <p>Malediction is not one of Magatsumi’s insect names. It is an extension, True Realm as policy. Akemura decides the islanders should end, and the blade learns a wider mouth. Flowers are the visual because the sword already ate people as gardens; he simply asked for a field the size of a nation.</p>
      <p>The other bearers fail in the room and then succeed in the press. Kunishige hides. Samura blinds himself twice: once as training, again as fatherhood. Kasen, years later, still thinks the blades are a path to order, which is how you get a director leaking a smith’s address to the Hishaku. The cover-up is not a twist. It is the water the present-day plot has been swimming in since page one.</p>
      <p>Yura’s conversion is the scary political joke. He wanted Akemura dead to open a contract. He meets the man and recognizes a colleague. Chihiro’s generation inherits both the flowers and the lie about who planted them.</p>
      </article>""")
@@ -358,12 +358,12 @@ page("world/index.html", "World & Timeline", "Kagurabachi in-universe timeline f
      </div>
      """)
 
-page("world/datenseki.html", "Datenseki", "The ore that makes Enchanted Blades — and explodes everyone else.",
+page("world/datenseki.html", "Datenseki", "The ore that makes Enchanted Blades, and explodes everyone else.",
      crumb("index.html", "World", "Datenseki")
      + hero("Material", "Datenseki", "奪天石", "About 250 kilograms known. One pair of eyes ever made it safe.")
      + """<article class="article">
-     <p>Datenseki amplifies spirit energy the way the blades do, without the stabilizing cut. Unprocessed, it pops the user. Kunishige’s sight let him smith it into katana that overflow as shapes instead of craters. Sojo spent Char’s clan trying to fake that sight and produced stones that hold for a few minutes — long enough to kill Tenri, long enough to arm Hishaku infantry.</p>
-     <p>The war is, at the mineral level, a fight over a vein on Irishima. Everything else — clans, contracts, flowers — is what people did with a quarter-ton of rock.</p>
+     <p>Datenseki amplifies spirit energy the way the blades do, without the stabilizing cut. Unprocessed, it pops the user. Kunishige’s sight let him smith it into katana that overflow as shapes instead of craters. Sojo spent Char’s clan trying to fake that sight and produced stones that hold for a few minutes, long enough to kill Tenri, long enough to arm Hishaku infantry.</p>
+     <p>The war is, at the mineral level, a fight over a vein on Irishima. Everything else, clans, contracts, flowers, is what people did with a quarter-ton of rock.</p>
      </article>""")
 
 page("world/sorcery.html", "Sorcery", "How spirit energy, innate arts, and Enchanted Blades interact in Kagurabachi.",
@@ -371,7 +371,7 @@ page("world/sorcery.html", "Sorcery", "How spirit energy, innate arts, and Encha
      + hero("System", "Sorcery", "妖術", "Yōjutsu and yōtō share a kanji. The blades are sorcery that left the body and did not come back.")
      + """<article class="article">
      <p>Civilian sorcerers handle small jobs. The Kamunabi exist because some jobs are national. Innate arts on this site include Shiba’s teleport, Azami’s Coin, Hakuri’s Isou and Storehouse, Hiyuki’s Flame Bone, Tafuku’s duel domain, Char’s regeneration, Hagiwara’s magnetism, Natsuki’s Lightning Menace, Hiruhiko’s Blood Crane, Kuguri’s Twilight Wave, Toto’s blood tracking.</p>
-     <p>A Lifelong Contract shuts those nerves off. Cut the contract without cutting the person — Samura’s specialty — and the old art limps back. Enchanted Blade extensions (True Realm, “dark power”) are what happens when intent, mortality, and Datenseki agree.</p>
+     <p>A Lifelong Contract shuts those nerves off. Cut the contract without cutting the person, Samura’s specialty, and the old art limps back. Enchanted Blade extensions (True Realm, “dark power”) are what happens when intent, mortality, and Datenseki agree.</p>
      <h3>Iai White Purity Style</h3>
      <p>Itsuo Shirakai’s speed school, mocked until it killed the mockers. Samura and Uruha are the famous students. Iori and Chihiro copy it; Kiri Shirakai wants to behead the founder for saying women cannot. Eyes closed is not theater. It is the curriculum.</p>
      </article>""")
@@ -382,15 +382,15 @@ page("collectibles/index.html", "Collectibles", "Kagurabachi volumes, ISBNs, cir
      + """
      <h2>Print</h2>
      <ul>
-       <li><strong>Jump Comics</strong> (Shueisha) — Japanese tankōbon, 11 volumes as of 1 May 2026. Start ISBN 978-4-08-883819-9.</li>
-       <li><strong>VIZ Media</strong> — English editions from 5 November 2024. Vols. 1–8 have announced dates through August 2026; later volumes TBA.</li>
-       <li><strong>Weekly Shōnen Jump</strong> — the serialization object. Color leads are issue-specific.</li>
+       <li><strong>Jump Comics</strong> (Shueisha), Japanese tankōbon, 11 volumes as of 1 May 2026. Start ISBN 978-4-08-883819-9.</li>
+       <li><strong>VIZ Media</strong>, English editions from 5 November 2024. Vols. 1–8 have announced dates through August 2026; later volumes TBA.</li>
+       <li><strong>Weekly Shōnen Jump</strong>, the serialization object. Color leads are issue-specific.</li>
        <li>French edition via Kana (noted on Volume 11 promo). Other territorial editions follow local Jump licenses.</li>
      </ul>
      <h2>Circulation &amp; awards</h2>
      <p>350k (Jul 2024) → 1M (Oct 2024) → 2.2M (May 2025) → 3M (Oct 2025) → 4M+ (Apr 2026). Next Manga Award 2024 (print). Nominations: Shogakukan, Kodansha, Eisner (Asia). 2026 Daruma for Best Action Manga. BookScan and NYT graphic lists in North America from the first VIZ volume.</p>
      <h2>Anime object</h2>
-     <p>Cypic / Takeuchi / Keigo Sasaki designs. World-tour first-20-minutes from July 2026 (Anime Expo, Japan Expo, AnimagiC, Anime NYC) before the April 2027 broadcast. Crunchyroll worldwide (with listed exceptions). Any “collectible” from that tour is a ticket and a memory unless a formal booklet is sold — record the SKU if one appears.</p>
+     <p>Cypic / Takeuchi / Keigo Sasaki designs. World-tour first-20-minutes from July 2026 (Anime Expo, Japan Expo, AnimagiC, Anime NYC) before the April 2027 broadcast. Crunchyroll worldwide (with listed exceptions). Any “collectible” from that tour is a ticket and a memory unless a formal booklet is sold, record the SKU if one appears.</p>
      <h2>Figures &amp; merch</h2>
      <p>Licensed goods track Jump’s usual partners (Jump Shop, volume-launch storefronts, later anime makers). This archive will log official items with release date and manufacturer when they exist. Unlicensed statues and bootleg keychains are not listed.</p>
      <p class="related"><a href="../manga/volumes.html">Volume ISBNs</a><a href="../manga/covers.html">Jacket studies</a></p>

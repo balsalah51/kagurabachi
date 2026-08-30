@@ -9,7 +9,7 @@ HEAD = """<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title} — Kagurabachi Archive</title>
+  <title>{title} · Kagurabachi Archive</title>
   <meta name="description" content="{desc}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +71,7 @@ def infobox(name, jp, portrait_class, caption, rows):
     </aside>"""
 
 
-# ——— Characters index ———
+# : : :  Characters index : : : 
 page(
     "characters/index.html",
     "Characters",
@@ -125,9 +125,9 @@ character(
     "Chihiro Rokuhira",
     "六平 千鉱",
     "Enchanted Blade bearer · Enten",
-    "The swordsmith’s son who inherited the seventh blade — and, later, the reason it was made.",
+    "The swordsmith’s son who inherited the seventh blade, and, later, the reason it was made.",
     "p-chihiro",
-    "Decorative mark — goldfish of Enten. Not official art.",
+    "Decorative mark, goldfish of Enten. Not official art.",
     [
         ("Age", "18"),
         ("Birthday", "August 11"),
@@ -143,12 +143,12 @@ character(
       <ol><li>Overview</li><li>Personality</li><li>Abilities</li><li>Story role</li><li>Notes</li></ol>
     </nav>
     <h2>Overview</h2>
-    <p>Chihiro grew up in isolation at his father’s workshop, training as a smith and as a swordsman in the quiet years after the Seitei War. Three years before the main story, the Hishaku murdered Kunishige and stole the six wartime Enchanted Blades. Chihiro survived, took Enten — the seventh blade, forged with him as a teenager — and went into the underworld with Togo Shiba to recover the swords and kill the men who ordered the raid.</p>
+    <p>Chihiro grew up in isolation at his father’s workshop, training as a smith and as a swordsman in the quiet years after the Seitei War. Three years before the main story, the Hishaku murdered Kunishige and stole the six wartime Enchanted Blades. Chihiro survived, took Enten, the seventh blade, forged with him as a teenager, and went into the underworld with Togo Shiba to recover the swords and kill the men who ordered the raid.</p>
     <p>He is typically stoic and economical with words, but he will not spend innocent lives for the hunt. That line is the difference between him and almost every adult who touched the blades during the war.</p>
     <h2>Personality</h2>
-    <p>Revenge is the engine, not the whole machine. Chihiro observes before he draws. He copies swordsmanship by watching — Uruha, Samura, Iori — and treats Enten as a partner rather than a trophy. After he learns what the Seitei War actually cost, the mission shifts: Enten was never only a weapon of succession. Kunishige made it to <em>end</em> the other blades.</p>
+    <p>Revenge is the engine, not the whole machine. Chihiro observes before he draws. He copies swordsmanship by watching, Uruha, Samura, Iori, and treats Enten as a partner rather than a trophy. After he learns what the Seitei War actually cost, the mission shifts: Enten was never only a weapon of succession. Kunishige made it to <em>end</em> the other blades.</p>
     <h2>Abilities</h2>
-    <p>Enten manifests spirit energy as water and three goldfish. <strong>Kuro</strong> is the black fish: flying slashes, later extended as Kuro: Shred. <strong>Aka</strong> is the red fish: absorb an attack, then spend it. <strong>Nishiki</strong> is the tricolor cloak: speed, density, and a built-in resistance to other Enchanted Blade ailments — Enten’s purpose showing through the technique list.</p>
+    <p>Enten manifests spirit energy as water and three goldfish. <strong>Kuro</strong> is the black fish: flying slashes, later extended as Kuro: Shred. <strong>Aka</strong> is the red fish: absorb an attack, then spend it. <strong>Nishiki</strong> is the tricolor cloak: speed, density, and a built-in resistance to other Enchanted Blade ailments, Enten’s purpose showing through the technique list.</p>
     <p>He briefly contracted the dying Cloud Gouger after Sojo’s death and spent its last charges at the Rakuzaichi. He is a keen enough student to fake Iai White Purity after watching its practitioners.</p>
     <h2>Story role</h2>
     <p>Chihiro is the viewpoint through Vs. Sojo, the Rakuzaichi, and the Sword Bearer Assassination arc. He hands Magatsumi to the Kamunabi in exchange for keeping Enten and working inside the system. By the end of Part 1 he has seen the Sword Master wear another man’s body, watched Samura spend his life, and started thinking like a smith again: <span class="spoiler">notes for a new Enten, and even a new Cloud Gouger, from the pieces he still holds.</span></p>
@@ -181,10 +181,10 @@ character(
     ],
     """
     <h2>Overview</h2>
-    <p>Before the Seitei War, Kunishige sold swords to people he could stand, which meant he barely ate. The Kamunabi’s Datenseki research went nowhere for two years. Shiba believed Kunishige’s eyes — his ability to see what the ore was doing — were the only way to make the mineral usable. He was right. The Enchanted Blades turned the war. They also made possible the Malediction.</p>
+    <p>Before the Seitei War, Kunishige sold swords to people he could stand, which meant he barely ate. The Kamunabi’s Datenseki research went nowhere for two years. Shiba believed Kunishige’s eyes, his ability to see what the ore was doing, were the only way to make the mineral usable. He was right. The Enchanted Blades turned the war. They also made possible the Malediction.</p>
     <p>After Akemura used Magatsumi to kill the remaining island population, Kunishige confiscated all six blades, hid with help from Azami and Shiba, and raised Chihiro in a workshop over a cellar full of swords he could not break. Every attempt to destroy them failed. Enten, forged with his son nearly fifteen years after the war, was the first blade built as a counter rather than a weapon of state.</p>
     <h2>The goldfish</h2>
-    <p>The three goldfish in the house — later Kuro, Aka, and Nishiki — are the emotional core of Enten. Hokazono has said he almost used koi, then realized goldfish better recorded the small contest of who the fish liked more. That domestic joke becomes Chihiro’s entire fighting style.</p>
+    <p>The three goldfish in the house, later Kuro, Aka, and Nishiki, are the emotional core of Enten. Hokazono has said he almost used koi, then realized goldfish better recorded the small contest of who the fish liked more. That domestic joke becomes Chihiro’s entire fighting style.</p>
     <h2>Death</h2>
     <p>Three Hishaku sorcerers raided the house, killed Kunishige in front of Chihiro, and took the six wartime blades. Enten stayed with the son. The Kamunabi later learned a director had leaked the address. The smith’s last work is still trying to finish the job he could not do with a hammer.</p>
     """,
@@ -208,7 +208,7 @@ character(
     ],
     """
     <h2>Overview</h2>
-    <p>Shiba is loud, childish on purpose, and one of the most dangerous sorcerers in the book. He grew up with Kunishige, guarded the Soga clan before the war, joined the Kamunabi when the island rose, and walked away after the smith disappeared. In the present he is Chihiro’s adult — the one who takes him to Cafe Haru Haru, the one who pulls him out of rooms he should not die in.</p>
+    <p>Shiba is loud, childish on purpose, and one of the most dangerous sorcerers in the book. He grew up with Kunishige, guarded the Soga clan before the war, joined the Kamunabi when the island rose, and walked away after the smith disappeared. In the present he is Chihiro’s adult, the one who takes him to Cafe Haru Haru, the one who pulls him out of rooms he should not die in.</p>
     <p>His teleportation is the practical magic of the series: infiltration, extraction, civilian evacuation. Before the war he was already famous as a teenager. He trained under Ichiki with Azami. He is not a blade bearer. He does not need to be.</p>
     """,
     [("Chihiro", "chihiro.html"), ("Kamunabi", "../factions/index.html")],
@@ -219,7 +219,7 @@ character(
     "Hakuri Sazanami",
     "漣 伯理",
     "Sazanami clan · Storehouse",
-    "The son the auction house threw away — and the only living Sazanami to hold both Isou and the Storehouse.",
+    "The son the auction house threw away, and the only living Sazanami to hold both Isou and the Storehouse.",
     "p-hakuri",
     "Decorative mark. Not official art.",
     [
@@ -230,7 +230,7 @@ character(
     ],
     """
     <h2>Overview</h2>
-    <p>Hakuri was beaten into believing he had no talent. The clan’s Isou — a burial-force technique — would not answer him because he was scattering his own spirit energy. When he chose Chihiro over the Rakuzaichi, the seal on that self-doubt broke. He is one of two people in clan history to wield both Isou and the Storehouse, the subspace the family head uses to warehouse loot and human beings.</p>
+    <p>Hakuri was beaten into believing he had no talent. The clan’s Isou, a burial-force technique, would not answer him because he was scattering his own spirit energy. When he chose Chihiro over the Rakuzaichi, the seal on that self-doubt broke. He is one of two people in clan history to wield both Isou and the Storehouse, the subspace the family head uses to warehouse loot and human beings.</p>
     <h2>Storehouse</h2>
     <p>Hakuri can register a person and their charged possessions, then move blades across the country. That single trick is why the Kamunabi bother to keep Chihiro: the bearers can be un-armed and re-armed without a siege. It is also why the Hishaku hunt him. The auction was a building. Hakuri is the building that walks.</p>
     """,
@@ -242,7 +242,7 @@ character(
     "Char Kyonagi",
     "鏡凪 シャル",
     "Kyonagi clan",
-    "The last child of a clan hunted for the way their flesh heals — Sojo’s experiment, Chihiro’s first rescue that was not a sword.",
+    "The last child of a clan hunted for the way their flesh heals, Sojo’s experiment, Chihiro’s first rescue that was not a sword.",
     "p-char",
     "Decorative mark. Not official art.",
     [
@@ -253,7 +253,7 @@ character(
     ],
     """
     <h2>Overview</h2>
-    <p>Sojo wanted Datenseki that did not explode. He thought Kyonagi cells were the stabilizer Kunishige’s eyes had been. Char and her mother were inventory. Chihiro’s decision to keep her — against Azami’s advice to avoid Sojo — is the first time the revenge plot has to share the page with a living person who is not a combatant.</p>
+    <p>Sojo wanted Datenseki that did not explode. He thought Kyonagi cells were the stabilizer Kunishige’s eyes had been. Char and her mother were inventory. Chihiro’s decision to keep her, against Azami’s advice to avoid Sojo, is the first time the revenge plot has to share the page with a living person who is not a combatant.</p>
     <p>She can close her own wounds and other people’s. That is why everyone wants her and why the archive lists her with the fighters.</p>
     """,
     [("Sojo", "sojo.html"), ("Vs. Sojo Arc", "../arcs/vs-sojo.html")],
@@ -274,7 +274,7 @@ character(
     ],
     """
     <h2>Overview</h2>
-    <p>After Iori’s mother died, Samura tried to be a parent and a war criminal in the same house. When Yura came to the door with the truth of the Malediction, Samura had the Masumi erase him from her memory and sent her away. The spell frayed because she still loved him. It broke when she moved to shield a classmate — Iai, eyes shut, the way the style is supposed to be used.</p>
+    <p>After Iori’s mother died, Samura tried to be a parent and a war criminal in the same house. When Yura came to the door with the truth of the Malediction, Samura had the Masumi erase him from her memory and sent her away. The spell frayed because she still loved him. It broke when she moved to shield a classmate, Iai, eyes shut, the way the style is supposed to be used.</p>
     <p>The Kyoto Bloodshed Hotel is where she decides she wants the memories. Everything after that is a daughter walking toward a man who already spent himself trying to keep her out of the ledger.</p>
     """,
     [("Samura", "samura.html"), ("Sword Bearer Arc", "../arcs/sword-bearer.html")],
@@ -285,7 +285,7 @@ character(
     "Hiyuki Kagari",
     "香刈 緋雪",
     "Kamunabi elite",
-    "The organization’s sharpest fighter without an Enchanted Blade — Flame Bone of the Starving, short temper, actual principles.",
+    "The organization’s sharpest fighter without an Enchanted Blade, Flame Bone of the Starving, short temper, actual principles.",
     "p-hiyuki",
     "Decorative mark. Not official art.",
     [
@@ -296,7 +296,7 @@ character(
     ],
     """
     <h2>Overview</h2>
-    <p>Hiyuki is assigned to problems the Kamunabi cannot file. Flame Bone is a learned, monstrous sorcery that lets her stand in front of Shinuchi without becoming a footnote. She starts as Chihiro’s obstacle — the state with a personality — and becomes the reason the Rakuzaichi actually ends: she will burn the auction if the alternative is leaving people in the Storehouse.</p>
+    <p>Hiyuki is assigned to problems the Kamunabi cannot file. Flame Bone is a learned, monstrous sorcery that lets her stand in front of Shinuchi without becoming a footnote. She starts as Chihiro’s obstacle, the state with a personality, and becomes the reason the Rakuzaichi actually ends: she will burn the auction if the alternative is leaving people in the Storehouse.</p>
     <p>Tafuku’s calm is the other half of the act. Together they are the Kamunabi as it wishes it looked.</p>
     """,
     [("Factions", "../factions/index.html"), ("Rakuzaichi Arc", "../arcs/rakuzaichi.html")],
@@ -321,7 +321,7 @@ character(
     <h2>Overview</h2>
     <p>Sojo is not Hishaku. He is a customer. They handed him Cloud Gouger in early October; he used it to chase Char and to chase the idea that he could mass-produce Kunishige. He is cruel, curious, and sincere about the smith in a way Chihiro recognizes with disgust.</p>
     <h2>Fight</h2>
-    <p>The Anti-Cloud Gouger Special Forces die around him. Chihiro loses an arm and still reaches the True Realm first. Enten cuts Cloud Gouger in half — the first time one of Kunishige’s wartime swords is shown to be mortal. Sojo fuses with unstable Datenseki rather than admit the experiment failed. The compound goes with him.</p>
+    <p>The Anti-Cloud Gouger Special Forces die around him. Chihiro loses an arm and still reaches the True Realm first. Enten cuts Cloud Gouger in half, the first time one of Kunishige’s wartime swords is shown to be mortal. Sojo fuses with unstable Datenseki rather than admit the experiment failed. The compound goes with him.</p>
     <p>Chihiro keeps the pieces. Even a dead blade can still spend a few charges of Mei.</p>
     """,
     [("Cloud Gouger", "../blades/cloud-gouger.html"), ("Vs. Sojo Arc", "../arcs/vs-sojo.html")],
@@ -389,7 +389,7 @@ character(
     ],
     """
     <h2>Overview</h2>
-    <p>Uruha was chosen young and never recovered from being chosen. Kunishige’s death empties him; Chihiro’s existence refills the oath. The Hishaku send Hiruhiko and Datenseki infantry at the train. Samura “kills” him at Senkutsuji — Suzaku, not betrayal — so the Lifelong Contract dies and Kumeyuri can be pulled off the board. Uruha wakes in a morgue with his old sorcery coming back and walks into the Kamunabi raid to keep Hakuri alive.</p>
+    <p>Uruha was chosen young and never recovered from being chosen. Kunishige’s death empties him; Chihiro’s existence refills the oath. The Hishaku send Hiruhiko and Datenseki infantry at the train. Samura “kills” him at Senkutsuji, Suzaku, not betrayal, so the Lifelong Contract dies and Kumeyuri can be pulled off the board. Uruha wakes in a morgue with his old sorcery coming back and walks into the Kamunabi raid to keep Hakuri alive.</p>
     """,
     [("Kumeyuri", "../blades/kumeyuri.html"), ("Samura", "samura.html")],
 )
@@ -406,7 +406,7 @@ character(
         ("Title", "Sword Master (Kensei)"),
         ("Blade", '<a href="../blades/magatsumi.html">Magatsumi / Shinuchi</a>'),
         ("Clan", "Soga (Chiaki’s younger brother)"),
-        ("War crime", "Malediction — ~200,000 civilians after the treaty"),
+        ("War crime", "Malediction, ~200,000 civilians after the treaty"),
     ],
     """
     <h2>Overview</h2>
@@ -432,12 +432,12 @@ character(
     ],
     """
     <h2>Overview</h2>
-    <p>Kyora is the Rakuzaichi in a person: polite, absolute, certain that the auction is civilization. Hakuri is a failed product until the boy becomes a rival Storehouse. Tenri dies on Datenseki trying to be useful. When Chihiro corners him in the collapsing subspace, Kyora unsheathes Magatsumi and almost becomes someone else. He dies as himself, which is the only kindness the book gives him — and he uses it to admit, too late, what he did to Hakuri.</p>
+    <p>Kyora is the Rakuzaichi in a person: polite, absolute, certain that the auction is civilization. Hakuri is a failed product until the boy becomes a rival Storehouse. Tenri dies on Datenseki trying to be useful. When Chihiro corners him in the collapsing subspace, Kyora unsheathes Magatsumi and almost becomes someone else. He dies as himself, which is the only kindness the book gives him, and he uses it to admit, too late, what he did to Hakuri.</p>
     """,
     [("Hakuri", "hakuri.html"), ("Rakuzaichi Arc", "../arcs/rakuzaichi.html")],
 )
 
-# ——— Blades ———
+# : : :  Blades : : : 
 page(
     "blades/index.html",
     "Enchanted Blades",
@@ -446,7 +446,7 @@ page(
     + hero("Yōtō 妖刀", "Enchanted Blades", "妖刀", "Seven katana Kunishige cut from Datenseki. Six won a war. The seventh was made to finish them.")
     + """
     <article class="article">
-      <p>An Enchanted Blade does not “cast” so much as overfill. Spirit energy becomes too large for the body and leaves as a shape — goldfish, clouds, flowers, feathers, oiran — that can be steered, seen through, and charged into the steel so the bearer can spend techniques while empty-handed. Most blades have three named techniques and a True Realm when the wielder’s intent locks with the sword. Magatsumi refuses the three-count.</p>
+      <p>An Enchanted Blade does not “cast” so much as overfill. Spirit energy becomes too large for the body and leaves as a shape, goldfish, clouds, flowers, feathers, oiran, that can be steered, seen through, and charged into the steel so the bearer can spend techniques while empty-handed. Most blades have three named techniques and a True Realm when the wielder’s intent locks with the sword. Magatsumi refuses the three-count.</p>
       <p><strong>Lifelong Contracts</strong> (Meimetsu Keiyaku) bind a blade to one nervous system. The bearer’s innate sorcery goes dark until the contract is cut. Magatsumi’s contract is the master key: if Akemura dies, the other five wartime bearers die with him. Destroy Magatsumi and the knot comes apart.</p>
     </article>
     <div class="grid">
@@ -467,7 +467,7 @@ def blade_page(slug, name, jp, lede, bclass, rows, article):
         + hero("Enchanted Blade", name, jp, lede)
         + f"""<div class="layout">
       <article class="article">{article}</article>
-      {infobox(name, jp, bclass, "Color field for this blade — not official steel.", rows)}
+      {infobox(name, jp, bclass, "Color field for this blade, not official steel.", rows)}
     </div>"""
     )
     page(f"blades/{slug}.html", name, lede, body)
@@ -477,7 +477,7 @@ blade_page(
     "enten",
     "Enten",
     "淵天",
-    "The seventh blade. Forged after the war, with Chihiro, to confront the other six — especially Magatsumi.",
+    "The seventh blade. Forged after the war, with Chihiro, to confront the other six, especially Magatsumi.",
     "blade-enten",
     [
         ("Bearer", "Chihiro Rokuhira"),
@@ -492,7 +492,7 @@ blade_page(
     <p>Kunishige could not smash the wartime blades. Enten is the tool he built instead: a sword whose True Realm is the death of Magatsumi. Nishiki’s cloak shrugging off Spider and vitality-drain is not a random buff. It is the design brief.</p>
     <h2>The fish</h2>
     <p>Kuro, Aka, and Nishiki are named for the three goldfish in the Rokuhira house. Kuro paints arm and edge in black water and throws a cut the size of the fish you called. Shred spends more spirit to throw many small ones. Aka drinks a technique and lets you speak it back for a short window. Nishiki is the household made into armor.</p>
-    <blockquote class="cite">“In a revenge tale where the protagonist’s clothes are stained black with blood, the colors white, black, and red match well.”<footer>Takeru Hokazono, on why the fish — and the palette — are not koi</footer></blockquote>
+    <blockquote class="cite">“In a revenge tale where the protagonist’s clothes are stained black with blood, the colors white, black, and red match well.”<footer>Takeru Hokazono, on why the fish, and the palette, are not koi</footer></blockquote>
     """,
 )
 
@@ -512,7 +512,7 @@ blade_page(
     ],
     """
     <h2>Overview</h2>
-    <p>Cloud Gouger leaves the body as clouds and cloud-dragons. Sojo’s cloaked Mei is the first time the series shows an extension: instead of throwing the lightning, wear it. Chihiro’s last use, Mei: Shred, turns the lightning black because the blade is dying — the same “dark power” rule that later paints Suzaku.</p>
+    <p>Cloud Gouger leaves the body as clouds and cloud-dragons. Sojo’s cloaked Mei is the first time the series shows an extension: instead of throwing the lightning, wear it. Chihiro’s last use, Mei: Shred, turns the lightning black because the blade is dying, the same “dark power” rule that later paints Suzaku.</p>
     <p>Kou exists to make the other two worse. Water is a wire. Ice is a larger Yui. It is a craftsman’s weather kit, which is why Sojo loved it and why Chihiro refused to let the last inch of it vanish unused.</p>
     """,
 )
@@ -549,7 +549,7 @@ blade_page(
         ("Later", "Hiruhiko (after Uruha’s false death)"),
         ("Banquet 宴", "Sense-killing hallucination; ears can be reinforced"),
         ("Play 遊", "Move objects; respect makes the telekinesis smoother"),
-        ("Extension", "Destructive Play — Hiruhiko’s contempt as a demolition tool"),
+        ("Extension", "Destructive Play, Hiruhiko’s contempt as a demolition tool"),
     ],
     """
     <h2>Overview</h2>
@@ -572,7 +572,7 @@ blade_page(
     ],
     """
     <h2>Overview</h2>
-    <p>Chihiro says Tobimune was forged for support. Crow is a reposition. Owl is reconnaissance at the scale of a country — Samura hangs it in the sky and listens for Enchanted Blade noise. Suzaku began as selfish fire and became resurrection: Uruha, Chihiro, a hotel Hiruhiko had already started to unmake. Black Suzaku is the life-for-power rule with the lights off. It is strong enough to argue with Malediction.</p>
+    <p>Chihiro says Tobimune was forged for support. Crow is a reposition. Owl is reconnaissance at the scale of a country, Samura hangs it in the sky and listens for Enchanted Blade noise. Suzaku began as selfish fire and became resurrection: Uruha, Chihiro, a hotel Hiruhiko had already started to unmake. Black Suzaku is the life-for-power rule with the lights off. It is strong enough to argue with Malediction.</p>
     """,
 )
 
