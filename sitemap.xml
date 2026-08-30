@@ -488,19 +488,19 @@
   </url>
   <url>
     <loc>https://kagurabachi.org/collectibles/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kagurabachi.org/collectibles/shop.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kagurabachi.org/collectibles/union-arena.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -673,6 +673,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kagurabachi.org/guide/reading-order.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/guide/series.html</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -695,6 +701,12 @@
     <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-1.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kagurabachi.org/manga/chapters.html</loc>
@@ -770,7 +782,7 @@
   </url>
   <url>
     <loc>https://kagurabachi.org/privacy.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -781,7 +793,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kagurabachi.org/world/barriers.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/world/battles.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/bearers.html</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -799,6 +823,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kagurabachi.org/world/circle.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/world/contracts.html</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -806,6 +836,12 @@
   </url>
   <url>
     <loc>https://kagurabachi.org/world/datenseki.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/deaths.html</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -841,6 +877,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kagurabachi.org/world/innate.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/world/irishima.html</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -860,6 +902,18 @@
   </url>
   <url>
     <loc>https://kagurabachi.org/world/objects.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/present.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/raid.html</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -896,6 +950,12 @@
   </url>
   <url>
     <loc>https://kagurabachi.org/world/techniques.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/underworld.html</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

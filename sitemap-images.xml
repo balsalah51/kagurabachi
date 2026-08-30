@@ -1669,6 +1669,14 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/guide/reading-order.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol1.webp</image:loc>
+      <image:title>jp vol1</image:title>
+      <image:caption>jp vol1</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/guide/series.html</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/hokazono-commemorative.jpg</image:loc>
@@ -1792,6 +1800,11 @@
       <image:caption>azami</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
+      <image:title>ch001</image:title>
+      <image:caption>ch001</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/community/07.png</image:loc>
       <image:title>07</image:title>
       <image:caption>07</image:caption>
@@ -1812,11 +1825,6 @@
       <image:caption>ch014</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
-      <image:title>ch001</image:title>
-      <image:caption>ch001</image:caption>
-    </image:image>
-    <image:image>
       <image:loc>https://kagurabachi.org/assets/cards/chihiro-060.jpg</image:loc>
       <image:title>chihiro 060</image:title>
       <image:caption>chihiro 060</image:caption>
@@ -1835,6 +1843,14 @@
       <image:loc>https://kagurabachi.org/assets/panels/Enten.png</image:loc>
       <image:title>Enten</image:title>
       <image:caption>Enten</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-1.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
+      <image:title>ch001</image:title>
+      <image:caption>ch001</image:caption>
     </image:image>
   </url>
   <url>
@@ -2213,6 +2229,14 @@
       <image:loc>https://kagurabachi.org/assets/panels/ch113.png</image:loc>
       <image:title>ch113</image:title>
       <image:caption>ch113</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/raid.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
+      <image:title>ch001</image:title>
+      <image:caption>ch001</image:caption>
     </image:image>
   </url>
   <url>
