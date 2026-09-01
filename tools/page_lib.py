@@ -20,6 +20,8 @@ def page(rel, title, desc, body, depth=1):
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="{FONTS}" rel="stylesheet">
   <link rel="stylesheet" href="{prefix}css/site.css">
+  <meta name="google-adsense-account" content="ca-pub-1074015774205047">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="site-header"></div>
