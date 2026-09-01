@@ -1121,6 +1121,13 @@ def strip_old_seo(html: str) -> str:
         html,
         flags=re.S,
     )
+    html = re.sub(r'\n?\s*<meta name="google-adsense-account"[^>]*>', "", html)
+    html = re.sub(
+        r'\n?\s*<script[^>]*pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js[^>]*></script>',
+        "",
+        html,
+        flags=re.S,
+    )
     return html
 
 
@@ -1183,6 +1190,8 @@ def inject_head(html: str, rel: str) -> str:
         f'  <meta name="robots" content="{robots}">',
         f'  <meta name="googlebot" content="{robots}">',
         f'  <meta name="theme-color" content="#9b1419">',
+        '  <meta name="google-adsense-account" content="ca-pub-1074015774205047">',
+        '  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>',
         f'  <meta property="og:type" content="{og_type}">',
         f'  <meta property="og:site_name" content="Kagurabachi Archive">',
         f'  <meta property="og:locale" content="en_US">',
