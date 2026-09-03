@@ -95,8 +95,9 @@
           <a href="${R}factions/hishaku.html">Hishaku</a> · <a href="${R}factions/kamunabi.html">Kamunabi</a><br>
           <a href="${R}world/techniques.html">Techniques</a> · <a href="${R}world/battles.html">Battles</a> · <a href="${R}world/lineage.html">Lineage</a><br>
           <a href="${R}world/bearers.html">Sword Bearers</a> · <a href="${R}world/raid.html">The raid</a> · <a href="${R}guide/reading-order.html">How to read</a><br>
+          <a href="${R}world/smelting.html">Smelting</a> · <a href="${R}world/princess.html">Princess Soga</a> · <a href="${R}world/seventh.html">The seventh</a><br>
           <a href="${R}world/storehouse.html">Storehouse</a> · <a href="${R}world/workshop.html">Workshop</a><br>
-          <a href="${R}manga/part-2.html">Part 2</a> · <a href="${R}manga/synopses.html">Synopses</a><br>
+          <a href="${R}manga/part-2.html">Part 2</a> · <a href="${R}guide/part-2.html">Part 2 guide</a> · <a href="${R}manga/chapter-130.html">Ch. 130</a><br>
           <a href="${R}media/anime.html">Anime countdown</a> · <a href="${R}media/staff.html">Staff</a>${hideShop ? "" : ` · <a href="${R}collectibles/shop.html">Shop</a> · <a href="${R}collectibles/union-arena.html">UNION ARENA</a>`}<br>
           <a href="${R}fun/index.html">Fun of the manga</a> · <a href="${R}fun/community.html">Sunday board</a><br>
           <a href="${R}blades/index.html">Enchanted Blades</a> · <a href="${R}arcs/index.html">Story arcs</a><br>
