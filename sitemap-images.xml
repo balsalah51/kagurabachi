@@ -1542,6 +1542,11 @@
       <image:caption>ch001</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch113.png</image:loc>
+      <image:title>ch113</image:title>
+      <image:caption>ch113</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/teaser-og.jpg</image:loc>
       <image:title>teaser og</image:title>
       <image:caption>teaser og</image:caption>
@@ -1613,6 +1618,14 @@
       <image:loc>https://kagurabachi.org/assets/covers/teaser-og.jpg</image:loc>
       <image:title>teaser og</image:title>
       <image:caption>teaser og</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/guide/part-2.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch113.png</image:loc>
+      <image:title>ch113</image:title>
+      <image:caption>ch113</image:caption>
     </image:image>
   </url>
   <url>
@@ -1851,6 +1864,38 @@
       <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
       <image:title>ch001</image:title>
       <image:caption>ch001</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-115.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
+      <image:title>enten</image:title>
+      <image:caption>enten</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-129.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch113.png</image:loc>
+      <image:title>ch113</image:title>
+      <image:caption>ch113</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-130.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch113.png</image:loc>
+      <image:title>ch113</image:title>
+      <image:caption>ch113</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-18.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch018.png</image:loc>
+      <image:title>ch018</image:title>
+      <image:caption>ch018</image:caption>
     </image:image>
   </url>
   <url>
@@ -2109,6 +2154,16 @@
       <image:title>hokazono commemorative</image:title>
       <image:caption>hokazono commemorative</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch018.png</image:loc>
+      <image:title>ch018</image:title>
+      <image:caption>ch018</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
+      <image:title>enten</image:title>
+      <image:caption>enten</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://kagurabachi.org/manga/part-2.html</loc>
@@ -2232,11 +2287,35 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/world/princess.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch113.png</image:loc>
+      <image:title>ch113</image:title>
+      <image:caption>ch113</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/world/raid.html</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
       <image:title>ch001</image:title>
       <image:caption>ch001</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/seventh.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
+      <image:title>enten</image:title>
+      <image:caption>enten</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/smelting.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch113.png</image:loc>
+      <image:title>ch113</image:title>
+      <image:caption>ch113</image:caption>
     </image:image>
   </url>
   <url>
