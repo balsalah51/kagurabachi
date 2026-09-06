@@ -1818,6 +1818,11 @@
       <image:caption>ch001</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>
+      <image:title>sojo</image:title>
+      <image:caption>sojo</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/community/07.png</image:loc>
       <image:title>07</image:title>
       <image:caption>07</image:caption>
@@ -1851,11 +1856,6 @@
       <image:loc>https://kagurabachi.org/assets/portraits/chihiro-anime.png</image:loc>
       <image:title>chihiro anime</image:title>
       <image:caption>chihiro anime</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/panels/Enten.png</image:loc>
-      <image:title>Enten</image:title>
-      <image:caption>Enten</image:caption>
     </image:image>
   </url>
   <url>
@@ -2163,6 +2163,11 @@
       <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
       <image:title>enten</image:title>
       <image:caption>enten</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>
+      <image:title>sojo</image:title>
+      <image:caption>sojo</image:caption>
     </image:image>
   </url>
   <url>
