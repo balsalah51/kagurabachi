@@ -1783,6 +1783,11 @@
       <image:caption>jp vol1</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
+      <image:title>ch001</image:title>
+      <image:caption>ch001</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/panels/ch113.png</image:loc>
       <image:title>ch113</image:title>
       <image:caption>ch113</image:caption>
@@ -1811,11 +1816,6 @@
       <image:loc>https://kagurabachi.org/assets/portraits/azami.webp</image:loc>
       <image:title>azami</image:title>
       <image:caption>azami</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
-      <image:title>ch001</image:title>
-      <image:caption>ch001</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>

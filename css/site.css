@@ -575,6 +575,9 @@ th {
   letter-spacing: 0.04em;
 }
 tr:nth-child(even) td { background: rgba(196, 30, 58, 0.035); }
+table.lookup { font-size: 0.86rem; }
+table.lookup th, table.lookup td { padding: 0.45rem 0.55rem; }
+table.lookup td:first-child { font-weight: 600; }
 
 /* Analysis / pull quotes */
 blockquote.pull {
