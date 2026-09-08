@@ -42,6 +42,7 @@
           <input id="nav-q" type="search" name="q" placeholder="Search Kagurabachi…" autocomplete="off" enterkeyhint="search">
           <button type="submit">Search</button>
         </form>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">Dark</button>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
         <ul class="primary-nav" id="primary-nav">
           ${navLink("index.html", "Home")}
@@ -114,10 +115,47 @@
     if (box && el.firstElementChild !== box) el.prepend(box);
   });
 
+  const THEME_COOKIE = "kb-theme";
+  const THEME_MAX_AGE = 34560000;
+
+  function readThemeCookie() {
+    const match = document.cookie.match(/(?:^|; )kb-theme=(dark|light)/);
+    return match ? match[1] : "light";
+  }
+
+  function writeThemeCookie(theme) {
+    const secure = location.protocol === "https:" ? "; Secure" : "";
+    document.cookie = THEME_COOKIE + "=" + theme + "; Path=/; Max-Age=" + THEME_MAX_AGE + "; SameSite=Lax" + secure;
+  }
+
+  function paintThemeToggle(theme) {
+    const btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+    const dark = theme === "dark";
+    btn.setAttribute("aria-pressed", String(dark));
+    btn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+    btn.textContent = dark ? "Light" : "Dark";
+  }
+
+  function applyTheme(theme, persist) {
+    const next = theme === "dark" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", next);
+    paintThemeToggle(next);
+    if (persist) writeThemeCookie(next);
+  }
+
   const mountHead = document.getElementById("site-header");
   const mountFoot = document.getElementById("site-footer");
   if (mountHead) mountHead.innerHTML = header;
   if (mountFoot) mountFoot.innerHTML = footer;
+  applyTheme(readThemeCookie(), false);
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      applyTheme(next, true);
+    });
+  }
   if (!document.querySelector('link[rel="icon"]')) {
     const icon = document.createElement("link");
     icon.rel = "icon";

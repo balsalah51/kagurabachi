@@ -2411,6 +2411,7 @@ def write_search_page(pages: list[str], titles: dict[str, str]):
     page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>!function(){try{var m=document.cookie.match(/(?:^|; )kb-theme=(dark|light)/);if(m)document.documentElement.setAttribute("data-theme",m[1])}catch(e){}}()</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Search the Kagurabachi Encyclopedia | Characters, Blades, Arcs</title>
@@ -2540,6 +2541,7 @@ def write_html_sitemap(pages: list[str], titles: dict[str, str]):
     page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>!function(){try{var m=document.cookie.match(/(?:^|; )kb-theme=(dark|light)/);if(m)document.documentElement.setAttribute("data-theme",m[1])}catch(e){}}()</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Site map · Kagurabachi Archive</title>
