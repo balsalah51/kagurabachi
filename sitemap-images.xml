@@ -80,6 +80,11 @@
       <image:caption>chihiro anime</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/hakuri.webp</image:loc>
+      <image:title>hakuri</image:title>
+      <image:caption>hakuri</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/teaser-og.jpg</image:loc>
       <image:title>teaser og</image:title>
       <image:caption>teaser og</image:caption>
@@ -1234,6 +1239,11 @@
       <image:title>jp ogp</image:title>
       <image:caption>jp ogp</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol1.webp</image:loc>
+      <image:title>jp vol1</image:title>
+      <image:caption>jp vol1</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://kagurabachi.org/fun/meme.html</loc>
@@ -1828,6 +1838,21 @@
       <image:caption>07</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/hiyuki.webp</image:loc>
+      <image:title>hiyuki</image:title>
+      <image:caption>hiyuki</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
+      <image:title>jp vol11</image:title>
+      <image:caption>jp vol11</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/samura.webp</image:loc>
+      <image:title>samura</image:title>
+      <image:caption>samura</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/official/jp-ogp.jpg</image:loc>
       <image:title>jp ogp</image:title>
       <image:caption>jp ogp</image:caption>
@@ -1841,21 +1866,6 @@
       <image:loc>https://kagurabachi.org/assets/panels/ch014.png</image:loc>
       <image:title>ch014</image:title>
       <image:caption>ch014</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/cards/chihiro-060.jpg</image:loc>
-      <image:title>chihiro 060</image:title>
-      <image:caption>chihiro 060</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/covers/jp-vol2.webp</image:loc>
-      <image:title>jp vol2</image:title>
-      <image:caption>jp vol2</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/portraits/chihiro-anime.png</image:loc>
-      <image:title>chihiro anime</image:title>
-      <image:caption>chihiro anime</image:caption>
     </image:image>
   </url>
   <url>
@@ -2168,6 +2178,11 @@
       <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>
       <image:title>sojo</image:title>
       <image:caption>sojo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/hiyuki.webp</image:loc>
+      <image:title>hiyuki</image:title>
+      <image:caption>hiyuki</image:caption>
     </image:image>
   </url>
   <url>
