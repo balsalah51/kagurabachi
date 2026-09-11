@@ -186,36 +186,36 @@ TITLE_OVERRIDES = {
     "manga/chapter-110.html": "Kagurabachi Chapter 110 “As a Swordsman”",
     "manga/chapter-113.html": "Kagurabachi Chapter 113 “Rock”",
     "manga/chapter-114.html": "Kagurabachi Chapter 114 “Kunishige Rokuhira”",
-    "world/kuro.html": "Kuro | Enten’s Black Goldfish",
-    "world/aka.html": "Aka | Enten’s Red Goldfish",
-    "world/nishiki.html": "Nishiki | Enten’s Tricolor Cloak",
-    "world/mei.html": "Mei | Cloud Gouger’s Lightning",
-    "world/yui.html": "Yui | Cloud Gouger’s Ice",
-    "world/kou.html": "Kou | Cloud Gouger’s Water",
-    "world/banquet-art.html": "Banquet | Kumeyuri’s Hallucination",
-    "world/crow.html": "Crow | Tobimune’s Feather Swap",
-    "world/suzaku.html": "Suzaku | Tobimune’s Flames",
-    "world/isou.html": "Isou | Sazanami Burial-Force",
-    "world/coin.html": "Coin | Azami’s Clinic Projectile",
-    "world/kurotsuchi.html": "Kurotsuchi | Hiroto’s Directional Gravity",
-    "world/sumika.html": "Sumika | Ariu’s Insect Art",
-    "world/akuu.html": "Akuu | Mashiro’s Air Pressure",
-    "world/warriors-path.html": "Warrior’s Path | Kudo’s Shitō",
-    "world/jikai.html": "Jikai | Hagiwara’s Magnetism",
-    "world/vessel.html": "Vessel | Yukisada in the HQ Barrier",
-    "world/tamahagane.html": "Tamahagane | Datenseki Allowed to Be Steel",
-    "world/briefcase.html": "Sojo’s Briefcase | Semi-Stable Datenseki",
-    "world/handover.html": "The Handover Letter | April 1, Irishima’s Beach",
-    "world/pine-sorcery.html": "Pine Sorcery | Hired Weather, Not Hishaku",
-    "world/counter-sorcery-army.html": "Counter-Sorcery Army | Before the Kamunabi Rename",
-    "world/anesthesia.html": "Anesthesia | Soga Forbidden Kindness in Chapter 130",
-    "world/teleport.html": "Shiba’s Teleport | Extraction Without a Contract",
-    "world/duel-domain.html": "Duel Domain | Tafuku’s Two-Person Match",
-    "world/gansui.html": "Gansui | Harima’s Stone Battlefield",
-    "world/iron-body.html": "Iron Body | Kugara’s ACG Art",
-    "analysis/hakuri.html": "Hakuri and the Architecture | Isou, Storehouse, Equal",
-    "analysis/suzaku.html": "Suzaku, the Cut That Keeps | Contract Surgery",
-    "analysis/foresight.html": "Foresight as an Office | Chiaki, Izanami, Cargo",
+    "world/kuro.html": "Kuro (涅) | Enten Technique | Kagurabachi",
+    "world/aka.html": "Aka (猩) | Enten Technique | Kagurabachi",
+    "world/nishiki.html": "Nishiki (錦) | Enten Technique | Kagurabachi",
+    "world/mei.html": "Mei (鳴) | Cloud Gouger Technique | Kagurabachi",
+    "world/yui.html": "Yui (結) | Cloud Gouger Technique | Kagurabachi",
+    "world/kou.html": "Kou (降) | Cloud Gouger Technique | Kagurabachi",
+    "world/banquet-art.html": "Banquet (宴) | Kumeyuri Technique | Kagurabachi",
+    "world/crow.html": "Crow (鴉) | Tobimune Technique | Kagurabachi",
+    "world/suzaku.html": "Suzaku (雀) | Tobimune Technique | Kagurabachi",
+    "world/isou.html": "Isou | Sazanami Burial-Force | Kagurabachi",
+    "world/coin.html": "Coin | Azami’s Innate Art | Kagurabachi",
+    "world/kurotsuchi.html": "Kurotsuchi | Hiroto’s Directional Gravity | Kagurabachi",
+    "world/sumika.html": "Sumika (栖) | Ariu’s Insect Art | Kagurabachi",
+    "world/akuu.html": "Akuu (空亜) | Mashiro’s Air Pressure | Kagurabachi",
+    "world/warriors-path.html": "Warrior’s Path (死闘) | Kudo’s Shitō | Kagurabachi",
+    "world/jikai.html": "Jikai (磁戒) | Hagiwara’s Magnetism | Kagurabachi",
+    "world/vessel.html": "Vessel (受け皿) | Yukisada | Kagurabachi",
+    "world/tamahagane.html": "Tamahagane | Datenseki Allowed to Be Steel | Kagurabachi",
+    "world/briefcase.html": "Sojo’s Briefcase | Semi-Stable Datenseki | Kagurabachi",
+    "world/handover.html": "The Handover Letter | April 1, Irishima | Kagurabachi",
+    "world/pine-sorcery.html": "Pine Sorcery | Hired Weather | Kagurabachi",
+    "world/counter-sorcery-army.html": "Counter-Sorcery Army | Before Kamunabi | Kagurabachi",
+    "world/anesthesia.html": "Anesthesia | Soga Kindness in Chapter 130 | Kagurabachi",
+    "world/teleport.html": "Shiba’s Teleport | Extraction Without a Contract | Kagurabachi",
+    "world/duel-domain.html": "Duel Domain | Tafuku’s Two-Person Match | Kagurabachi",
+    "world/gansui.html": "Gansui (岩垂) | Harima’s Stone Battlefield | Kagurabachi",
+    "world/iron-body.html": "Iron Body | Kugara’s ACG Art | Kagurabachi",
+    "analysis/hakuri.html": "Hakuri and the Architecture | Kagurabachi Essay",
+    "analysis/suzaku.html": "Suzaku, the Cut That Keeps | Kagurabachi Essay",
+    "analysis/foresight.html": "Foresight as an Office | Kagurabachi Essay",
     "fun/enten-oneshot.html": "The Enten One-Shot | Tezuka Award, Jump Giga 2021",
     "fun/circulation.html": "Kagurabachi Circulation | 350,000 to 4 Million",
     "manga/volume-12.html": "Kagurabachi Volume 12 | Solicited 4 September 2026",
@@ -1649,6 +1649,30 @@ SRC_ALT = {
 
 SKIP_RELATED = {"404.html"}
 
+TECHNIQUE_TERMS = {
+    "world/kuro.html": ("Kuro", "涅"),
+    "world/aka.html": ("Aka", "猩"),
+    "world/nishiki.html": ("Nishiki", "錦"),
+    "world/mei.html": ("Mei", "鳴"),
+    "world/yui.html": ("Yui", "結"),
+    "world/kou.html": ("Kou", "降"),
+    "world/banquet-art.html": ("Banquet", "宴"),
+    "world/crow.html": ("Crow", "鴉"),
+    "world/suzaku.html": ("Suzaku", "雀"),
+    "world/isou.html": ("Isou", None),
+    "world/coin.html": ("Coin", None),
+    "world/kurotsuchi.html": ("Kurotsuchi", None),
+    "world/sumika.html": ("Sumika", "栖"),
+    "world/akuu.html": ("Akuu", "空亜"),
+    "world/warriors-path.html": ("Warrior’s Path", "死闘"),
+    "world/jikai.html": ("Jikai", "磁戒"),
+    "world/vessel.html": ("Vessel", "受け皿"),
+    "world/gansui.html": ("Gansui", "岩垂"),
+    "world/teleport.html": ("Teleport", None),
+    "world/iron-body.html": ("Iron Body", None),
+    "world/duel-domain.html": ("Duel Domain", None),
+}
+
 SERIES_SAME_AS = [
     "https://en.wikipedia.org/wiki/Kagurabachi",
     "https://www.viz.com/kagurabachi",
@@ -1749,8 +1773,8 @@ def og_image_for(html: str, rel: str) -> str:
     }
     if rel in overrides:
         return overrides[rel]
-    # Prefer a portrait or cover over a tiny tile if present.
-    prefs = re.findall(r'<img[^>]+src="([^"]+(?:portraits|covers|official)[^"]+)"', html)
+    # Prefer a portrait, cover, official still, or panel over a tiny tile.
+    prefs = re.findall(r'<img[^>]+src="([^"]+(?:portraits|covers|official|panels)[^"]+)"', html)
     if prefs:
         fake = f'<img src="{prefs[0]}">'
         return first_img_abs(fake, rel)
@@ -1766,9 +1790,151 @@ def page_kind(rel: str) -> str:
         return "SearchResultsPage"
     if rel.endswith("/index.html") or rel in ("index.html", "sitemap.html"):
         return "CollectionPage"
+    if re.match(r"manga/chapter-\d+\.html$", rel):
+        return "Article"
     if rel.startswith("analysis/") or rel.startswith("manga/synopses"):
         return "Article"
     return "WebPage"
+
+
+def chapter_number(rel: str) -> int | None:
+    m = re.match(r"manga/chapter-(\d+)\.html$", rel)
+    return int(m.group(1)) if m else None
+
+
+def chapter_room_numbers() -> list[int]:
+    nums = []
+    folder = ROOT / "manga"
+    if not folder.is_dir():
+        return []
+    for p in folder.glob("chapter-*.html"):
+        m = re.match(r"chapter-(\d+)\.html$", p.name)
+        if not m:
+            continue
+        n = int(m.group(1))
+        if n in (118, 119, 120):
+            continue
+        nums.append(n)
+    return sorted(set(nums))
+
+
+def chapter_neighbors(n: int) -> tuple[int | None, int | None]:
+    rooms = chapter_room_numbers()
+    if n not in rooms:
+        return None, None
+    i = rooms.index(n)
+    prev_n = rooms[i - 1] if i > 0 else None
+    next_n = rooms[i + 1] if i < len(rooms) - 1 else None
+    return prev_n, next_n
+
+
+_IMG_DIMS: dict[str, tuple[int, int]] = {}
+
+
+def _read_image_size(path: Path) -> tuple[int, int] | None:
+    try:
+        data = path.read_bytes()
+    except OSError:
+        return None
+    if data[:8] == b"\x89PNG\r\n\x1a\n" and len(data) >= 24:
+        w, h = int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+        return w, h
+    if data[:2] == b"\xff\xd8":
+        i = 2
+        while i + 9 < len(data):
+            if data[i] != 0xFF:
+                break
+            marker = data[i + 1]
+            if marker in (0xD8, 0xD9):
+                i += 2
+                continue
+            seglen = int.from_bytes(data[i + 2 : i + 4], "big")
+            if marker in (0xC0, 0xC1, 0xC2) and i + 9 <= len(data):
+                h = int.from_bytes(data[i + 5 : i + 7], "big")
+                w = int.from_bytes(data[i + 7 : i + 9], "big")
+                return w, h
+            i += 2 + seglen
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        if data[12:16] == b"VP8X" and len(data) >= 30:
+            w = 1 + int.from_bytes(data[24:27], "little")
+            h = 1 + int.from_bytes(data[27:30], "little")
+            return w, h
+        if data[12:16] == b"VP8 " and len(data) >= 30:
+            w = int.from_bytes(data[26:28], "little") & 0x3FFF
+            h = int.from_bytes(data[28:30], "little") & 0x3FFF
+            return w, h
+        if data[12:16] == b"VP8L" and len(data) >= 25:
+            bits = int.from_bytes(data[21:25], "little")
+            w = (bits & 0x3FFF) + 1
+            h = ((bits >> 14) & 0x3FFF) + 1
+            return w, h
+    return None
+
+
+def image_dimensions(abs_url: str) -> tuple[int, int] | None:
+    if abs_url in _IMG_DIMS:
+        return _IMG_DIMS[abs_url]
+    if not abs_url.startswith(SITE + "/"):
+        return None
+    path = ROOT / abs_url[len(SITE) + 1 :]
+    dims = _read_image_size(path) if path.is_file() else None
+    if dims:
+        _IMG_DIMS[abs_url] = dims
+    return dims
+
+
+def image_mime(abs_url: str) -> str | None:
+    ext = abs_url.rsplit(".", 1)[-1].lower()
+    return {
+        "jpg": "image/jpeg",
+        "jpeg": "image/jpeg",
+        "png": "image/png",
+        "webp": "image/webp",
+        "gif": "image/gif",
+        "svg": "image/svg+xml",
+    }.get(ext)
+
+
+def item_list_for(rel: str, html: str, title: str) -> dict | None:
+    items: list[dict] = []
+    seen: set[str] = set()
+    if rel == "manga/chapters.html":
+        for href, label in re.findall(r'<a href="(chapter-\d+\.html)"[^>]*>(.*?)</a>', html):
+            n = chapter_number(f"manga/{href}")
+            if n is None or n in (118, 119, 120) or href in seen:
+                continue
+            seen.add(href)
+            plain = htmlmod.unescape(re.sub(r"<[^>]+>", "", label)).strip()
+            items.append({
+                "@type": "ListItem",
+                "position": len(items) + 1,
+                "url": f"{SITE}/manga/{href}",
+                "name": plain or f"Chapter {n}",
+            })
+    else:
+        for href, label in re.findall(r'<a href="([^"]+\.html)"[^>]*>(.*?)</a>', html):
+            resolved = str((Path(rel).parent / href).as_posix())
+            while "/../" in f"/{resolved}":
+                resolved = re.sub(r"[^/]+/\.\./", "", resolved)
+            resolved = resolved.lstrip("./")
+            if resolved not in TECHNIQUE_TERMS or resolved in seen:
+                continue
+            seen.add(resolved)
+            plain = htmlmod.unescape(re.sub(r"<[^>]+>", "", label)).strip()
+            items.append({
+                "@type": "ListItem",
+                "position": len(items) + 1,
+                "url": canonical_url(resolved),
+                "name": plain or TECHNIQUE_TERMS[resolved][0],
+            })
+    if len(items) < 3:
+        return None
+    return {
+        "@type": "ItemList",
+        "name": title,
+        "numberOfItems": len(items),
+        "itemListElement": items[:80],
+    }
 
 
 def breadcrumbs(html: str, rel: str, title: str) -> list[dict]:
@@ -1830,12 +1996,14 @@ def json_ld(rel: str, title: str, desc: str, html: str) -> str:
         "@id": f"{SITE}/#org",
         "name": "Kagurabachi Archive",
         "url": f"{SITE}/",
+        "description": "Independent encyclopedia for Takeru Hokazono’s Kagurabachi.",
         "logo": {
             "@type": "ImageObject",
             "url": f"{SITE}/assets/logo.png",
             "width": 512,
             "height": 512,
         },
+        "knowsAbout": {"@id": f"{SITE}/#series"},
     }
     page = {
         "@type": page_kind(rel),
@@ -1854,9 +2022,45 @@ def json_ld(rel: str, title: str, desc: str, html: str) -> str:
         page["datePublished"] = modified
         page["author"] = {"@id": f"{SITE}/#org"}
     graph: list[dict] = [website, org, page]
-    if rel in ("index.html", "manga/index.html", "guide/series.html"):
-        graph.append(comic_series())
-        page["about"] = {"@id": f"{SITE}/#series"}
+    ch_num = chapter_number(rel)
+    if ch_num is not None or rel in ("index.html", "manga/index.html", "guide/series.html", "manga/chapters.html"):
+        if not any(node.get("@id") == f"{SITE}/#series" for node in graph):
+            graph.append(comic_series())
+        if ch_num is None:
+            page["about"] = {"@id": f"{SITE}/#series"}
+    if ch_num is not None:
+        issue = {
+            "@type": "ComicIssue",
+            "@id": f"{url}#issue",
+            "name": clean_title,
+            "issueNumber": ch_num,
+            "url": url,
+            "isPartOf": {"@id": f"{SITE}/#series"},
+            "author": {"@type": "Person", "name": "Takeru Hokazono"},
+            "publisher": {"@type": "Organization", "name": "Shueisha"},
+            "inLanguage": "ja",
+            "description": htmlmod.unescape(desc or ""),
+            "image": og_image_for(html, rel),
+            "dateModified": modified,
+        }
+        graph.append(issue)
+        page["about"] = {"@id": f"{url}#issue"}
+    if rel in TECHNIQUE_TERMS:
+        name, alt_name = TECHNIQUE_TERMS[rel]
+        term = {
+            "@type": "DefinedTerm",
+            "name": name,
+            "description": htmlmod.unescape(desc or ""),
+            "url": url,
+            "inDefinedTermSet": f"{SITE}/world/techniques.html",
+        }
+        if alt_name:
+            term["alternateName"] = alt_name
+        graph.append(term)
+    if rel in ("manga/chapters.html", "world/techniques.html", "world/technique-index.html"):
+        listing = item_list_for(rel, html, clean_title)
+        if listing:
+            graph.append(listing)
     if rel in ("media/anime.html", "guide/watch.html"):
         graph.append(tv_series())
         page["about"] = {"@id": f"{SITE}/#anime"}
@@ -1911,6 +2115,7 @@ def strip_old_seo(html: str) -> str:
     html = re.sub(r'\n?\s*<link rel="apple-touch-icon"[^>]*>', "", html)
     html = re.sub(r'\n?\s*<link rel="alternate"[^>]*hreflang[^>]*>', "", html)
     html = re.sub(r'\n?\s*<link rel="preload"[^>]*>', "", html)
+    html = re.sub(r'\n?\s*<link rel="(?:prev|next)"[^>]*>', "", html)
     html = re.sub(
         r'\n?\s*<script type="application/ld\+json">.*?</script>',
         "",
@@ -2000,10 +2205,29 @@ def inject_head(html: str, rel: str) -> str:
         f'  <meta name="twitter:title" content="{htmlmod.escape(clean_title, quote=True)}">',
         f'  <meta name="twitter:description" content="{desc}">',
         f'  <meta name="twitter:image" content="{image}">',
+        f'  <meta name="twitter:image:alt" content="{og_alt}">',
         '  <script type="application/ld+json">',
         ld,
         "  </script>",
     ]
+    mime = image_mime(image)
+    if mime:
+        extra.insert(extra.index(f'  <meta property="og:image:alt" content="{og_alt}">') + 1,
+                     f'  <meta property="og:image:type" content="{mime}">')
+    dims = image_dimensions(image)
+    if dims:
+        w, h = dims
+        extra.insert(extra.index(f'  <meta property="og:image:alt" content="{og_alt}">') + 1,
+                     f'  <meta property="og:image:height" content="{h}">')
+        extra.insert(extra.index(f'  <meta property="og:image:alt" content="{og_alt}">') + 1,
+                     f'  <meta property="og:image:width" content="{w}">')
+    ch_num = chapter_number(rel)
+    if ch_num is not None:
+        prev_n, next_n = chapter_neighbors(ch_num)
+        if prev_n:
+            extra.insert(3, f'  <link rel="prev" href="{SITE}/manga/chapter-{prev_n}.html">')
+        if next_n:
+            extra.insert(3 if not prev_n else 4, f'  <link rel="next" href="{SITE}/manga/chapter-{next_n}.html">')
     if rel == "index.html":
         extra.insert(1, f'  <link rel="sitemap" type="application/xml" href="{SITE}/sitemap.xml">')
         extra.insert(2, '  <link rel="preload" as="image" href="assets/covers/teaser-og.jpg" fetchpriority="high">')
@@ -2335,9 +2559,53 @@ def write_robots():
         "Allow: /assets/\n"
         "\n"
         f"Sitemap: {SITE}/sitemap.xml\n"
-        f"Sitemap: {SITE}/sitemap-images.xml\n",
+        f"Sitemap: {SITE}/sitemap-images.xml\n"
+        "\n"
+        f"# Machine-readable summary: {SITE}/llms.txt\n",
         encoding="utf-8",
     )
+
+
+def write_llms():
+    lines = [
+        "# Kagurabachi Archive",
+        "",
+        "> Independent English encyclopedia for Takeru Hokazono’s Weekly Shōnen Jump manga Kagurabachi (カグラバチ).",
+        "",
+        f"Home: {SITE}/",
+        "Official chapters live on VIZ and MANGA Plus. This site does not host chapters.",
+        "Part 1 is chapters 1–115. Rakuzaichi is 19–46. Sword Bearer Assassination is 47–115.",
+        "Part 2 starts at chapter 116. Latest close reading on this site: chapter 130, I'm Fine! (30 Aug 2026).",
+        "Do not invent unpublished chapter titles, the first Enchanted Blade’s name, or Fandom-only labels.",
+        "Enten is the seventh blade. Sojo is a Cloud Gouger customer, not Hishaku.",
+        "",
+        "## Primary hubs",
+        "",
+        f"- [Encyclopedia home]({SITE}/)",
+        f"- [Beginner guide]({SITE}/guide/)",
+        f"- [Characters]({SITE}/characters/)",
+        f"- [Enchanted Blades]({SITE}/blades/)",
+        f"- [Technique catalog]({SITE}/world/techniques.html)",
+        f"- [Manga guide]({SITE}/manga/)",
+        f"- [Chapter index]({SITE}/manga/chapters.html)",
+        f"- [Volume guide]({SITE}/manga/volumes.html)",
+        f"- [Story arcs]({SITE}/arcs/)",
+        f"- [World]({SITE}/world/)",
+        f"- [Hishaku]({SITE}/factions/hishaku.html)",
+        f"- [Kamunabi]({SITE}/factions/kamunabi.html)",
+        f"- [Essays]({SITE}/analysis/)",
+        f"- [FAQ]({SITE}/faq.html)",
+        f"- [Search]({SITE}/search.html)",
+        f"- [Site map]({SITE}/sitemap.html)",
+        f"- [Anime]({SITE}/media/anime.html)",
+        "",
+        "## Citation",
+        "",
+        "Prefer printed Weekly Shōnen Jump / tankōbon facts. Birthdays printed here: Chihiro 11 Aug;",
+        "Kunishige 5 June; Shiba 15 Oct; Sojo 6 June; Char 21 Dec.",
+        "",
+    ]
+    (ROOT / "llms.txt").write_text("\n".join(lines), encoding="utf-8")
 
 
 def abs_img(src: str, rel: str) -> str | None:
@@ -2765,10 +3033,11 @@ def main() -> None:
     write_xml_sitemap(all_pages)
     write_image_sitemap(all_pages)
     write_robots()
+    write_llms()
     write_opensearch()
     write_manifest()
     print(
-        "wrote robots.txt sitemap.xml sitemap-images.xml sitemap.html search.html",
+        "wrote robots.txt llms.txt sitemap.xml sitemap-images.xml sitemap.html search.html",
         "pages",
         len(all_pages),
     )

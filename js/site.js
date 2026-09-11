@@ -80,31 +80,45 @@
       <div class="footer-inner">
         <div>
           <h3>Kagurabachi</h3>
-          <p>A fan site for Takeru Hokazono’s <em>Kagurabachi</em>. Characters, blades, volumes, and the goldfish.</p>
-          <p class="legal">Kagurabachi © Takeru Hokazono / Shueisha. Anime images © Takeru Hokazono / Project Kagurabachi. Fan-made reference. Official chapters: <a href="https://www.viz.com/kagurabachi">VIZ</a> and <a href="https://mangaplus.shueisha.co.jp/">MANGA Plus</a>. <a href="${R}sitemap.html">Site map</a> · <a href="${R}privacy.html">Privacy</a>.</p>
+          <p>A fan encyclopedia for Takeru Hokazono’s <em>Kagurabachi</em>. Characters, Enchanted Blades, volumes, and the goldfish.</p>
+          <p class="legal">Kagurabachi © Takeru Hokazono / Shueisha. Anime images © Takeru Hokazono / Project Kagurabachi. Fan-made reference. Official chapters: <a href="https://www.viz.com/kagurabachi">VIZ</a> and <a href="https://mangaplus.shueisha.co.jp/">MANGA Plus</a>.</p>
         </div>
         <div>
           <h3>Read officially</h3>
-          <p><a href="https://www.viz.com/shonenjump/chapters/kagurabachi">VIZ Shonen Jump</a><br>
-          <a href="https://mangaplus.shueisha.co.jp/titles/100274">MANGA Plus</a><br>
-          <a href="https://www.shonenjump.com/j/rensai/kagurabachi.html">Weekly Shōnen Jump (JP)</a></p>
+          <ul class="footer-list">
+            <li><a href="https://www.viz.com/shonenjump/chapters/kagurabachi">VIZ Shonen Jump</a></li>
+            <li><a href="https://mangaplus.shueisha.co.jp/titles/100274">MANGA Plus</a></li>
+            <li><a href="https://www.shonenjump.com/j/rensai/kagurabachi.html">Weekly Shōnen Jump (JP)</a></li>
+          </ul>
         </div>
         <div>
-          <h3>On this site</h3>
-          <p><a href="${R}guide/index.html">Guide</a> · <a href="${R}guide/part-1.html">Part 1</a><br>
-          <a href="${R}characters/index.html">Characters</a><br>
-          <a href="${R}factions/hishaku.html">Hishaku</a> · <a href="${R}factions/kamunabi.html">Kamunabi</a><br>
-          <a href="${R}world/techniques.html">Techniques</a> · <a href="${R}world/battles.html">Battles</a> · <a href="${R}world/lineage.html">Lineage</a><br>
-          <a href="${R}world/bearers.html">Sword Bearers</a> · <a href="${R}world/raid.html">The raid</a> · <a href="${R}guide/reading-order.html">How to read</a><br>
-          <a href="${R}world/smelting.html">Smelting</a> · <a href="${R}world/princess.html">Princess Soga</a> · <a href="${R}world/seventh.html">The seventh</a><br>
-          <a href="${R}world/storehouse.html">Storehouse</a> · <a href="${R}world/workshop.html">Workshop</a><br>
-          <a href="${R}manga/part-2.html">Part 2</a> · <a href="${R}guide/part-2.html">Part 2 guide</a> · <a href="${R}manga/chapter-130.html">Ch. 130</a><br>
-          <a href="${R}media/anime.html">Anime countdown</a> · <a href="${R}media/staff.html">Staff</a>${hideShop ? "" : ` · <a href="${R}collectibles/shop.html">Shop</a> · <a href="${R}collectibles/union-arena.html">UNION ARENA</a>`}<br>
-          <a href="${R}fun/index.html">Fun of the manga</a> · <a href="${R}fun/community.html">Sunday board</a><br>
-          <a href="${R}blades/index.html">Enchanted Blades</a> · <a href="${R}arcs/index.html">Story arcs</a><br>
-          <a href="${R}analysis/index.html">Essays</a> · <a href="${R}world/glossary.html">Glossary</a><br>
-          <a href="${R}search.html">Search</a> · <a href="${R}faq.html">FAQ</a><br>
-          <a href="${R}about.html">About</a> · <a href="${R}sitemap.html">Site map</a> · <a href="${R}privacy.html">Privacy</a></p>
+          <h3>Encyclopedia</h3>
+          <ul class="footer-list">
+            <li><a href="${R}guide/index.html">Beginner guide</a></li>
+            <li><a href="${R}characters/index.html">Characters</a></li>
+            <li><a href="${R}blades/index.html">Enchanted Blades</a></li>
+            <li><a href="${R}world/techniques.html">Techniques</a></li>
+            <li><a href="${R}manga/index.html">Manga guide</a></li>
+            <li><a href="${R}manga/chapters.html">Chapter index</a></li>
+            <li><a href="${R}arcs/index.html">Story arcs</a></li>
+            <li><a href="${R}analysis/index.html">Essays</a></li>
+            <li><a href="${R}manga/part-2.html">Part 2</a></li>
+            <li><a href="${R}media/anime.html">Anime</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>This site</h3>
+          <ul class="footer-list">
+            <li><a href="${R}search.html">Search</a></li>
+            <li><a href="${R}faq.html">FAQ</a></li>
+            <li><a href="${R}sitemap.html">Site map</a></li>
+            <li><a href="${R}about.html">About</a></li>
+            <li><a href="${R}privacy.html">Privacy</a></li>
+            <li><a href="${R}fun/index.html">Fun of the manga</a></li>
+            <li><a href="${R}world/glossary.html">Glossary</a></li>${hideShop ? "" : `
+            <li><a href="${R}collectibles/shop.html">Shop</a></li>
+            <li><a href="${R}collectibles/union-arena.html">UNION ARENA</a></li>`}
+          </ul>
         </div>
       </div>
     </footer>

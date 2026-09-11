@@ -18,6 +18,22 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/analysis/foresight.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/official/jp-ogp.jpg</image:loc>
+      <image:title>jp ogp</image:title>
+      <image:caption>jp ogp</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/analysis/hakuri.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/hakuri.webp</image:loc>
+      <image:title>hakuri</image:title>
+      <image:caption>hakuri</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/analysis/</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
@@ -112,6 +128,14 @@
       <image:loc>https://kagurabachi.org/assets/panels/ch009.png</image:loc>
       <image:title>ch009</image:title>
       <image:caption>ch009</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/analysis/suzaku.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/tobimune.webp</image:loc>
+      <image:title>tobimune</image:title>
+      <image:caption>tobimune</image:caption>
     </image:image>
   </url>
   <url>
@@ -1041,6 +1065,14 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/fun/circulation.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/official/comics1.png</image:loc>
+      <image:title>comics1</image:title>
+      <image:caption>comics1</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/fun/community.html</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/official/x-en-avatar.jpg</image:loc>
@@ -1141,6 +1173,14 @@
       <image:loc>https://kagurabachi.org/assets/official/x-jp-avatar.jpg</image:loc>
       <image:title>x jp avatar</image:title>
       <image:caption>x jp avatar</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/fun/enten-oneshot.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/fun/enten.png</image:loc>
+      <image:title>enten</image:title>
+      <image:caption>enten</image:caption>
     </image:image>
   </url>
   <url>
@@ -1877,6 +1917,46 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/manga/chapter-105.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/akemura.webp</image:loc>
+      <image:title>akemura</image:title>
+      <image:caption>akemura</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-106.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/akemura.webp</image:loc>
+      <image:title>akemura</image:title>
+      <image:caption>akemura</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-110.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/chihiro.webp</image:loc>
+      <image:title>chihiro</image:title>
+      <image:caption>chihiro</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-113.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch113.png</image:loc>
+      <image:title>ch113</image:title>
+      <image:caption>ch113</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-114.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/kunishige.webp</image:loc>
+      <image:title>kunishige</image:title>
+      <image:caption>kunishige</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/manga/chapter-115.html</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
@@ -1906,6 +1986,142 @@
       <image:loc>https://kagurabachi.org/assets/panels/ch018.png</image:loc>
       <image:title>ch018</image:title>
       <image:caption>ch018</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-19.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch019.png</image:loc>
+      <image:title>ch019</image:title>
+      <image:caption>ch019</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-20.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/hiyuki.webp</image:loc>
+      <image:title>hiyuki</image:title>
+      <image:caption>hiyuki</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-32.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/Wall_of_Trees.png</image:loc>
+      <image:title>Wall_of_Trees</image:title>
+      <image:caption>Wall_of_Trees</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-4.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
+      <image:title>ch001</image:title>
+      <image:caption>ch001</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-41.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/kyora.webp</image:loc>
+      <image:title>kyora</image:title>
+      <image:caption>kyora</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-45.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/hakuri.webp</image:loc>
+      <image:title>hakuri</image:title>
+      <image:caption>hakuri</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-48.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/uruha.webp</image:loc>
+      <image:title>uruha</image:title>
+      <image:caption>uruha</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-5.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol1.webp</image:loc>
+      <image:title>jp vol1</image:title>
+      <image:caption>jp vol1</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-56.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch056.png</image:loc>
+      <image:title>ch056</image:title>
+      <image:caption>ch056</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-59.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/samura.webp</image:loc>
+      <image:title>samura</image:title>
+      <image:caption>samura</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-66.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/iori.webp</image:loc>
+      <image:title>iori</image:title>
+      <image:caption>iori</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-7.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/ch002.png</image:loc>
+      <image:title>ch002</image:title>
+      <image:caption>ch002</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-75.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/hiruhiko.webp</image:loc>
+      <image:title>hiruhiko</image:title>
+      <image:caption>hiruhiko</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-80.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/hiruhiko.webp</image:loc>
+      <image:title>hiruhiko</image:title>
+      <image:caption>hiruhiko</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-92.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/samura.webp</image:loc>
+      <image:title>samura</image:title>
+      <image:caption>samura</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-97.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/azami.webp</image:loc>
+      <image:title>azami</image:title>
+      <image:caption>azami</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/chapter-99.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/tobimune.webp</image:loc>
+      <image:title>tobimune</image:title>
+      <image:caption>tobimune</image:caption>
     </image:image>
   </url>
   <url>
@@ -2194,6 +2410,14 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/manga/volume-12.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
+      <image:title>jp vol11</image:title>
+      <image:caption>jp vol11</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/manga/volumes.html</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/jp-vol1.webp</image:loc>
@@ -2275,11 +2499,99 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/world/aka.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
+      <image:title>enten</image:title>
+      <image:caption>enten</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/akuu.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/official/jp-ogp.jpg</image:loc>
+      <image:title>jp ogp</image:title>
+      <image:caption>jp ogp</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/anesthesia.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
+      <image:title>jp vol11</image:title>
+      <image:caption>jp vol11</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/banquet-art.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/kumeyuri.webp</image:loc>
+      <image:title>kumeyuri</image:title>
+      <image:caption>kumeyuri</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/briefcase.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>
+      <image:title>sojo</image:title>
+      <image:caption>sojo</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/coin.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/azami.webp</image:loc>
+      <image:title>azami</image:title>
+      <image:caption>azami</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/counter-sorcery-army.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/azami.webp</image:loc>
+      <image:title>azami</image:title>
+      <image:caption>azami</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/crow.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/tobimune.webp</image:loc>
+      <image:title>tobimune</image:title>
+      <image:caption>tobimune</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/world/datenseki.html</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/panels/ch018.png</image:loc>
       <image:title>ch018</image:title>
       <image:caption>ch018</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/duel-domain.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/samura.webp</image:loc>
+      <image:title>samura</image:title>
+      <image:caption>samura</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/gansui.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol2.webp</image:loc>
+      <image:title>jp vol2</image:title>
+      <image:caption>jp vol2</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/handover.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/official/jp-ogp.jpg</image:loc>
+      <image:title>jp ogp</image:title>
+      <image:caption>jp ogp</image:caption>
     </image:image>
   </url>
   <url>
@@ -2299,11 +2611,83 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/world/iron-body.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>
+      <image:title>sojo</image:title>
+      <image:caption>sojo</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/isou.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/hakuri.webp</image:loc>
+      <image:title>hakuri</image:title>
+      <image:caption>hakuri</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/jikai.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/Sojo_holding_Cloud_Gouger.png</image:loc>
+      <image:title>Sojo_holding_Cloud_Gouger</image:title>
+      <image:caption>Sojo_holding_Cloud_Gouger</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/kou.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/Sojo_holding_Cloud_Gouger.png</image:loc>
+      <image:title>Sojo_holding_Cloud_Gouger</image:title>
+      <image:caption>Sojo_holding_Cloud_Gouger</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/kuro.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
+      <image:title>enten</image:title>
+      <image:caption>enten</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/kurotsuchi.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
+      <image:title>jp vol11</image:title>
+      <image:caption>jp vol11</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/world/locations.html</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/panels/ch113.png</image:loc>
       <image:title>ch113</image:title>
       <image:caption>ch113</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/mei.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/Sojo_holding_Cloud_Gouger.png</image:loc>
+      <image:title>Sojo_holding_Cloud_Gouger</image:title>
+      <image:caption>Sojo_holding_Cloud_Gouger</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/nishiki.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
+      <image:title>enten</image:title>
+      <image:caption>enten</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/pine-sorcery.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol3.webp</image:loc>
+      <image:title>jp vol3</image:title>
+      <image:caption>jp vol3</image:caption>
     </image:image>
   </url>
   <url>
@@ -2347,6 +2731,54 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/world/sumika.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
+      <image:title>jp vol11</image:title>
+      <image:caption>jp vol11</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/suzaku.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/tobimune.webp</image:loc>
+      <image:title>tobimune</image:title>
+      <image:caption>tobimune</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/tamahagane.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol1.webp</image:loc>
+      <image:title>jp vol1</image:title>
+      <image:caption>jp vol1</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/teleport.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/shiba.webp</image:loc>
+      <image:title>shiba</image:title>
+      <image:caption>shiba</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/vessel.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/yura.webp</image:loc>
+      <image:title>yura</image:title>
+      <image:caption>yura</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/warriors-path.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/azami.webp</image:loc>
+      <image:title>azami</image:title>
+      <image:caption>azami</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/world/workshop.html</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/panels/ch001.png</image:loc>
@@ -2357,6 +2789,14 @@
       <image:loc>https://kagurabachi.org/assets/covers/jp-vol1.webp</image:loc>
       <image:title>jp vol1</image:title>
       <image:caption>jp vol1</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/world/yui.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/panels/Sojo_holding_Cloud_Gouger.png</image:loc>
+      <image:title>Sojo_holding_Cloud_Gouger</image:title>
+      <image:caption>Sojo_holding_Cloud_Gouger</image:caption>
     </image:image>
   </url>
 </urlset>
