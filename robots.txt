@@ -14,3 +14,5 @@ Allow: /assets/
 
 Sitemap: https://kagurabachi.org/sitemap.xml
 Sitemap: https://kagurabachi.org/sitemap-images.xml
+
+# Machine-readable summary: https://kagurabachi.org/llms.txt

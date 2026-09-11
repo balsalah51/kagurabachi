@@ -1,0 +1,35 @@
+# Kagurabachi Archive
+
+> Independent English encyclopedia for Takeru Hokazono’s Weekly Shōnen Jump manga Kagurabachi (カグラバチ).
+
+Home: https://kagurabachi.org/
+Official chapters live on VIZ and MANGA Plus. This site does not host chapters.
+Part 1 is chapters 1–115. Rakuzaichi is 19–46. Sword Bearer Assassination is 47–115.
+Part 2 starts at chapter 116. Latest close reading on this site: chapter 130, I'm Fine! (30 Aug 2026).
+Do not invent unpublished chapter titles, the first Enchanted Blade’s name, or Fandom-only labels.
+Enten is the seventh blade. Sojo is a Cloud Gouger customer, not Hishaku.
+
+## Primary hubs
+
+- [Encyclopedia home](https://kagurabachi.org/)
+- [Beginner guide](https://kagurabachi.org/guide/)
+- [Characters](https://kagurabachi.org/characters/)
+- [Enchanted Blades](https://kagurabachi.org/blades/)
+- [Technique catalog](https://kagurabachi.org/world/techniques.html)
+- [Manga guide](https://kagurabachi.org/manga/)
+- [Chapter index](https://kagurabachi.org/manga/chapters.html)
+- [Volume guide](https://kagurabachi.org/manga/volumes.html)
+- [Story arcs](https://kagurabachi.org/arcs/)
+- [World](https://kagurabachi.org/world/)
+- [Hishaku](https://kagurabachi.org/factions/hishaku.html)
+- [Kamunabi](https://kagurabachi.org/factions/kamunabi.html)
+- [Essays](https://kagurabachi.org/analysis/)
+- [FAQ](https://kagurabachi.org/faq.html)
+- [Search](https://kagurabachi.org/search.html)
+- [Site map](https://kagurabachi.org/sitemap.html)
+- [Anime](https://kagurabachi.org/media/anime.html)
+
+## Citation
+
+Prefer printed Weekly Shōnen Jump / tankōbon facts. Birthdays printed here: Chihiro 11 Aug;
+Kunishige 5 June; Shiba 15 Oct; Sojo 6 June; Char 21 Dec.
