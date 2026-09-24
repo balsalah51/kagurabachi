@@ -5,7 +5,7 @@
 Home: https://kagurabachi.org/
 Official chapters live on VIZ and MANGA Plus. This site does not host chapters.
 Part 1 is chapters 1–115. Rakuzaichi is 19–46. Sword Bearer Assassination is 47–115.
-Part 2 starts at chapter 116. Latest close reading on this site: chapter 130, I'm Fine! (30 Aug 2026).
+Part 2 starts at chapter 116. Latest titled chapter room: chapter 131, Tipping Point (6 Sep 2026). Chapter 132 is a publication door (Jump 2026 #44, 28 Sep 2026) without a printed title on this desk.
 Do not invent unpublished chapter titles, the first Enchanted Blade’s name, or Fandom-only labels.
 Enten is the seventh blade. Sojo is a Cloud Gouger customer, not Hishaku.
 
@@ -18,6 +18,10 @@ Enten is the seventh blade. Sojo is a Cloud Gouger customer, not Hishaku.
 - [Technique catalog](https://kagurabachi.org/world/techniques.html)
 - [Manga guide](https://kagurabachi.org/manga/)
 - [Chapter index](https://kagurabachi.org/manga/chapters.html)
+- [Chapter 131 Tipping Point](https://kagurabachi.org/manga/chapter-131.html)
+- [Volume map](https://kagurabachi.org/guide/volume-map.html)
+- [Technique map](https://kagurabachi.org/guide/technique-map.html)
+- [September 2026 rest](https://kagurabachi.org/fun/september-2026-rest.html)
 - [Volume guide](https://kagurabachi.org/manga/volumes.html)
 - [Story arcs](https://kagurabachi.org/arcs/)
 - [World](https://kagurabachi.org/world/)
