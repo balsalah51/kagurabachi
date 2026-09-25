@@ -101,6 +101,11 @@
       <image:caption>hakuri</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
+      <image:title>jp vol11</image:title>
+      <image:caption>jp vol11</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/teaser-og.jpg</image:loc>
       <image:title>teaser og</image:title>
       <image:caption>teaser og</image:caption>
@@ -1284,6 +1289,11 @@
       <image:title>jp vol1</image:title>
       <image:caption>jp vol1</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
+      <image:title>jp vol11</image:title>
+      <image:caption>jp vol11</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://kagurabachi.org/fun/meme.html</loc>
@@ -1601,6 +1611,11 @@
       <image:title>teaser og</image:title>
       <image:caption>teaser og</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol5.webp</image:loc>
+      <image:title>jp vol5</image:title>
+      <image:caption>jp vol5</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://kagurabachi.org/guide/paper.html</loc>
@@ -1878,6 +1893,11 @@
       <image:caption>07</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/samura.webp</image:loc>
+      <image:title>samura</image:title>
+      <image:caption>samura</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/portraits/hiyuki.webp</image:loc>
       <image:title>hiyuki</image:title>
       <image:caption>hiyuki</image:caption>
@@ -1886,11 +1906,6 @@
       <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
       <image:title>jp vol11</image:title>
       <image:caption>jp vol11</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/portraits/samura.webp</image:loc>
-      <image:title>samura</image:title>
-      <image:caption>samura</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/official/jp-ogp.jpg</image:loc>
@@ -2410,11 +2425,99 @@
     </image:image>
   </url>
   <url>
+    <loc>https://kagurabachi.org/manga/volume-1.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol1.webp</image:loc>
+      <image:title>jp vol1</image:title>
+      <image:caption>jp vol1</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/volume-10.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol10.webp</image:loc>
+      <image:title>jp vol10</image:title>
+      <image:caption>jp vol10</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/volume-11.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
+      <image:title>jp vol11</image:title>
+      <image:caption>jp vol11</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://kagurabachi.org/manga/volume-12.html</loc>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
       <image:title>jp vol11</image:title>
       <image:caption>jp vol11</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/volume-2.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol2.webp</image:loc>
+      <image:title>jp vol2</image:title>
+      <image:caption>jp vol2</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/volume-3.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol3.webp</image:loc>
+      <image:title>jp vol3</image:title>
+      <image:caption>jp vol3</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/volume-4.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol4.webp</image:loc>
+      <image:title>jp vol4</image:title>
+      <image:caption>jp vol4</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/volume-5.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol5.webp</image:loc>
+      <image:title>jp vol5</image:title>
+      <image:caption>jp vol5</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/volume-6.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol6.webp</image:loc>
+      <image:title>jp vol6</image:title>
+      <image:caption>jp vol6</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/volume-7.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol7.webp</image:loc>
+      <image:title>jp vol7</image:title>
+      <image:caption>jp vol7</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/volume-8.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol8.webp</image:loc>
+      <image:title>jp vol8</image:title>
+      <image:caption>jp vol8</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagurabachi.org/manga/volume-9.html</loc>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol9.webp</image:loc>
+      <image:title>jp vol9</image:title>
+      <image:caption>jp vol9</image:caption>
     </image:image>
   </url>
   <url>

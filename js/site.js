@@ -103,6 +103,8 @@
             <li><a href="${R}arcs/index.html">Story arcs</a></li>
             <li><a href="${R}analysis/index.html">Essays</a></li>
             <li><a href="${R}manga/part-2.html">Part 2</a></li>
+            <li><a href="${R}manga/chapter-131.html">Chapter 131</a></li>
+            <li><a href="${R}guide/volume-map.html">Volume map</a></li>
             <li><a href="${R}media/anime.html">Anime</a></li>
           </ul>
         </div>
