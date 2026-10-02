@@ -101,14 +101,39 @@
       <image:caption>hakuri</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol5.webp</image:loc>
+      <image:title>jp vol5</image:title>
+      <image:caption>jp vol5</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/kyora.webp</image:loc>
+      <image:title>kyora</image:title>
+      <image:caption>kyora</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
       <image:title>jp vol11</image:title>
       <image:caption>jp vol11</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://kagurabachi.org/assets/covers/teaser-og.jpg</image:loc>
-      <image:title>teaser og</image:title>
-      <image:caption>teaser og</image:caption>
+      <image:loc>https://kagurabachi.org/assets/portraits/iori.webp</image:loc>
+      <image:title>iori</image:title>
+      <image:caption>iori</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol1.webp</image:loc>
+      <image:title>jp vol1</image:title>
+      <image:caption>jp vol1</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/fun/enten.png</image:loc>
+      <image:title>enten</image:title>
+      <image:caption>enten</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/akemura.webp</image:loc>
+      <image:title>akemura</image:title>
+      <image:caption>akemura</image:caption>
     </image:image>
   </url>
   <url>
@@ -1290,6 +1315,16 @@
       <image:caption>jp vol1</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/vol7.jpg</image:loc>
+      <image:title>vol7</image:title>
+      <image:caption>vol7</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol8.webp</image:loc>
+      <image:title>jp vol8</image:title>
+      <image:caption>jp vol8</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/jp-vol11.webp</image:loc>
       <image:title>jp vol11</image:title>
       <image:caption>jp vol11</image:caption>
@@ -1616,6 +1651,26 @@
       <image:title>jp vol5</image:title>
       <image:caption>jp vol5</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>
+      <image:title>sojo</image:title>
+      <image:caption>sojo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/uruha.webp</image:loc>
+      <image:title>uruha</image:title>
+      <image:caption>uruha</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/hiruhiko.webp</image:loc>
+      <image:title>hiruhiko</image:title>
+      <image:caption>hiruhiko</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/viz-social.jpg</image:loc>
+      <image:title>viz social</image:title>
+      <image:caption>viz social</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://kagurabachi.org/guide/paper.html</loc>
@@ -1898,6 +1953,11 @@
       <image:caption>samura</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol5.webp</image:loc>
+      <image:title>jp vol5</image:title>
+      <image:caption>jp vol5</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/portraits/hiyuki.webp</image:loc>
       <image:title>hiyuki</image:title>
       <image:caption>hiyuki</image:caption>
@@ -1916,11 +1976,6 @@
       <image:loc>https://kagurabachi.org/assets/fun/enten.png</image:loc>
       <image:title>enten</image:title>
       <image:caption>enten</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/panels/ch014.png</image:loc>
-      <image:title>ch014</image:title>
-      <image:caption>ch014</image:caption>
     </image:image>
   </url>
   <url>
