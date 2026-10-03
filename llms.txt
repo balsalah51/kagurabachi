@@ -5,7 +5,7 @@
 Home: https://kagurabachi.org/
 Official chapters live on VIZ and MANGA Plus. This site does not host chapters.
 Part 1 is chapters 1–115. Rakuzaichi is 19–46. Sword Bearer Assassination is 47–115.
-Part 2 starts at chapter 116. Latest titled chapter room: chapter 131, Tipping Point (6 Sep 2026). Chapter 132 is a publication door (Jump 2026 #44, 28 Sep 2026) without a printed title on this desk.
+Part 2 starts at chapter 116. Latest titled chapter room: chapter 132, Misaka (27 Sep 2026). Chapter 133 is a publication door (Jump 2026 #45, 5 Oct 2026) without a printed title on this desk.
 Do not invent unpublished chapter titles, the first Enchanted Blade’s name, or Fandom-only labels.
 Enten is the seventh blade. Sojo is a Cloud Gouger customer, not Hishaku.
 Irishima talks chapters 118–120 stay table-only (combined room: world/irishima-talks.html).
@@ -21,6 +21,8 @@ Relationship rooms start at characters/bonds.html. Fight desks start at world/ba
 - [Manga guide](https://kagurabachi.org/manga/)
 - [Chapter index](https://kagurabachi.org/manga/chapters.html)
 - [Chapter 131 Tipping Point](https://kagurabachi.org/manga/chapter-131.html)
+- [Chapter 132 Misaka](https://kagurabachi.org/manga/chapter-132.html)
+- [October 2026 update](https://kagurabachi.org/guide/october-update.html)
 - [Volume map](https://kagurabachi.org/guide/volume-map.html)
 - [Technique map](https://kagurabachi.org/guide/technique-map.html)
 - [September 2026 rest](https://kagurabachi.org/fun/september-2026-rest.html)
@@ -34,6 +36,10 @@ Relationship rooms start at characters/bonds.html. Fight desks start at world/ba
 - [Search](https://kagurabachi.org/search.html)
 - [Site map](https://kagurabachi.org/sitemap.html)
 - [Anime](https://kagurabachi.org/media/anime.html)
+- [Printed bonds](https://kagurabachi.org/characters/bonds.html)
+- [Fight desks](https://kagurabachi.org/world/battle-index.html)
+- [Quadruple wave](https://kagurabachi.org/guide/quad-doors.html)
+- [Volume reading rooms](https://kagurabachi.org/guide/volume-reads.html)
 
 ## Citation
 
