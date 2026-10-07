@@ -530,6 +530,11 @@
   <url>
     <loc>https://kagurabachi.org/characters/</loc>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>
+      <image:title>sojo</image:title>
+      <image:caption>sojo</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/portraits/chihiro.webp</image:loc>
       <image:title>chihiro</image:title>
       <image:caption>chihiro</image:caption>
@@ -588,11 +593,6 @@
       <image:loc>https://kagurabachi.org/assets/portraits/azami.webp</image:loc>
       <image:title>azami</image:title>
       <image:caption>azami</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>
-      <image:title>sojo</image:title>
-      <image:caption>sojo</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/portraits/yura.webp</image:loc>
@@ -1958,6 +1958,11 @@
       <image:caption>jp vol5</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/chihiro-anime-art.jpg</image:loc>
+      <image:title>chihiro anime art</image:title>
+      <image:caption>chihiro anime art</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/portraits/hiyuki.webp</image:loc>
       <image:title>hiyuki</image:title>
       <image:caption>hiyuki</image:caption>
@@ -1968,14 +1973,9 @@
       <image:caption>jp vol11</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://kagurabachi.org/assets/official/jp-ogp.jpg</image:loc>
-      <image:title>jp ogp</image:title>
-      <image:caption>jp ogp</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/fun/enten.png</image:loc>
-      <image:title>enten</image:title>
-      <image:caption>enten</image:caption>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol2.webp</image:loc>
+      <image:title>jp vol2</image:title>
+      <image:caption>jp vol2</image:caption>
     </image:image>
   </url>
   <url>
@@ -2446,6 +2446,11 @@
       <image:caption>ch023</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>
+      <image:title>sojo</image:title>
+      <image:caption>sojo</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/hokazono-commemorative.jpg</image:loc>
       <image:title>hokazono commemorative</image:title>
       <image:caption>hokazono commemorative</image:caption>
@@ -2459,11 +2464,6 @@
       <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
       <image:title>enten</image:title>
       <image:caption>enten</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/portraits/sojo.webp</image:loc>
-      <image:title>sojo</image:title>
-      <image:caption>sojo</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://kagurabachi.org/assets/portraits/hiyuki.webp</image:loc>
