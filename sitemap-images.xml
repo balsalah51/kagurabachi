@@ -1671,6 +1671,11 @@
       <image:title>viz social</image:title>
       <image:caption>viz social</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol10.webp</image:loc>
+      <image:title>jp vol10</image:title>
+      <image:caption>jp vol10</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://kagurabachi.org/guide/paper.html</loc>
