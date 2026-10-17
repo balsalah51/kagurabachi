@@ -1671,6 +1671,11 @@
       <image:title>viz social</image:title>
       <image:caption>viz social</image:caption>
     </image:image>
+    <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol10.webp</image:loc>
+      <image:title>jp vol10</image:title>
+      <image:caption>jp vol10</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://kagurabachi.org/guide/paper.html</loc>
@@ -2451,6 +2456,11 @@
       <image:caption>sojo</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://kagurabachi.org/assets/covers/jp-vol10.webp</image:loc>
+      <image:title>jp vol10</image:title>
+      <image:caption>jp vol10</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://kagurabachi.org/assets/covers/hokazono-commemorative.jpg</image:loc>
       <image:title>hokazono commemorative</image:title>
       <image:caption>hokazono commemorative</image:caption>
@@ -2464,11 +2474,6 @@
       <image:loc>https://kagurabachi.org/assets/panels/enten.webp</image:loc>
       <image:title>enten</image:title>
       <image:caption>enten</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://kagurabachi.org/assets/portraits/hiyuki.webp</image:loc>
-      <image:title>hiyuki</image:title>
-      <image:caption>hiyuki</image:caption>
     </image:image>
   </url>
   <url>
