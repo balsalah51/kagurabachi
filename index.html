@@ -13,10 +13,9 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://kagurabachi.org/">
   <link rel="sitemap" type="application/xml" href="https://kagurabachi.org/sitemap.xml">
-  <link rel="preload" as="image" href="assets/covers/teaser-og.jpg" fetchpriority="high">
   <link rel="alternate" hreflang="en" href="https://kagurabachi.org/">
   <link rel="alternate" hreflang="x-default" href="https://kagurabachi.org/">
-  <link rel="search" type="application/opensearchdescription+xml" title="Kagurabachi Archive" href="https://kagurabachi.org/opensearch.xml">
+  <link rel="search" type="application/opensearchdescription+xml" title="Kagurabachi Encyclopedia" href="https://kagurabachi.org/opensearch.xml">
   <link rel="manifest" href="https://kagurabachi.org/manifest.webmanifest">
   <link rel="apple-touch-icon" href="https://kagurabachi.org/assets/logo.png">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -25,7 +24,7 @@
   <meta name="google-adsense-account" content="ca-pub-1074015774205047">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Kagurabachi Archive">
+  <meta property="og:site_name" content="Kagurabachi Encyclopedia">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://kagurabachi.org/">
   <meta property="og:title" content="Kagurabachi Encyclopedia | Characters, Enchanted Blades &amp; Manga Guide">
@@ -47,9 +46,9 @@
     {
       "@type": "WebSite",
       "@id": "https://kagurabachi.org/#website",
-      "name": "Kagurabachi Archive",
+      "name": "Kagurabachi Encyclopedia",
       "alternateName": [
-        "Kagurabachi Encyclopedia",
+        "Kagurabachi Archive",
         "Kagurabachi.org",
         "Kagurabachi wiki",
         "KB",
@@ -73,7 +72,7 @@
     {
       "@type": "Organization",
       "@id": "https://kagurabachi.org/#org",
-      "name": "Kagurabachi Archive",
+      "name": "Kagurabachi Encyclopedia",
       "url": "https://kagurabachi.org/",
       "description": "Independent encyclopedia for Takeru Hokazono’s Kagurabachi.",
       "logo": {
@@ -97,7 +96,7 @@
       },
       "inLanguage": "en",
       "image": "https://kagurabachi.org/assets/covers/teaser-og.jpg",
-      "dateModified": "2026-10-03",
+      "dateModified": "2026-10-18",
       "publisher": {
         "@id": "https://kagurabachi.org/#org"
       },
@@ -146,13 +145,18 @@
 </head>
 <body class="home">
 <noscript>
-<nav class="crawl-nav" aria-label="Site"><a href="index.html">Home</a> · <a href="search.html">Search</a> · <a href="faq.html">FAQ</a> · <a href="characters/index.html">Characters</a> · <a href="blades/index.html">Blades</a> · <a href="manga/index.html">Manga</a> · <a href="arcs/index.html">Story</a> · <a href="sitemap.html">Site map</a></nav>
+<nav class="crawl-nav" aria-label="Site"><a href="index.html">Home</a> · <a href="media/anime.html">Anime</a> · <a href="search.html">Search</a> · <a href="faq.html">FAQ</a> · <a href="characters/index.html">Characters</a> · <a href="blades/index.html">Blades</a> · <a href="manga/index.html">Manga</a> · <a href="arcs/index.html">Story</a> · <a href="sitemap.html">Site map</a></nav>
 </noscript>
 
   <div id="site-header"></div>
 
   <main id="main">
     <section class="home-banner">
+      <svg class="home-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="#9b1419"/>
+        <path d="M14 34c8-10 16-8 20-2 4-8 14-10 18 0-8 10-16 8-20 2-4 8-12 12-18 0z" fill="#e8c547"/>
+        <path d="M18 30c6 2 10 8 8 14" stroke="#0c0b0a" stroke-width="2" fill="none"/>
+      </svg>
       <div class="home-banner-inner">
         <p class="kicker">Independent database · since the first Jump issue</p>
         <h1>Kagurabachi<span class="jp">カグラバチ</span></h1>
@@ -161,9 +165,10 @@
           <div><b>12</b><span>tankōbon volumes</span></div>
           <div><b>133</b><span>serialized chapters</span></div>
           <div><b>7</b><span>Enchanted Blades</span></div>
-          <div><b>4M+</b><span>copies in circulation</span></div>
-          <div><b>2027</b><span>Cypic anime</span></div>
+          <div><b>4M+</b><span><a href="fun/circulation.html">copies in circulation</a></span></div>
+          <div><b>2027</b><span><a href="media/anime.html">Cypic anime</a></span></div>
         </div>
+        <p class="stat-source">Over 4 million copies by April 2026, Shueisha’s restated circulation. <a href="fun/circulation.html">The count, from 350,000 up</a>. <a href="manga/publication.html">Publication record</a>.</p>
         <div class="clock-band" data-clock>
           <p class="clock-kicker">Until the first broadcast</p>
           <p class="clock-label">April 2027 · Cypic · Japan time</p>
@@ -176,8 +181,8 @@
           <p class="clock-note" data-clock-live>Counted to 1 April 2027, 00:00 Japan. A first-episode date lands when they print one. <a href="guide/watch.html">How to watch</a> · <a href="media/anime.html">Anime page</a></p>
         </div>
         <div class="cta-row">
-          <a class="btn" href="characters/chihiro.html">Start with Chihiro</a>
-          <a class="btn ghost" href="manga/part-2.html">Open Part 2</a>
+          <a class="btn" href="guide/newcomer-hour.html">Start here, spoiler-free</a>
+          <a class="btn ghost" href="media/anime.html">Anime countdown</a>
         </div>
         <form class="home-search" action="search.html" method="get" role="search">
           <label for="home-q">Search this encyclopedia</label>
@@ -188,60 +193,34 @@
     </section>
 
     <div class="wrap">
+    <aside class="spoiler-gate" aria-label="Spoiler notice">
+      <p><b>Spoiler notice.</b> If you are new, especially from the anime, start on the spoiler-free path. Fresh steel and the sections under it discuss later chapters.</p>
+      <p class="spoiler-gate-links"><a class="btn" href="guide/newcomer-hour.html">Start here, spoiler-free</a> <a href="guide/spoiler-ladder.html">Spoiler ladder</a></p>
+    </aside>
+
     <p class="home-label">The workshop <span>工房</span></p>
     <div class="home-table">
-      <a class="home-row" href="guide/series.html"><img src="assets/covers/hokazono-commemorative.jpg" alt="The series"><b>The series</b><small>Jump 2023 · 12 volumes · 4M+</small></a>
-      <a class="home-row" href="guide/premise.html"><img loading="lazy" decoding="async" src="assets/portraits/chihiro.webp" alt="The premise"><b>The premise</b><small>Kunishige, the raid, Enten</small></a>
-      <a class="home-row" href="guide/blades.html"><img loading="lazy" decoding="async" src="assets/panels/enten.webp" alt="The blades"><b>The blades</b><small>Seven swords. One cellar.</small></a>
-      <a class="home-row" href="guide/story.html"><img loading="lazy" decoding="async" src="assets/panels/ch009.png" alt="The story"><b>The story</b><small>Part 1 · Part 2 · four arcs</small></a>
-      <a class="home-row" href="guide/paper.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol1.webp" alt="On paper"><b>On paper</b><small>ISBNs, jackets, 2027 anime</small></a>
+      <a class="home-row" href="guide/series.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#series"/></svg><b>The series</b><small>Jump 2023. Twelve volumes.</small></a>
+      <a class="home-row" href="guide/premise.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#premise"/></svg><b>The premise</b><small>A smith, a son, and a goldfish</small></a>
+      <a class="home-row" href="guide/blades.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#blades"/></svg><b>The blades</b><small>Seven swords, introduced in order</small></a>
+      <a class="home-row" href="guide/story.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#story"/></svg><b>The story</b><small>How the serial is divided</small></a>
+      <a class="home-row" href="guide/paper.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#paper"/></svg><b>On paper</b><small>ISBNs, jackets, the 2027 anime</small></a>
     </div>
 
     <p class="home-label">Fresh steel <span>新打</span></p>
     <div class="home-table">
-      <a class="home-row" href="manga/chapters.html"><img loading="lazy" decoding="async" src="assets/panels/ch001.png" alt="Chapter rooms"><b>Chapter rooms</b><small>Banquet, Enten vs Tobimune, Irishima Talks, Smelting</small></a>
-      <a class="home-row" href="world/timeline.html"><img loading="lazy" decoding="async" src="assets/panels/ch113.png" alt="Timeline"><b>Dated timeline</b><small>October, November, March 29, April 1</small></a>
-      <a class="home-row" href="world/fight-log.html"><img loading="lazy" decoding="async" src="assets/panels/ch009.png" alt="Fight log"><b>Fight log</b><small>Combatants, chapters, what is left standing</small></a>
-      <a class="home-row" href="world/technique-index.html"><img loading="lazy" decoding="async" src="assets/panels/enten.webp" alt="Technique index"><b>Technique index</b><small>One row per named art</small></a>
-      <a class="home-row" href="manga/part-2.html"><img loading="lazy" decoding="async" src="assets/panels/ch113.png" alt="Part 2"><b>Part 2</b><small>Princess through a live 133, ch. 116–133</small></a>
-      <a class="home-row" href="world/techniques.html"><img loading="lazy" decoding="async" src="assets/panels/enten.webp" alt="Techniques"><b>Techniques</b><small>Blade kit and innate arts</small></a>
-      <a class="home-row" href="world/storehouse.html"><img loading="lazy" decoding="async" src="assets/portraits/hakuri.webp" alt="The Storehouse"><b>The Storehouse</b><small>Hakuri’s walking Kura</small></a>
-      <a class="home-row" href="factions/hishaku.html"><img loading="lazy" decoding="async" src="assets/portraits/yura.webp" alt="Hishaku"><b>Hishaku</b><small>The ten who raided the house</small></a>
-      <a class="home-row" href="characters/index.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol10.webp" alt="The rest of the ten"><b>The rest of the ten</b><small>Toto, Yukisada, Bingo, and the still-unnamed</small></a>
-      <a class="home-row" href="manga/synopses.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol1.webp" alt="Volume synopses"><b>Volume synopses</b><small>Twelve Japanese spines, told in sentences</small></a>
-      <a class="home-row" href="guide/watch.html"><img loading="lazy" decoding="async" src="assets/covers/teaser-og.jpg" alt="Anime countdown"><b>Anime countdown</b><small>April 2027 · Cypic · how to watch</small></a>
-      <a class="home-row" href="characters/ichiki.html"><img loading="lazy" decoding="async" src="assets/portraits/azami.webp" alt="The leadership table"><b>The leadership table</b><small>Ichiki, Yatsuru, Izaru, and the rest of the heads</small></a>
-      <a class="home-row" href="guide/reading-order.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol1.webp" alt="How to read"><b>How to read</b><small>Chapter 1 through Part 2, in order</small></a>
-      <a class="home-row" href="world/bearers.html"><img loading="lazy" decoding="async" src="assets/panels/enten.webp" alt="Sword Bearers"><b>Sword Bearers</b><small>Every printed contract on steel</small></a>
-      <a class="home-row" href="world/raid.html"><img loading="lazy" decoding="async" src="assets/panels/ch001.png" alt="The raid"><b>The raid</b><small>The night the workshop emptied</small></a>
-      <a class="home-row" href="manga/chapter-130.html"><img loading="lazy" decoding="async" src="assets/panels/ch113.png" alt="Chapter 130"><b>Chapter 130, “I'm Fine!”</b><small>Tamahagane, reunion, the beach in three days</small></a>
-      <a class="home-row" href="guide/part-2.html"><img loading="lazy" decoding="async" src="assets/panels/ch113.png" alt="Part 2 guide"><b>Part 2, the forge door</b><small>How to read the war book after Swordsmith</small></a>
-      <a class="home-row" href="world/smelting.html"><img loading="lazy" decoding="async" src="assets/panels/enten.webp" alt="Smelting"><b>Smelting</b><small>Datenseki into steel, still not a named blade</small></a>
-      <a class="home-row" href="world/spirit-energy.html"><img loading="lazy" decoding="async" src="assets/panels/enten.webp" alt="Spirit energy"><b>Spirit energy</b><small>Genryoku, the fuel the YouTube tapes start with</small></a>
-      <a class="home-row" href="world/kaburato.html"><img loading="lazy" decoding="async" src="assets/portraits/sojo.webp" alt="Kaburato Castle"><b>Kaburato Castle</b><small>Sojo’s house. The last weather duel</small></a>
-      <a class="home-row" href="fun/reddit.html"><img loading="lazy" decoding="async" src="assets/community/07.png" alt="r/Kagurabachi"><b>r/Kagurabachi</b><small>Weekly threads. First-blade camps. No leaks</small></a>
-      <a class="home-row" href="world/first-blade.html"><img loading="lazy" decoding="async" src="assets/panels/ch113.png" alt="The first blade"><b>The first blade</b><small>Still unnamed after the live 133</small></a>
-      <a class="home-row" href="manga/chapter-131.html"><img loading="lazy" decoding="async" src="assets/panels/ch113.png" alt="Chapter 131"><b>Chapter 131, Tipping Point</b><small>Jump 2026 #41. 6 September</small></a>
-      <a class="home-row" href="fun/september-2026-rest.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol1.webp" alt="September rest"><b>The September rest</b><small>133 is live untitled. 134 is Jump #46</small></a>
-      <a class="home-row" href="manga/volume-1.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol1.webp" alt="Volume 1"><b>Volume rooms</b><small>Mission through Heroes, each with a jacket</small></a>
-      <a class="home-row" href="world/owl.html"><img loading="lazy" decoding="async" src="assets/portraits/samura.webp" alt="Owl"><b>Owl, Play, Flame Bone</b><small>Printed kit, now with rooms</small></a>
-      <a class="home-row" href="guide/mega-doors.html"><img loading="lazy" decoding="async" src="assets/panels/ch001.png" alt="Mega doors"><b>Mega update doors</b><small>Leftover titles, volumes, leftover kit</small></a>
-      <a class="home-row" href="guide/quad-doors.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol5.webp" alt="Quadruple wave"><b>Quadruple wave</b><small>Bonds, fight desks, volume reads, new essays</small></a>
-      <a class="home-row" href="manga/chapter-132.html"><img loading="lazy" decoding="async" src="assets/portraits/sojo.webp" alt="Chapter 132"><b>Chapter 132, Misaka</b><small>巳坂. Jump 2026 #44. 27 September</small></a>
-      <a class="home-row" href="guide/october-update.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol1.webp" alt="October update"><b>October update</b><small>The door became a title. 133 is a date</small></a>
-      <a class="home-row" href="fun/voices.html"><img loading="lazy" decoding="async" src="assets/portraits/chihiro-anime-art.jpg" alt="Voices"><b>Voices</b><small>Kimura, Seki, Konishi, Itō, Nemoto</small></a>
-      <a class="home-row" href="characters/bonds.html"><img loading="lazy" decoding="async" src="assets/portraits/chihiro.webp" alt="Printed bonds"><b>Printed bonds</b><small>Household, auction, Iai, kiln pairs</small></a>
-      <a class="home-row" href="world/battle-index.html"><img loading="lazy" decoding="async" src="assets/panels/ch009.png" alt="Fight desks"><b>Fight desks</b><small>Raid, weather, auction, hotel, HQ</small></a>
-      <a class="home-row" href="manga/chapter-19.html"><img loading="lazy" decoding="async" src="assets/portraits/hiyuki.webp" alt="Chapter 19"><b>Chapter 19, Knight of Darkness</b><small>Hiyuki arrives. Volume 3 opens</small></a>
-      <a class="home-row" href="world/kuro.html"><img loading="lazy" decoding="async" src="assets/panels/enten.webp" alt="Kuro"><b>Kuro, Aka, Nishiki</b><small>Enten’s kit, each with a room</small></a>
-      <a class="home-row" href="manga/volume-12.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol11.webp" alt="Volume 12"><b>Volume 12</b><small>4 September 2026. Karma through Swordsmith</small></a>
-      <a class="home-row" href="analysis/suzaku.html"><img loading="lazy" decoding="async" src="assets/portraits/samura.webp" alt="Suzaku"><b>Suzaku</b><small>The cut that keeps. Then the life spend</small></a>
-      <a class="home-row" href="manga/chapter-133.html"><img loading="lazy" decoding="async" src="assets/panels/ch113.png" alt="Chapter 133"><b>Chapter 133, live untitled</b><small>VIZ 4 October. No subtitle on this desk</small></a>
-      <a class="home-row" href="collectibles/licenses.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol1.webp" alt="Licenses"><b>Official licenses</b><small>Sixteen publishers. Three Spanish rows</small></a>
-      <a class="home-row" href="fun/awards.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol2.webp" alt="Awards"><b>Awards desk</b><small>Next Manga, Eisner, Daruma, BookScan</small></a>
-      <a class="home-row" href="guide/ultra-doors.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol5.webp" alt="Biggest update"><b>Biggest update doors</b><small>Licenses, leftover pairs, tour stops</small></a>
-      <a class="home-row" href="collectibles/english-volume-10.html"><img loading="lazy" decoding="async" src="assets/covers/vol9.jpg" alt="English 10"><b>English volume 10</b><small>2 February 2027. ISBN 978-1-9747-6947-6</small></a>
+      <a class="home-row is-lead" href="manga/chapter-133.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#chapter"/></svg><b>Latest chapter</b><small>Chapter 133. Spoilers past the early manga.</small></a>
+      <a class="home-row is-lead" href="media/anime.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#anime"/></svg><b>Anime countdown</b><small>April 2027. Cypic. How to watch.</small></a>
+      <a class="home-row is-lead" href="guide/newcomer-hour.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#start"/></svg><b>Start here</b><small>Spoiler-free. Chapter 1, then this desk.</small></a>
+      <a class="home-row" href="guide/reading-order.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#read"/></svg><b>How to read</b><small>Chapter 1 through the volumes, in order</small></a>
+      <a class="home-row" href="characters/index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#people"/></svg><b>Characters</b><small>The cast, filed by name</small></a>
+      <a class="home-row" href="blades/index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#catalog"/></svg><b>Enchanted Blades</b><small>Each sword has its own page</small></a>
+      <a class="home-row" href="manga/volumes.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#volumes"/></svg><b>Volumes</b><small>Twelve Japanese tankōbon, with ISBNs</small></a>
+      <a class="home-row" href="world/techniques.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#techniques"/></svg><b>Techniques</b><small>Named arts, in one catalog</small></a>
+      <a class="home-row" href="arcs/index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#arcs"/></svg><b>Story arcs</b><small>The shape of the serial. Later-chapter detail.</small></a>
+      <a class="home-row" href="manga/index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#manga"/></svg><b>Manga guide</b><small>Chapters, jackets, and where to read</small></a>
     </div>
+    <p class="home-more">Changelog notes, including the October desk and earlier waves of new pages, live on the <a href="guide/updates.html">updates page</a>.</p>
 
     <p class="home-label">Asked a lot <span>質問</span></p>
     <div class="home-faq">
@@ -254,23 +233,24 @@
 
     <p class="home-label">Sunday ink <span>日曜</span></p>
     <div class="home-table">
-      <a class="home-row" href="fun/community.html"><img loading="lazy" decoding="async" src="assets/community/07.png" alt="Sunday board"><b>Sunday board</b><small>Pictures from Reddit and X</small></a>
-      <a class="home-row" href="fun/wall.html"><img loading="lazy" decoding="async" src="assets/official/jp-ogp.jpg" alt="Sunday wall"><b>Sunday wall</b><small>The glaze, typeset on official stills</small></a>
-      <a class="home-row" href="fun/bowl.html"><img loading="lazy" decoding="async" src="assets/fun/enten.png" alt="The bowl"><b>The bowl</b><small>Kuro, Aka, Nishiki</small></a>
-      <a class="home-row" href="fun/quotes.html"><img loading="lazy" decoding="async" src="assets/panels/ch014.png" alt="Quoted"><b>Quoted</b><small>Goldfish, True Realm, Hakuri</small></a>
-      <a class="home-row" href="world/workshop.html"><img loading="lazy" decoding="async" src="assets/panels/ch001.png" alt="The workshop"><b>The workshop</b><small>House, cellar, bowl, raid</small></a>
-      <a class="home-row" href="world/battles.html"><img loading="lazy" decoding="async" src="assets/panels/ch009.png" alt="Battles"><b>Battles</b><small>Sojo, the auction, the hotel</small></a>
-      <a class="home-row" href="collectibles/union-arena.html"><img loading="lazy" decoding="async" src="assets/cards/chihiro-060.jpg" alt="UNION ARENA Chihiro card"><b>UNION ARENA</b><small>Kagurabachi cards, pictured</small></a>
-      <a class="home-row" href="fun/toc.html"><img loading="lazy" decoding="async" src="assets/covers/jp-vol2.webp" alt="ToC ritual"><b>ToC ritual</b><small>We’re so back. The jackets are the record</small></a>
+      <a class="home-row" href="fun/community.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#board"/></svg><b>Sunday board</b><small>Fandom talk. Pictures stay on that page.</small></a>
+      <a class="home-row" href="fun/wall.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#wall"/></svg><b>Sunday wall</b><small>Jokes typeset by this archive</small></a>
+      <a class="home-row" href="fun/bowl.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#bowl"/></svg><b>The bowl</b><small>Three colors, drawn for this page</small></a>
+      <a class="home-row" href="fun/quotes.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#quotes"/></svg><b>Quoted</b><small>Lines from the book. Later-chapter detail.</small></a>
+      <a class="home-row" href="world/workshop.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#workshop"/></svg><b>The workshop</b><small>The house and the workbench</small></a>
+      <a class="home-row" href="world/battles.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#battles"/></svg><b>Battles</b><small>Fight notes. Later-chapter detail.</small></a>
+      <a class="home-row" href="collectibles/union-arena.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#cards"/></svg><b>UNION ARENA</b><small>The card game, without card art here</small></a>
+      <a class="home-row" href="fun/toc.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#toc"/></svg><b>ToC ritual</b><small>How the magazine leads the week</small></a>
     </div>
 
     <div class="tiles">
-      <a class="tile" href="characters/index.html"><img loading="lazy" decoding="async" src="assets/portraits/chihiro.webp" alt="Characters"><span><b>Characters</b><small>Everyone</small></span></a>
-      <a class="tile" href="fun/index.html"><img loading="lazy" decoding="async" src="assets/portraits/chihiro-anime.png" alt="Fun"><span><b>Fun</b><small>Fandom</small></span></a>
-      <a class="tile" href="analysis/index.html"><img loading="lazy" decoding="async" src="assets/panels/Enten.png" alt="Essays"><span><b>Essays</b><small>Analysis</small></span></a>
-      <a class="tile" href="media/index.html"><img loading="lazy" decoding="async" src="assets/covers/teaser-og.jpg" alt="Theories"><span><b>Theories</b><small>YouTube</small></span></a>
+      <a class="tile" href="guide/index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#start"/></svg><span><b>Guide</b><small>Begin</small></span></a>
+      <a class="tile" href="fun/index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#fun"/></svg><span><b>Fun</b><small>Fandom</small></span></a>
+      <a class="tile" href="analysis/index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#essays"/></svg><span><b>Essays</b><small>Analysis</small></span></a>
+      <a class="tile" href="media/index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><use href="assets/marks.svg#theories"/></svg><span><b>Theories</b><small>YouTube</small></span></a>
     </div>
-    <nav class="related" aria-label="Related pages"><a href="guide/index.html">Guide</a><a href="characters/index.html">Characters</a><a href="blades/index.html">Enchanted Blades</a><a href="manga/synopses.html">Volume synopses</a><a href="arcs/index.html">Story arcs</a><a href="media/anime.html">Anime</a><a href="sitemap.html">Site map</a><a href="about.html">About</a></nav>
+    <p class="home-rights">Marks on this page are original diagrams drawn for the encyclopedia. Chapter pages are not hosted here. Read on <a href="https://www.viz.com/shonenjump/chapters/kagurabachi">VIZ</a> or <a href="https://mangaplus.shueisha.co.jp/titles/100274">MANGA Plus</a>.</p>
+    <nav class="related" aria-label="Related pages"><a href="guide/index.html">Guide</a><a href="guide/newcomer-hour.html">Spoiler-free start</a><a href="guide/updates.html">Updates</a><a href="characters/index.html">Characters</a><a href="blades/index.html">Enchanted Blades</a><a href="manga/synopses.html">Volume synopses</a><a href="arcs/index.html">Story arcs</a><a href="media/anime.html">Anime</a><a href="sitemap.html">Site map</a><a href="about.html">About</a></nav>
     </div>
   </main>
 
