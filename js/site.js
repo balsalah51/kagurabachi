@@ -104,6 +104,8 @@
             <li><a href="${R}arcs/index.html">Story arcs</a></li>
             <li><a href="${R}analysis/index.html">Essays</a></li>
             <li><a href="${R}manga/part-2.html">Part 2</a></li>
+            <li><a href="${R}manga/chapter-134.html">Chapter 134, Masters of the Sword</a></li>
+            <li><a href="${R}manga/chapter-133.html">Chapter 133, Misaka Version II</a></li>
             <li><a href="${R}manga/chapter-132.html">Chapter 132, Misaka</a></li>
             <li><a href="${R}guide/volume-map.html">Volume map</a></li>
             <li><a href="${R}media/anime.html">Anime</a></li>
