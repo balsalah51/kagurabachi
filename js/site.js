@@ -46,6 +46,7 @@
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
         <ul class="primary-nav" id="primary-nav">
           ${navLink("index.html", "Home")}
+          ${navLink("media/anime.html", "Anime")}
           ${navLink("characters/index.html", "Characters", "characters")}
           ${navLink("manga/index.html", "Manga", "manga")}
           ${navLink("arcs/index.html", "Story", "arcs")}
@@ -116,6 +117,7 @@
             <li><a href="${R}search.html">Search</a></li>
             <li><a href="${R}faq.html">FAQ</a></li>
             <li><a href="${R}sitemap.html">Site map</a></li>
+            <li><a href="${R}guide/updates.html">Updates</a></li>
             <li><a href="${R}about.html">About</a></li>
             <li><a href="${R}privacy.html">Privacy</a></li>
             <li><a href="${R}fun/index.html">Fun of the manga</a></li>
