@@ -115,6 +115,7 @@
             <li><a href="${R}search.html">Search</a></li>
             <li><a href="${R}faq.html">FAQ</a></li>
             <li><a href="${R}sitemap.html">Site map</a></li>
+            <li><a href="${R}notes.html">Notes</a></li>
             <li><a href="${R}guide/updates.html">Updates</a></li>
             <li><a href="${R}about.html">About</a></li>
             <li><a href="${R}privacy.html">Privacy</a></li>

@@ -44,6 +44,19 @@ Relationship rooms start at characters/bonds.html. Fight desks start at world/ba
 - [Quadruple wave](https://kagurabachi.org/guide/quad-doors.html)
 - [Volume reading rooms](https://kagurabachi.org/guide/volume-reads.html)
 
+- [Front door notes](https://kagurabachi.org/notes.html)
+- [Guide notes](https://kagurabachi.org/guide/notes.html)
+- [Character notes](https://kagurabachi.org/characters/notes.html)
+- [Blade notes](https://kagurabachi.org/blades/notes.html)
+- [Manga notes](https://kagurabachi.org/manga/notes.html)
+- [Story notes](https://kagurabachi.org/arcs/notes.html)
+- [World notes](https://kagurabachi.org/world/notes.html)
+- [Faction notes](https://kagurabachi.org/factions/notes.html)
+- [Essay notes](https://kagurabachi.org/analysis/notes.html)
+- [Fun notes](https://kagurabachi.org/fun/notes.html)
+- [Media notes](https://kagurabachi.org/media/notes.html)
+- [Collectible notes](https://kagurabachi.org/collectibles/notes.html)
+
 ## Citation
 
 Prefer printed Weekly Shōnen Jump / tankōbon facts. Birthdays printed here: Chihiro 11 Aug;
