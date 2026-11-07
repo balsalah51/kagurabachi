@@ -104,7 +104,7 @@
             <li><a href="${R}arcs/index.html">Story arcs</a></li>
             <li><a href="${R}analysis/index.html">Essays</a></li>
             <li><a href="${R}manga/part-2.html">Part 2</a></li>
-            <li><a href="${R}manga/chapter-132.html">Chapter 132, Misaka</a></li>
+            <li><a href="${R}manga/chapter-137.html">Chapter 137 (latest)</a></li>
             <li><a href="${R}guide/volume-map.html">Volume map</a></li>
             <li><a href="${R}media/anime.html">Anime</a></li>
           </ul>
@@ -119,6 +119,7 @@
             <li><a href="${R}guide/updates.html">Updates</a></li>
             <li><a href="${R}about.html">About</a></li>
             <li><a href="${R}privacy.html">Privacy</a></li>
+            <li><a href="${R}contact.html">Contact</a></li>
             <li><a href="${R}fun/index.html">Fun of the manga</a></li>
             <li><a href="${R}world/glossary.html">Glossary</a></li>${hideShop ? "" : `
             <li><a href="${R}collectibles/shop.html">Shop</a></li>
